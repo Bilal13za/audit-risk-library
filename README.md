@@ -60,3 +60,20 @@ v1.2 library: 49 factors, 45 risks, 128 procedures, 121 evidence items, 80 contr
 - 8 fraud indicators (fraud-triangle mapped) + 4 significant fraud risks + 6 fraud-focused procedures
 - 21 analytical procedures across 7 audit areas; 12 control objectives bidirectionally linked to controls
 All `Verified` on a professional-practice basis with standards references unverified. 22/22 pytest pass. See `docs/ROADMAP.md` for expansion plans.
+
+
+## Run on any device (in your browser)
+
+The Windows download above is the full offline version. To open this app on
+your phone, tablet, or any computer without installing anything, host it free
+on **Streamlit Community Cloud**:
+
+1. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
+2. **New app** → pick this repository (`Bilal13za/audit-risk-library`), branch `main`,
+   main file `app.py`.
+3. **Deploy** — after a minute or two you get a link like
+   `https://audit-risk-library.streamlit.app` that works on any device.
+
+Two honest caveats: anything you save in the cloud copy is temporary (it
+resets when the app sleeps from inactivity), and the Windows version
+remains the full, keep-everything version.
