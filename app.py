@@ -13,7 +13,7 @@ from pathlib import Path
 import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from db import connect  # noqa: E402
+from db import connect, ensure_db  # noqa: E402
 from engine import RuleEngine  # noqa: E402
 from export import export_csv, export_excel  # noqa: E402
 
@@ -29,6 +29,9 @@ JUDGMENT_NOTICE = (
 
 @st.cache_resource
 def get_engine():
+    # First run on a new machine (or cloud deploy): create + seed the database.
+    # No-op when the database already has content.
+    ensure_db()
     return RuleEngine()
 
 

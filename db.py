@@ -414,6 +414,60 @@ def init_db(db_path=None):
     return conn
 
 
+def _needs_seed(conn):
+    """True when the database is missing or has no library content.
+
+    A fresh ``sqlite3.connect()`` creates an empty file without tables, so a
+    first run on a new machine (or a cloud deploy) must initialise + seed.
+    An existing database with content is never touched.
+    """
+    try:
+        row = conn.execute("SELECT COUNT(*) FROM business_factors").fetchone()
+    except sqlite3.OperationalError:
+        return True  # table (or the whole schema) is missing
+    return (row[0] if row else 0) == 0
+
+
+def ensure_db(db_path=None):
+    """Make sure the database exists, is initialised, and is seeded.
+
+    Safe to call on every startup: it is a single cheap ``COUNT(*)`` when the
+    database already has content, and only builds + seeds on a fresh/empty
+    database. Never deletes or rebuilds existing content (unlike seed.py's
+    manual full-rebuild mode). Returns an open connection to the ready database.
+    """
+    db_path = Path(db_path) if db_path else DEFAULT_DB
+    probe = connect(db_path)
+    try:
+        if not _needs_seed(probe):
+            return probe
+    except Exception:
+        probe.close()
+        raise
+    probe.close()
+    # Fresh or empty database: build schema + fixed data, then load the seed library.
+    # Lazy import: seed.py imports from db.py, so import here to avoid a cycle.
+    from seed import SEED_DIR, check_seed_file, load_seed_file
+
+    conn = init_db(db_path)
+    # Mirror seed.py's full-rebuild load order (FKs deferred, validated after).
+    conn.execute("PRAGMA foreign_keys = OFF")
+    seed_files = sorted(SEED_DIR.glob("*.json"))
+    for path in seed_files:
+        if check_seed_file(path):
+            continue  # structural errors - skip, same as seed.py
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        load_seed_file(conn, doc, path.name)
+    conn.execute(
+        "INSERT INTO library_builds (built_at, note) VALUES (?, ?)",
+        (time.strftime("%Y-%m-%d %H:%M:%S"),
+         f"seeded on first run from {len(seed_files)} files"),
+    )
+    conn.commit()
+    conn.execute("PRAGMA foreign_keys = ON")
+    return conn
+
+
 # ---------------------------------------------------------------------------
 # Validation
 # ---------------------------------------------------------------------------
