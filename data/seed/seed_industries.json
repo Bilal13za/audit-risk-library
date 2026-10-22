@@ -1,0 +1,2643 @@
+{
+ "controls": [
+  {
+   "description": "A complete register of network sites is maintained, capturing lease terms and restoration/dismantling clauses, and is reconciled to the lease portfolio annually.",
+   "evidence_of_operation": "Reconciled site register with restoration-clause flags; review sign-off.",
+   "frequency": "Annual",
+   "id": "C-TEL-001-1",
+   "limitations": "Only as good as the underlying lease data; new sites may be missed.",
+   "link_explanation": "Completeness of the obligation population starts with a complete site register.",
+   "manual_automated": "Manual",
+   "objective": "Ensure all sites with restoration obligations are identified.",
+   "preventive_detective": "Detective",
+   "responsible_role": "Network operations / finance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "The decommissioning provision model (cost estimates, timing, discount rate, unwinding) is reviewed and approved by management each reporting date.",
+   "evidence_of_operation": "Approved provision calculation with assumption support.",
+   "frequency": "Annual",
+   "id": "C-TEL-001-2",
+   "limitations": "Management review may lack challenge where assumptions are highly technical.",
+   "link_explanation": "Directly addresses the measurement (valuation) risk.",
+   "manual_automated": "Manual",
+   "objective": "Ensure the provision is measured on supportable assumptions.",
+   "preventive_detective": "Detective",
+   "responsible_role": "Financial controller",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "New tariff plans and bundle structures are independently reviewed and approved, including the stand-alone selling prices used for allocation, before launch.",
+   "evidence_of_operation": "Tariff approval forms with allocation basis documented.",
+   "frequency": "Per new plan",
+   "id": "C-TEL-002-1",
+   "limitations": "Review may be a formality under launch pressure.",
+   "link_explanation": "Targets the source of allocation error: the approved selling prices.",
+   "manual_automated": "Manual",
+   "objective": "Prevent unsupported allocation keys entering the billing system.",
+   "preventive_detective": "Preventive",
+   "responsible_role": "Product / finance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "The billing and revenue system automatically allocates consideration per the approved configuration, with changes to allocation logic restricted and logged.",
+   "evidence_of_operation": "Change logs and restricted access rights.",
+   "frequency": "Ongoing",
+   "id": "C-TEL-002-2",
+   "limitations": "An automated control faithfully applies a wrong configuration.",
+   "link_explanation": "Consistency of application across high volumes.",
+   "manual_automated": "Automated",
+   "objective": "Ensure allocation is applied consistently to all contracts.",
+   "preventive_detective": "Preventive",
+   "responsible_role": "IT / revenue assurance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Rating exception and rejection reports are reviewed daily and rejected usage records are investigated and reprocessed or resolved.",
+   "evidence_of_operation": "Reviewed exception logs with resolution notes.",
+   "frequency": "Daily",
+   "id": "C-TEL-003-1",
+   "limitations": "Reviewers may clear exceptions without proper investigation under volume pressure.",
+   "link_explanation": "The main detective control over completeness and accuracy of rated revenue.",
+   "manual_automated": "IT-dependent manual",
+   "objective": "Detect unrated or misrated usage before billing.",
+   "preventive_detective": "Detective",
+   "responsible_role": "Revenue assurance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Tariff and rating configuration changes are tested in a non-production environment and independently approved before deployment.",
+   "evidence_of_operation": "Test results and deployment approvals.",
+   "frequency": "Per change",
+   "id": "C-TEL-003-2",
+   "limitations": "Testing may not cover all tariff combinations.",
+   "link_explanation": "Addresses the systematic-error source directly.",
+   "manual_automated": "Manual",
+   "objective": "Prevent defective rating logic reaching production.",
+   "preventive_detective": "Preventive",
+   "responsible_role": "Billing IT / finance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Overhead absorption rates and the normal-capacity assumption are set from approved budgets and reviewed when budgets change or capacity shifts materially.",
+   "evidence_of_operation": "Approved rate-setting papers with budget support.",
+   "frequency": "Annual / on budget change",
+   "id": "C-MFG-001-1",
+   "limitations": "Budgets themselves may be optimistic.",
+   "link_explanation": "Rate-setting is the root input to the valuation.",
+   "manual_automated": "Manual",
+   "objective": "Keep absorption rates current and capacity assumptions realistic.",
+   "preventive_detective": "Preventive",
+   "responsible_role": "Cost accounting / finance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Abnormal idle-capacity costs are identified and expensed rather than absorbed into inventory.",
+   "evidence_of_operation": "Capacity utilisation reports with idle-cost analysis.",
+   "frequency": "Monthly",
+   "id": "C-MFG-001-2",
+   "limitations": "The normal/abnormal boundary is judgmental.",
+   "link_explanation": "Directly addresses the idle-capacity valuation risk.",
+   "manual_automated": "Manual",
+   "objective": "Prevent capitalisation of abnormal production costs.",
+   "preventive_detective": "Detective",
+   "responsible_role": "Plant finance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Material cost variances are investigated monthly, with findings documented and standards updated where the variance reflects a permanent cost change.",
+   "evidence_of_operation": "Variance investigation reports with conclusions.",
+   "frequency": "Monthly",
+   "id": "C-MFG-002-1",
+   "limitations": "Investigations may conclude too readily that variances are 'timing'.",
+   "link_explanation": "The missing detective control this factor describes.",
+   "manual_automated": "Manual",
+   "objective": "Ensure variances are understood and standards stay current.",
+   "preventive_detective": "Detective",
+   "responsible_role": "Cost accounting",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Warranty claims are tracked by product cohort and the provision model is updated for actual claim experience each reporting date.",
+   "evidence_of_operation": "Cohort claim analyses feeding the provision model.",
+   "frequency": "Quarterly / annual",
+   "id": "C-MFG-003-1",
+   "limitations": "New products have no history to track.",
+   "link_explanation": "Connects actual experience to the estimate - the key detective control.",
+   "manual_automated": "Manual",
+   "objective": "Keep the provision aligned with emerging claims data.",
+   "preventive_detective": "Detective",
+   "responsible_role": "Finance / after-sales",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Daily till reconciliations are performed, independently reviewed, and differences investigated; bankings agree to till records.",
+   "evidence_of_operation": "Signed till sheets, banking slips, investigation notes.",
+   "frequency": "Daily",
+   "id": "C-RTL-001-1",
+   "limitations": "Collusion between till operator and reviewer defeats it.",
+   "link_explanation": "The frontline detective control over takings.",
+   "manual_automated": "Manual",
+   "objective": "Detect missing takings promptly.",
+   "preventive_detective": "Detective",
+   "responsible_role": "Store supervisor / finance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Voids, refunds and discounts require supervisor authorisation with reason codes, and are reviewed for unusual patterns.",
+   "evidence_of_operation": "Authorised void/refund logs.",
+   "frequency": "Ongoing",
+   "id": "C-RTL-001-2",
+   "limitations": "Supervisor may be the perpetrator.",
+   "link_explanation": "Voids and refunds are the classic skimming channel.",
+   "manual_automated": "Manual",
+   "objective": "Prevent fictitious voids/refunds as a skimming method.",
+   "preventive_detective": "Preventive",
+   "responsible_role": "Store supervisor",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Rebate agreements are documented, with tiered terms captured in a rebate schedule reviewed by finance before income is recognised.",
+   "evidence_of_operation": "Signed agreements and approved rebate schedules.",
+   "frequency": "Per agreement",
+   "id": "C-RTL-002-1",
+   "limitations": "Informal side deals may bypass documentation.",
+   "link_explanation": "The agreed terms are the foundation of accurate measurement.",
+   "manual_automated": "Manual",
+   "objective": "Ensure income is recognised only on agreed terms.",
+   "preventive_detective": "Preventive",
+   "responsible_role": "Commercial finance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Gift card and loyalty liabilities are reconciled between the POS/loyalty system and the general ledger each period, with breakage assumptions approved.",
+   "evidence_of_operation": "Reconciliations with approval; breakage papers.",
+   "frequency": "Monthly",
+   "id": "C-RTL-003-1",
+   "limitations": "Reconciliation proves arithmetic, not correct breakage.",
+   "link_explanation": "Completeness of the liability population.",
+   "manual_automated": "IT-dependent manual",
+   "objective": "Ensure the liability is complete and breakage is authorised.",
+   "preventive_detective": "Detective",
+   "responsible_role": "Finance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "The ECL model is independently validated, staging criteria are documented, and significant staging decisions and overlays are approved with documented rationale.",
+   "evidence_of_operation": "Validation reports; staging committee minutes; overlay approvals.",
+   "frequency": "Annual / quarterly",
+   "id": "C-BNK-001-1",
+   "limitations": "Validation may lag model changes.",
+   "link_explanation": "The governance control over the key estimate.",
+   "manual_automated": "Manual",
+   "objective": "Ensure the impairment estimate is controlled and challenged.",
+   "preventive_detective": "Detective",
+   "responsible_role": "Risk / finance",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Interest accrual is automatically suspended when a loan meets defined non-performance criteria, with any exception requiring documented approval.",
+   "evidence_of_operation": "System configuration; exception approvals.",
+   "frequency": "Ongoing",
+   "id": "C-BNK-002-1",
+   "limitations": "Criteria may be set too leniently.",
+   "link_explanation": "The preventive control at the source of the risk.",
+   "manual_automated": "Automated",
+   "objective": "Prevent accrual of uncollectible interest.",
+   "preventive_detective": "Preventive",
+   "responsible_role": "Credit operations / IT",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "description": "Independent price verification is performed on treasury valuations, with model inputs and classifications reviewed by a function independent of the trading desk.",
+   "evidence_of_operation": "IPV reports with investigation of differences.",
+   "frequency": "Monthly",
+   "id": "C-BNK-003-1",
+   "limitations": "Independent sources may not exist for level 3 instruments.",
+   "link_explanation": "Segregation between valuation and trading addresses the information asymmetry.",
+   "manual_automated": "Manual",
+   "objective": "Ensure valuations and classifications are not set by the front office alone.",
+   "preventive_detective": "Detective",
+   "responsible_role": "Risk / product control",
+   "review_status": "Verified",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  }
+ ],
+ "evidence": [
+  {
+   "contradictory_evidence": "Clauses disclaiming restoration that contradict the register flag.",
+   "description": "Lease contracts for towers, masts and rooftop sites, including dismantling and restoration clauses.",
+   "expected_characteristics": "Signed, dated, restoration clause identifiable.",
+   "id": "E-TEL-001-1",
+   "limitations": "Side letters or verbal amendments may not be in the file.",
+   "name": "Site leases and land agreements",
+   "reliability_notes": "High reliability for the existence of the obligation: executed contracts with third parties.",
+   "review_status": "Verified",
+   "source": "External",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Contractor quotes materially below assumed dismantling costs.",
+   "description": "Management's model of per-site costs, timing, discounting and unwinding.",
+   "expected_characteristics": "Formula-driven, version-controlled, approved.",
+   "id": "E-TEL-001-2",
+   "limitations": "Reflects management's own assumptions.",
+   "name": "Decommissioning provision calculation schedule",
+   "reliability_notes": "Low reliability as evidence of the correct amount - it is the item under test; useful as the population recalculated.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Marketing material promising terms absent from the contract.",
+   "description": "Executed customer agreements and the published tariff plan detailing bundle components and prices.",
+   "expected_characteristics": "Signed contracts; version-controlled tariff schedules.",
+   "id": "E-TEL-002-1",
+   "limitations": "Oral promises by sales agents are not captured.",
+   "name": "Customer contracts and tariff plan terms",
+   "reliability_notes": "Contracts are the primary evidence of what was promised; system-generated plan terms are reliable where change-controlled.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Reperformance differences indicating systematic misallocation.",
+   "description": "System or spreadsheet schedules allocating the transaction price across bundle components per contract.",
+   "expected_characteristics": "Traceable to contracts and approved selling prices.",
+   "id": "E-TEL-002-2",
+   "limitations": "Reflects the system's own logic.",
+   "name": "Revenue allocation schedules",
+   "reliability_notes": "The item under test for accuracy; reliable as the population for reperformance, not as proof of correctness.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Network traffic statistics materially exceeding rated records.",
+   "description": "System-generated records of subscriber usage and the rating applied.",
+   "expected_characteristics": "Chronological, tamper-evident, reconcilable to network statistics.",
+   "id": "E-TEL-003-1",
+   "limitations": "Completeness of the underlying network feed is assumed.",
+   "name": "Usage records (CDRs) and rating logs",
+   "reliability_notes": "System-generated and reliable as the population, provided IT general controls are effective; not proof the rating was correct.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Aged unresolved exceptions written off without investigation.",
+   "description": "Logs of usage records rejected or flagged by the rating engine.",
+   "expected_characteristics": "Dated, with documented resolution.",
+   "id": "E-TEL-003-2",
+   "limitations": "Only captures exceptions the engine detects.",
+   "name": "Rating exception and rejection reports",
+   "reliability_notes": "Useful for completeness testing; reliability of resolution evidence depends on reviewer independence.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Actual overheads materially below absorbed amounts with no true-up.",
+   "description": "The calculation of absorption rates, overhead pools and the normal-capacity basis.",
+   "expected_characteristics": "Approved, formula-driven, tied to the budget.",
+   "id": "E-MFG-001-1",
+   "limitations": "Built on budgeted inputs.",
+   "name": "Overhead absorption model and rate-setting papers",
+   "reliability_notes": "The item under test; reliable as the population recalculated, not as proof of correctness.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Jobs showing no activity for months still carried at full cost.",
+   "description": "Per-job records of materials, labour and overhead applied and stage of completion.",
+   "expected_characteristics": "Complete job coverage, dated stage updates.",
+   "id": "E-MFG-001-2",
+   "limitations": "Stage assessments are judgmental.",
+   "name": "Job cards and production records",
+   "reliability_notes": "Operational records; more reliable where independently reviewed at count.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Manual adjustments to variance accounts outside the system.",
+   "description": "Periodic reports of purchase-price, usage and overhead variances by cost centre.",
+   "expected_characteristics": "Complete period coverage, reconcilable to the ledger.",
+   "id": "E-MFG-002-1",
+   "limitations": "Only as granular as the standard-cost setup.",
+   "name": "Variance reports",
+   "reliability_notes": "System-generated and reliable as the population for analysis, where the costing system is stable.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Key input prices moved materially with no standard revision.",
+   "description": "The standard costs in use and when each was last revised.",
+   "expected_characteristics": "Dated revisions with approval.",
+   "id": "E-MFG-002-2",
+   "limitations": "Does not show why a standard was not revised.",
+   "name": "Standard cost master and revision history",
+   "reliability_notes": "Useful for assessing staleness; changes should be authorised.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Customer complaints indicating claims not logged.",
+   "description": "Record of claims received, by product, cohort and cost of remedy.",
+   "expected_characteristics": "Complete, dated, costed claims.",
+   "id": "E-MFG-003-1",
+   "limitations": "May understate where claims are discouraged or mishandled.",
+   "name": "Warranty claims register",
+   "reliability_notes": "Operational data; reliable where claims handling is separate from the provision preparer.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Back-testing showing consistent under-provisioning.",
+   "description": "Management's calculation of expected future claims by cohort.",
+   "expected_characteristics": "Tied to claim history, approved.",
+   "id": "E-MFG-003-2",
+   "limitations": "Assumption-driven.",
+   "name": "Warranty provision model",
+   "reliability_notes": "The item under test; useful as the recalculated population.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Bankings consistently below till totals.",
+   "description": "Point-of-sale totals per till per day.",
+   "expected_characteristics": "Sequential, reconcilable to bankings.",
+   "id": "E-RTL-001-1",
+   "limitations": "Skimmed sales never reach the till record.",
+   "name": "Till Z-readings and daily sales summaries",
+   "reliability_notes": "System-generated where POS controls are effective; vulnerable where staff can manipulate the till.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Bankings exceeding recorded sales (may indicate prior-period skimming now banked).",
+   "description": "Evidence of cash actually banked.",
+   "expected_characteristics": "Dated, agreeing to till records.",
+   "id": "E-RTL-001-2",
+   "limitations": "Proves deposit, not completeness of takings.",
+   "name": "Banking slips and bank statements",
+   "reliability_notes": "External bank records are highly reliable for amounts actually deposited.",
+   "review_status": "Verified",
+   "source": "External",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Supplier correspondence disputing the claimed terms.",
+   "description": "Contracts setting out rebate tiers, qualifying volumes and payment terms.",
+   "expected_characteristics": "Signed, dated, tier tables clear.",
+   "id": "E-RTL-002-1",
+   "limitations": "Side letters may alter terms.",
+   "name": "Supplier rebate agreements",
+   "reliability_notes": "Signed agreements are strong evidence of terms; drafts are not.",
+   "review_status": "Verified",
+   "source": "External",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Confirmed amounts below the recognised accrual.",
+   "description": "Direct written confirmation of amounts due from suppliers.",
+   "expected_characteristics": "On supplier letterhead, specific amounts.",
+   "id": "E-RTL-002-2",
+   "limitations": "Non-responses require alternative procedures.",
+   "name": "Supplier confirmations of rebate balances",
+   "reliability_notes": "High reliability: independent, direct to the auditor.",
+   "review_status": "Verified",
+   "source": "External",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Liability reports that do not reconcile to the ledger.",
+   "description": "System reports of outstanding gift card values and loyalty points.",
+   "expected_characteristics": "Reconcilable to the ledger, aged analysis available.",
+   "id": "E-RTL-003-1",
+   "limitations": "Does not validate breakage.",
+   "name": "Loyalty/POS liability reports",
+   "reliability_notes": "System-generated; reliable as the population where IT controls are effective.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Falling redemption rates contradicting increased breakage.",
+   "description": "Analyses of redemption and breakage patterns by cohort.",
+   "expected_characteristics": "Cohort-based, multi-period.",
+   "id": "E-RTL-003-2",
+   "limitations": "Past patterns may not predict future behaviour.",
+   "name": "Historical redemption analyses",
+   "reliability_notes": "The evidential basis for breakage; reliability depends on data completeness.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Validation findings not remediated.",
+   "description": "Model methodology, validation results and staging criteria.",
+   "expected_characteristics": "Current version, independently validated.",
+   "id": "E-BNK-001-1",
+   "limitations": "Validates design, not the period's inputs.",
+   "name": "ECL model documentation and validation reports",
+   "reliability_notes": "Useful for understanding; validation by an independent function adds weight, but it remains management's model.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Facilities 90+ days past due still in stage 1.",
+   "description": "Delinquency, forbearance and staging flags per facility.",
+   "expected_characteristics": "Complete portfolio coverage, reconcilable.",
+   "id": "E-BNK-001-2",
+   "limitations": "Staging flags reflect judgments.",
+   "name": "Loan-level arrears and staging data",
+   "reliability_notes": "System-generated; reliable as the population where lending-system controls are effective.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Accrual continuing on flagged NPLs.",
+   "description": "List of non-performing facilities and whether interest accrual is suspended.",
+   "expected_characteristics": "Complete, with suspension flags.",
+   "id": "E-BNK-002-1",
+   "limitations": "Classification judgments sit underneath.",
+   "name": "NPL register with accrual status",
+   "reliability_notes": "System-generated; reliable as the population where credit-system controls hold.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Reperformance differences indicating systematic under-suspension.",
+   "description": "Computations of interest suspended or provided against.",
+   "expected_characteristics": "Formula-driven, reviewed.",
+   "id": "E-BNK-002-2",
+   "limitations": "Manual calculations are error-prone.",
+   "name": "Interest suspension calculations",
+   "reliability_notes": "The item under test; auditor reperformance is the evidence.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Persistent uninvestigated differences.",
+   "description": "Comparison of desk valuations with independent market sources or models.",
+   "expected_characteristics": "Periodic, with differences investigated.",
+   "id": "E-BNK-003-1",
+   "limitations": "No independent source exists for some level 3 instruments.",
+   "name": "Independent price verification reports",
+   "reliability_notes": "Stronger where the verification function is truly independent of trading.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  },
+  {
+   "contradictory_evidence": "Broker quotes materially below model values.",
+   "description": "Model methodology, inputs and calibration for fair-valued instruments.",
+   "expected_characteristics": "Current, validated, version-controlled.",
+   "id": "E-BNK-003-2",
+   "limitations": "Complexity may obscure weak inputs.",
+   "name": "Valuation model documentation",
+   "reliability_notes": "Necessary to understand; not evidence the valuation is right.",
+   "review_status": "Verified",
+   "source": "Internal",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+  }
+ ],
+ "factor_risk": [
+  {
+   "additional_info_needed": "Whether restoration obligations are enforceable under the site contracts and local regulation.; The number of sites and the materiality of the aggregate obligation.; The discount rate and cost assumptions used, and who approved them.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Telecom operators install thousands of towers and network sites on leased land, almost always under contracts requiring the site to be restored when the lease ends. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-TEL-001",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-TEL-001",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "The stand-alone selling prices used and how they were determined.; Whether any manual journals adjust system-generated allocation.; The volume of bundled contracts and their revenue share.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Telecom operators routinely sell bundled contracts (handset plus service over 12-24 months) where consideration must be split between distinct goods and services. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-TEL-002",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-TEL-002",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "Whether IT general controls over the billing system are effective.; The volume and ageing of unresolved rating exceptions.; How tariff changes are tested before deployment.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Telecom billing runs millions of call/data records through automated rating engines applying complex, frequently changing tariffs - a classic systematic-error environment. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-TEL-003",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-TEL-003",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "The normal-capacity level assumed and how it compares with actual utilisation.; Whether overhead rates were updated for the current budget.; The ageing of open WIP jobs.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Manufacturers carry work in progress valued with absorbed overheads - an area where allocation bases and rates are easily manipulated or simply stale. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-MFG-001",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-MFG-001",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "When standards were last revised and for which inputs.; How material variances are currently disposed of.; Whether variance investigations are documented.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Standard costing systems generate purchase-price and usage variances that should be investigated - but are often posted away without analysis, hiding real cost problems. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-MFG-002",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-MFG-002",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "The warranty terms offered and which products they cover.; Claims history by cohort, especially for new products.; How the provision has compared with actual claims in prior periods.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Manufacturers warrant their products, creating an obligation whose measurement depends on failure rates and claim patterns that shift with product changes. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-MFG-003",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-MFG-003",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "The proportion of cash versus card sales.; Void, refund and discount rates by outlet.; How shrinkage is measured and provided for.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Retailers process huge volumes of small cash and card transactions across many outlets - the classic environment for skimming and shrinkage. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-RTL-001",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-RTL-001",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "Which rebate streams are material and their agreement status.; Whether terms are confirmed in writing by suppliers.; The basis of year-end accruals - actual or forecast volumes.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Retailers earn significant supplier rebates and promotional income whose recognition depends on purchase volumes and conditions that are only confirmed later. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-RTL-002",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-RTL-002",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "The size of outstanding gift card and loyalty balances.; The breakage rate assumed and its historical support.; Expiry terms and how consistently they are applied.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Gift cards and loyalty points create deferred revenue that is only released on redemption - and breakage estimates add further judgment. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-RTL-003",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-RTL-003",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "The staging criteria and the volume of overrides.; How forward-looking scenarios are weighted.; The size and direction of management overlays.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Banks carry loan books whose impairment depends on forward-looking expected-credit-loss models - the single largest estimate in most bank audits. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-BNK-001",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-BNK-001",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "The policy criteria for suspending interest accrual.; The ageing and size of the NPL book.; Whether suspended interest is tracked for disclosure.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Interest on non-performing loans may continue to accrue in the system even where collection is doubtful - a direct overstatement channel. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-BNK-002",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-BNK-002",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  },
+  {
+   "additional_info_needed": "The size of level 3 exposures.; How often independent price verification is performed and by whom.; Any period-end reclassifications and their rationale.",
+   "applicability": "Applies where the described business model or transaction type is material. Less applicable where the activity is immaterial or the entity has exited the business line.",
+   "confidence_basis": "Industry risk profiling based on the characteristic business model; the link is a possibility to investigate, not a presumption of misstatement.",
+   "explanation": "Industry analysis: Banks hold derivatives and traded instruments whose classification drives measurement - and whose valuation models are opaque to non-specialists. This creates the conditions in which the risk can arise.",
+   "factor_id": "F-BNK-003",
+   "review_status": "Verified",
+   "reviewer": "Library build - deterministic rules",
+   "risk_id": "R-BNK-003",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "trigger_condition": "The entity operates in this industry segment and the factor condition is present."
+  }
+ ],
+ "factors": [
+  {
+   "conditions_relevant": "Relevant where the operator has a large estate of leased sites and restoration obligations are enforceable. Consider materiality of the aggregate obligation.",
+   "cycle_id": "CYC-PROV",
+   "description": "The entity operates a telecom network with towers, masts, rooftop sites and related equipment installed on leased land or buildings, where lease or regulatory terms require dismantling and site restoration at the end of the arrangement.",
+   "id": "F-TEL-001",
+   "name": "Telecom towers and network sites carry dismantling and site-restoration (decommissioning) obligations",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "No decommissioning provision recognised despite a large leased site estate; restoration costs expensed only when incurred; site register does not track restoration clauses."
+  },
+  {
+   "conditions_relevant": "Relevant where bundled offers are a material sales channel. Consider the complexity of tariff structures and frequency of new promotions.",
+   "cycle_id": "CYC-REV",
+   "description": "The entity sells bundled customer contracts combining equipment (handsets, routers) with service over a contract term, where the transaction price must be allocated across the bundle components and recognised as each is delivered.",
+   "id": "F-TEL-002",
+   "name": "Multi-element customer contracts (handset plus service bundles)",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Upfront recognition of the full contract value on handset delivery; allocation keys that do not reflect stand-alone selling prices; frequent manual adjustments to allocation journals."
+  },
+  {
+   "conditions_relevant": "Relevant where billing is substantially automated and tariffs change frequently. Consider reliance on IT controls.",
+   "cycle_id": "CYC-REV",
+   "description": "Revenue is generated by rating millions of usage records (calls, data, SMS) through automated billing systems applying complex tariff rules, discounts and promotions.",
+   "id": "F-TEL-003",
+   "name": "High-volume automated billing with complex rating and tariff logic",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Recurring billing complaints or regulator fines; large credit-note volumes; rating exception reports not cleared; tariff changes applied without testing."
+  },
+  {
+   "conditions_relevant": "Relevant where manufacturing is material and overhead absorption is significant. Consider seasonality and capacity utilisation.",
+   "cycle_id": "CYC-INV",
+   "description": "The entity manufactures goods and carries work in progress, with production overheads absorbed into inventory using predetermined rates and allocation bases.",
+   "id": "F-MFG-001",
+   "name": "Work in progress with absorbed production overheads",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Overhead rates unchanged for years despite cost changes; abnormal idle capacity absorbed into inventory; WIP growing faster than production volumes."
+  },
+  {
+   "conditions_relevant": "Relevant where standard costing drives inventory valuation. Consider how often standards are updated.",
+   "cycle_id": "CYC-INV",
+   "description": "The entity uses standard costs for inventory and production, generating material purchase-price, usage and overhead variances that are not routinely investigated.",
+   "id": "F-MFG-002",
+   "name": "Standard costing with material variances not investigated",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Large unexplained variances written off to cost of sales; standards unchanged for multiple years; variance reports not reviewed."
+  },
+  {
+   "conditions_relevant": "Relevant where warranties are offered and claims are material. Consider new product launches with no history.",
+   "cycle_id": "CYC-PROV",
+   "description": "The entity provides warranties on manufactured goods sold, creating an obligation for future repairs, replacements or refunds.",
+   "id": "F-MFG-003",
+   "name": "Warranty obligations on goods sold",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Falling warranty provision despite rising sales or new products; claims paid exceeding the provision; no tracking of claims by product cohort."
+  },
+  {
+   "conditions_relevant": "Relevant where cash sales are significant and outlets are numerous or geographically dispersed. Consider the strength of point-of-sale controls.",
+   "cycle_id": "CYC-REV",
+   "description": "The entity operates retail outlets with high volumes of cash and card sales, where takings pass through many hands and shrinkage (theft, error, damage) is a persistent exposure.",
+   "id": "F-RTL-001",
+   "name": "High-volume cash and card sales with shrinkage exposure",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Unexplained differences between till records and bankings; void and refund rates far above peers; weak segregation at tills; shrinkage provisions based on hope rather than counts."
+  },
+  {
+   "conditions_relevant": "Relevant where rebates are material to margins. Consider the complexity of rebate agreements and whether terms are confirmed by suppliers.",
+   "cycle_id": "CYC-REV",
+   "description": "The entity receives volume rebates, promotional funding and listing fees from suppliers, recognised by reference to purchase volumes and promotional activity over the period.",
+   "id": "F-RTL-002",
+   "name": "Supplier rebates and promotional income",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Rebate income recognised on forecast volumes not yet achieved; rebate agreements unsigned or disputed; year-end rebate accruals growing without support."
+  },
+  {
+   "conditions_relevant": "Relevant where gift card or loyalty balances are material. Consider the reliability of redemption data.",
+   "cycle_id": "CYC-REV",
+   "description": "The entity sells gift cards and operates loyalty schemes, creating deferred revenue released on redemption, with breakage (never-redeemed value) recognised as an estimate.",
+   "id": "F-RTL-003",
+   "name": "Gift cards sold and loyalty points outstanding",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Deferred revenue released without redemption evidence; breakage rates increased to meet targets; no reconciliation of card liabilities."
+  },
+  {
+   "conditions_relevant": "Relevant wherever lending is material. Consider portfolio concentrations and economic volatility.",
+   "cycle_id": "CYC-FRP",
+   "description": "The entity holds a material loan portfolio measured with an expected-credit-loss impairment model using staging, probability of default, loss given default and forward-looking scenarios.",
+   "id": "F-BNK-001",
+   "name": "Loan book subject to expected credit losses",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Falling impairment charges while arrears rise; staging overrides concentrated in stage 1; model not revalidated after economic shifts; management adjustments (overlays) growing."
+  },
+  {
+   "conditions_relevant": "Relevant where non-performing exposures are material. Consider whether the policy suspends accrual on defined criteria.",
+   "cycle_id": "CYC-REV",
+   "description": "The entity's systems continue to accrue interest on loans classified as non-performing or doubtful, where collectability is uncertain.",
+   "id": "F-BNK-002",
+   "name": "Interest income recognised on non-performing loans",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Interest income growing while the NPL ratio deteriorates; suspended-interest calculations done manually; policy thresholds not enforced by the system."
+  },
+  {
+   "conditions_relevant": "Relevant where treasury activity is material. Consider the use of models with unobservable (level 3) inputs.",
+   "cycle_id": "CYC-FRP",
+   "description": "The entity holds derivatives, traded securities and other financial instruments measured using models with unobservable inputs, where classification determines the measurement basis.",
+   "id": "F-BNK-003",
+   "name": "Complex treasury and financial instruments",
+   "review_status": "Verified",
+   "risk_category": "Inherent risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "warning_signs": "Growing level 3 portfolios; valuations always at management's mark with no independent price verification; instruments reclassified near period-ends."
+  }
+ ],
+ "industry_factors": [
+  {
+   "explanation": "Telecom operators install thousands of towers and network sites on leased land, almost always under contracts requiring the site to be restored when the lease ends.",
+   "factor_id": "F-TEL-001",
+   "industry_id": "IND-TEL"
+  },
+  {
+   "explanation": "Telecom operators routinely sell bundled contracts (handset plus service over 12-24 months) where consideration must be split between distinct goods and services.",
+   "factor_id": "F-TEL-002",
+   "industry_id": "IND-TEL"
+  },
+  {
+   "explanation": "Telecom billing runs millions of call/data records through automated rating engines applying complex, frequently changing tariffs - a classic systematic-error environment.",
+   "factor_id": "F-TEL-003",
+   "industry_id": "IND-TEL"
+  },
+  {
+   "explanation": "Manufacturers carry work in progress valued with absorbed overheads - an area where allocation bases and rates are easily manipulated or simply stale.",
+   "factor_id": "F-MFG-001",
+   "industry_id": "IND-MFG"
+  },
+  {
+   "explanation": "Standard costing systems generate purchase-price and usage variances that should be investigated - but are often posted away without analysis, hiding real cost problems.",
+   "factor_id": "F-MFG-002",
+   "industry_id": "IND-MFG"
+  },
+  {
+   "explanation": "Manufacturers warrant their products, creating an obligation whose measurement depends on failure rates and claim patterns that shift with product changes.",
+   "factor_id": "F-MFG-003",
+   "industry_id": "IND-MFG"
+  },
+  {
+   "explanation": "Retailers process huge volumes of small cash and card transactions across many outlets - the classic environment for skimming and shrinkage.",
+   "factor_id": "F-RTL-001",
+   "industry_id": "IND-RTL"
+  },
+  {
+   "explanation": "Retailers earn significant supplier rebates and promotional income whose recognition depends on purchase volumes and conditions that are only confirmed later.",
+   "factor_id": "F-RTL-002",
+   "industry_id": "IND-RTL"
+  },
+  {
+   "explanation": "Gift cards and loyalty points create deferred revenue that is only released on redemption - and breakage estimates add further judgment.",
+   "factor_id": "F-RTL-003",
+   "industry_id": "IND-RTL"
+  },
+  {
+   "explanation": "Banks carry loan books whose impairment depends on forward-looking expected-credit-loss models - the single largest estimate in most bank audits.",
+   "factor_id": "F-BNK-001",
+   "industry_id": "IND-BNK"
+  },
+  {
+   "explanation": "Interest on non-performing loans may continue to accrue in the system even where collection is doubtful - a direct overstatement channel.",
+   "factor_id": "F-BNK-002",
+   "industry_id": "IND-BNK"
+  },
+  {
+   "explanation": "Banks hold derivatives and traded instruments whose classification drives measurement - and whose valuation models are opaque to non-specialists.",
+   "factor_id": "F-BNK-003",
+   "industry_id": "IND-BNK"
+  }
+ ],
+ "procedure_assertions": [
+  {
+   "assertion_id": "BAL-COM",
+   "procedure_id": "P-TEL-001-1"
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "procedure_id": "P-TEL-001-2"
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "procedure_id": "P-TEL-002-1"
+  },
+  {
+   "assertion_id": "TRN-CUT",
+   "procedure_id": "P-TEL-002-1"
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "procedure_id": "P-TEL-002-2"
+  },
+  {
+   "assertion_id": "TRN-CLS",
+   "procedure_id": "P-TEL-002-2"
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "procedure_id": "P-TEL-003-1"
+  },
+  {
+   "assertion_id": "TRN-COM",
+   "procedure_id": "P-TEL-003-2"
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "procedure_id": "P-MFG-001-1"
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "procedure_id": "P-MFG-001-1"
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "procedure_id": "P-MFG-001-2"
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "procedure_id": "P-MFG-002-1"
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "procedure_id": "P-MFG-002-1"
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "procedure_id": "P-MFG-002-2"
+  },
+  {
+   "assertion_id": "BAL-COM",
+   "procedure_id": "P-MFG-003-1"
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "procedure_id": "P-MFG-003-1"
+  },
+  {
+   "assertion_id": "BAL-COM",
+   "procedure_id": "P-MFG-003-2"
+  },
+  {
+   "assertion_id": "TRN-COM",
+   "procedure_id": "P-RTL-001-1"
+  },
+  {
+   "assertion_id": "BAL-EXI",
+   "procedure_id": "P-RTL-001-1"
+  },
+  {
+   "assertion_id": "TRN-COM",
+   "procedure_id": "P-RTL-001-2"
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "procedure_id": "P-RTL-002-1"
+  },
+  {
+   "assertion_id": "TRN-CUT",
+   "procedure_id": "P-RTL-002-1"
+  },
+  {
+   "assertion_id": "TRN-CUT",
+   "procedure_id": "P-RTL-002-2"
+  },
+  {
+   "assertion_id": "BAL-COM",
+   "procedure_id": "P-RTL-003-1"
+  },
+  {
+   "assertion_id": "DIS-COM",
+   "procedure_id": "P-RTL-003-1"
+  },
+  {
+   "assertion_id": "BAL-COM",
+   "procedure_id": "P-RTL-003-2"
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "procedure_id": "P-BNK-001-1"
+  },
+  {
+   "assertion_id": "DIS-COM",
+   "procedure_id": "P-BNK-001-2"
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "procedure_id": "P-BNK-002-1"
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "procedure_id": "P-BNK-002-1"
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "procedure_id": "P-BNK-003-1"
+  },
+  {
+   "assertion_id": "BAL-CLS",
+   "procedure_id": "P-BNK-003-1"
+  },
+  {
+   "assertion_id": "DIS-VAL",
+   "procedure_id": "P-BNK-003-2"
+  }
+ ],
+ "procedure_evidence": [
+  {
+   "evidence_id": "E-TEL-001-1",
+   "notes": "Evidence supporting P-TEL-001-1.",
+   "procedure_id": "P-TEL-001-1"
+  },
+  {
+   "evidence_id": "E-TEL-001-2",
+   "notes": "Evidence supporting P-TEL-001-2.",
+   "procedure_id": "P-TEL-001-2"
+  },
+  {
+   "evidence_id": "E-TEL-002-1",
+   "notes": "Evidence supporting P-TEL-002-1.",
+   "procedure_id": "P-TEL-002-1"
+  },
+  {
+   "evidence_id": "E-TEL-002-2",
+   "notes": "Evidence supporting P-TEL-002-2.",
+   "procedure_id": "P-TEL-002-2"
+  },
+  {
+   "evidence_id": "E-TEL-003-1",
+   "notes": "Evidence supporting P-TEL-003-1.",
+   "procedure_id": "P-TEL-003-1"
+  },
+  {
+   "evidence_id": "E-TEL-003-2",
+   "notes": "Evidence supporting P-TEL-003-2.",
+   "procedure_id": "P-TEL-003-2"
+  },
+  {
+   "evidence_id": "E-MFG-001-1",
+   "notes": "Evidence supporting P-MFG-001-1.",
+   "procedure_id": "P-MFG-001-1"
+  },
+  {
+   "evidence_id": "E-MFG-001-2",
+   "notes": "Evidence supporting P-MFG-001-2.",
+   "procedure_id": "P-MFG-001-2"
+  },
+  {
+   "evidence_id": "E-MFG-002-1",
+   "notes": "Evidence supporting P-MFG-002-1.",
+   "procedure_id": "P-MFG-002-1"
+  },
+  {
+   "evidence_id": "E-MFG-002-2",
+   "notes": "Evidence supporting P-MFG-002-2.",
+   "procedure_id": "P-MFG-002-2"
+  },
+  {
+   "evidence_id": "E-MFG-003-1",
+   "notes": "Evidence supporting P-MFG-003-1.",
+   "procedure_id": "P-MFG-003-1"
+  },
+  {
+   "evidence_id": "E-MFG-003-2",
+   "notes": "Evidence supporting P-MFG-003-2.",
+   "procedure_id": "P-MFG-003-2"
+  },
+  {
+   "evidence_id": "E-RTL-001-1",
+   "notes": "Evidence supporting P-RTL-001-1.",
+   "procedure_id": "P-RTL-001-1"
+  },
+  {
+   "evidence_id": "E-RTL-001-2",
+   "notes": "Evidence supporting P-RTL-001-2.",
+   "procedure_id": "P-RTL-001-2"
+  },
+  {
+   "evidence_id": "E-RTL-002-1",
+   "notes": "Evidence supporting P-RTL-002-1.",
+   "procedure_id": "P-RTL-002-1"
+  },
+  {
+   "evidence_id": "E-RTL-002-2",
+   "notes": "Evidence supporting P-RTL-002-2.",
+   "procedure_id": "P-RTL-002-2"
+  },
+  {
+   "evidence_id": "E-RTL-003-1",
+   "notes": "Evidence supporting P-RTL-003-1.",
+   "procedure_id": "P-RTL-003-1"
+  },
+  {
+   "evidence_id": "E-RTL-003-2",
+   "notes": "Evidence supporting P-RTL-003-2.",
+   "procedure_id": "P-RTL-003-2"
+  },
+  {
+   "evidence_id": "E-BNK-001-1",
+   "notes": "Evidence supporting P-BNK-001-1.",
+   "procedure_id": "P-BNK-001-1"
+  },
+  {
+   "evidence_id": "E-BNK-001-2",
+   "notes": "Evidence supporting P-BNK-001-2.",
+   "procedure_id": "P-BNK-001-2"
+  },
+  {
+   "evidence_id": "E-BNK-002-1",
+   "notes": "Evidence supporting P-BNK-002-1.",
+   "procedure_id": "P-BNK-002-1"
+  },
+  {
+   "evidence_id": "E-BNK-002-2",
+   "notes": "Evidence supporting P-BNK-002-1.",
+   "procedure_id": "P-BNK-002-1"
+  },
+  {
+   "evidence_id": "E-BNK-003-1",
+   "notes": "Evidence supporting P-BNK-003-1.",
+   "procedure_id": "P-BNK-003-1"
+  },
+  {
+   "evidence_id": "E-BNK-003-2",
+   "notes": "Evidence supporting P-BNK-003-2.",
+   "procedure_id": "P-BNK-003-2"
+  }
+ ],
+ "procedures": [
+  {
+   "exception_criteria": "Restoration clauses found in contracts but missing from the register; register sites with no supporting agreement.",
+   "expected_result": "Sites with restoration obligations are completely and accurately flagged in the register.",
+   "follow_up": "Quantify the unrecognised obligation; extend the sample; consider whether the omission indicates a systematic completeness failure - do not presume intent.",
+   "id": "P-TEL-001-1",
+   "objective": "Establish the population of dismantling obligations.",
+   "population": "Network site leases.",
+   "procedure_type": "Inspection",
+   "reason": "Tests completeness of the obligation population at its source.",
+   "review_status": "Verified",
+   "sampling_notes": "Stratify by site type and geography; include new sites in the year.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Obtain the site register and select a sample of tower and rooftop sites.",
+    "Inspect the underlying lease or land agreements for dismantling and site-restoration clauses.",
+    "Agree the restoration-clause flag in the register to the contract terms."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Inspect site leases for restoration obligations"
+  },
+  {
+   "exception_criteria": "Material recalculation differences; unsupported cost or discount assumptions; unwinding omitted.",
+   "expected_result": "The provision recalculates; assumptions are supportable and consistent with contracts and market data.",
+   "follow_up": "Propose adjustments for unsupported measurement; perform sensitivity analysis to assess estimation uncertainty for disclosure.",
+   "id": "P-TEL-001-2",
+   "objective": "Test the measurement of the recognised provision.",
+   "population": "Decommissioning provision by site cohort.",
+   "procedure_type": "Recalculation",
+   "reason": "Directly tests the valuation assertion, the dominant risk for provisions.",
+   "review_status": "Verified",
+   "sampling_notes": "Reperform the full model; sensitivity-test key assumptions.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Obtain the provision model and independently recalculate it.",
+    "Challenge key assumptions: per-site dismantling cost, expected timing, discount rate and inflation.",
+    "Verify the unwinding of discount is recognised and the capitalised asset cost is depreciated."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Recalculate the decommissioning provision and challenge assumptions"
+  },
+  {
+   "exception_criteria": "Material allocation differences; revenue recognised before service delivery.",
+   "expected_result": "Allocation agrees with the reperformance; recognition timing follows delivery of each component.",
+   "follow_up": "Extend testing to the affected tariff plan; quantify the timing misstatement; assess whether the configuration error is systematic.",
+   "id": "P-TEL-002-1",
+   "objective": "Test accuracy of the allocation and timing of recognition.",
+   "population": "New bundled contracts in the period.",
+   "procedure_type": "Reperformance",
+   "reason": "Directly tests the two assertions at risk.",
+   "review_status": "Verified",
+   "sampling_notes": "Stratify by tariff plan, including newly launched plans.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Select a sample of new bundled contracts across tariff plans.",
+    "Obtain the contract terms and the stand-alone selling prices used.",
+    "Independently reperform the allocation and compare with the amounts recognised."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Reperform allocation of consideration on a sample of bundled contracts"
+  },
+  {
+   "exception_criteria": "Launched plans without approval; configuration differing from approval.",
+   "expected_result": "Approvals exist, are independent, and match the system configuration.",
+   "follow_up": "Treat unapproved configurations as a control deficiency; expand substantive allocation testing for those plans.",
+   "id": "P-TEL-002-2",
+   "objective": "Verify allocation keys were properly authorised.",
+   "population": "Tariff plans launched in the period.",
+   "procedure_type": "Inspection",
+   "reason": "Tests the preventive control over allocation inputs.",
+   "review_status": "Verified",
+   "sampling_notes": "Focus on plans with the highest subscriber uptake.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Obtain approval documentation for a sample of tariff plans launched in the period.",
+    "Verify the stand-alone selling prices are supported (e.g. observable prices) and approved.",
+    "Trace the approved configuration into the billing system."
+   ],
+   "test_type": "Test of controls",
+   "title": "Inspect tariff plan approvals and allocation configuration"
+  },
+  {
+   "exception_criteria": "Systematic differences for a tariff or service type; unexplained rejected records.",
+   "expected_result": "Reperformed charges agree with billed amounts.",
+   "follow_up": "Quantify the affected population; determine whether the error is systematic and requires a provision or restatement of billed revenue.",
+   "id": "P-TEL-003-1",
+   "objective": "Test accuracy of automated rating independently of the system.",
+   "population": "Rated usage records in the period.",
+   "procedure_type": "Reperformance",
+   "reason": "Independent reperformance is the strongest test of rating accuracy.",
+   "review_status": "Verified",
+   "sampling_notes": "Stratify by tariff and service type; include records from just after tariff changes.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Extract a sample of rated usage records (CDRs) across tariff types.",
+    "Independently apply the published tariff to compute the expected charge.",
+    "Compare with the billed amount and investigate differences."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Reperform rating on a sample of usage records"
+  },
+  {
+   "exception_criteria": "Unresolved or written-off exceptions without justification; material rejected volumes.",
+   "expected_result": "Exceptions are investigated timely; valid usage is reprocessed into billing.",
+   "follow_up": "Estimate unrecorded revenue from unresolved rejections; report the control gap.",
+   "id": "P-TEL-003-2",
+   "objective": "Verify rejected usage is completely resolved.",
+   "population": "Rating exceptions and rejections.",
+   "procedure_type": "Inspection",
+   "reason": "Exceptions are where completeness leaks out of automated billing.",
+   "review_status": "Verified",
+   "sampling_notes": "Focus on high-value and recurring exception types.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Obtain rating exception/rejection logs for the period.",
+    "Select a sample of exceptions and inspect evidence of investigation and resolution.",
+    "Trace reprocessed records into billing."
+   ],
+   "test_type": "Dual-purpose",
+   "title": "Test follow-up of rating exceptions and rejections"
+  },
+  {
+   "exception_criteria": "Material recalculation differences; rates based on superseded budgets; abnormal idle costs absorbed.",
+   "expected_result": "Absorption recalculates; the rate and capacity basis are supportable.",
+   "follow_up": "Quantify the WIP misstatement; propose adjustment; consider whether other estimates share the same weak budgeting inputs.",
+   "id": "P-MFG-001-1",
+   "objective": "Test the accuracy of overhead absorbed into WIP.",
+   "population": "Overhead absorbed in the period.",
+   "procedure_type": "Recalculation",
+   "reason": "Independent reperformance of the valuation mechanics.",
+   "review_status": "Verified",
+   "sampling_notes": "Reperform the full model; sensitivity-test the capacity assumption.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Obtain the overhead absorption model and independently recalculate it.",
+    "Verify the rate to approved budgets and actual overhead pools.",
+    "Assess whether the normal-capacity assumption is reasonable against actual utilisation."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Reperform overhead absorption and challenge the rate"
+  },
+  {
+   "exception_criteria": "WIP jobs that cannot be located; stages inconsistent with costs; obsolete jobs carried at full cost.",
+   "expected_result": "WIP exists, stages agree with cost records, and stalled jobs are provided for.",
+   "follow_up": "Propose write-downs for obsolete WIP; extend testing if stage assessments appear optimistic.",
+   "id": "P-MFG-001-2",
+   "objective": "Corroborate the existence and completion stage of WIP.",
+   "population": "WIP at the reporting date.",
+   "procedure_type": "Physical verification",
+   "reason": "Physical reality check on the most judgmental inventory category.",
+   "review_status": "Verified",
+   "sampling_notes": "Focus on high-value jobs and jobs open for unusually long periods.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Attend the physical count and observe WIP quantities and production stages.",
+    "For sampled WIP jobs, inspect job cards and agree stage-of-completion to costs incurred.",
+    "Challenge whether stalled or obsolete jobs remain in WIP."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Test WIP by physical observation and stage-of-completion"
+  },
+  {
+   "exception_criteria": "Material unexplained variances; standards materially divorced from actual costs.",
+   "expected_result": "Material variances are explained by valid causes and standards approximate actual costs.",
+   "follow_up": "Quantify the inventory impact of stale standards; propose adjustment; recommend standards revision.",
+   "id": "P-MFG-002-1",
+   "objective": "Determine whether standards remain appropriate and variances are understood.",
+   "population": "Cost variances in the period.",
+   "procedure_type": "Analytical procedures",
+   "reason": "Variances are the direct evidence of standard-cost accuracy.",
+   "review_status": "Verified",
+   "sampling_notes": "Census of material variances; trend analysis over the year.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Obtain variance reports for the period and identify material variances.",
+    "For material variances, inspect investigation documentation or perform the investigation.",
+    "Compare standards to recent actual costs for major inputs."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Analyse variances and test standard-to-actual alignment"
+  },
+  {
+   "exception_criteria": "Variances posted entirely to cost of sales to avoid inventory adjustment; unrecorded variances.",
+   "expected_result": "Variances are completely recorded and appropriately allocated.",
+   "follow_up": "Recompute the correct allocation; propose adjustments where inventory is misstated.",
+   "id": "P-MFG-002-2",
+   "objective": "Verify variances are correctly allocated between inventory and cost of sales.",
+   "population": "Material variance journals.",
+   "procedure_type": "Tracing",
+   "reason": "Tests that the accounting for variances does not distort inventory valuation.",
+   "review_status": "Verified",
+   "sampling_notes": "Census of material items.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Trace material variances from the variance report to the ledger.",
+    "Verify the allocation between closing inventory and cost of sales is appropriate.",
+    "Check that immaterial variances are treated consistently."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Inspect disposition of variances"
+  },
+  {
+   "exception_criteria": "Systematic under-provisioning revealed by back-testing; new products with no provision.",
+   "expected_result": "Provisions track actual claim experience; new-product assumptions are cautious and supported.",
+   "follow_up": "Propose adjustment based on claim experience; evaluate disclosure of the estimation uncertainty.",
+   "id": "P-MFG-003-1",
+   "objective": "Assess whether the provision reflects actual and expected claims.",
+   "population": "Warranty provision and claims.",
+   "procedure_type": "Analytical procedures",
+   "reason": "Back-testing is the most direct evidence for a claims-driven estimate.",
+   "review_status": "Verified",
+   "sampling_notes": "Cohort-level analysis; focus on new or high-claim products.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Obtain the provision model and claims data by product cohort.",
+    "Compare historical provisions with actual claims paid (back-testing).",
+    "Challenge assumptions for new products with no history."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Test the warranty provision against claim experience"
+  },
+  {
+   "exception_criteria": "Product lines omitted; extended warranties not provided for.",
+   "expected_result": "All warranty-bearing sales are captured in the provision.",
+   "follow_up": "Quantify the omitted obligation; extend procedures to the affected lines.",
+   "id": "P-MFG-003-2",
+   "objective": "Establish the complete population of warranty obligations.",
+   "population": "Products sold with warranty.",
+   "procedure_type": "Inspection",
+   "reason": "Tests the completeness boundary of the obligation.",
+   "review_status": "Verified",
+   "sampling_notes": "Include new product lines launched in the year.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Inspect standard warranty terms and any extended warranties sold or given.",
+    "Verify all products sold with warranty cover are in the provision population.",
+    "Check cut-off: sales before year-end are included."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Inspect warranty terms and identify unprovided obligations"
+  },
+  {
+   "exception_criteria": "Unexplained shortfalls; unsupported voids/refunds; pattern of differences at an outlet.",
+   "expected_result": "Till records agree to bankings; differences are explained and supported.",
+   "follow_up": "Extend testing at affected outlets; consider unannounced cash counts; evaluate fraud indicators without presuming fraud.",
+   "id": "P-RTL-001-1",
+   "objective": "Test completeness of recorded sales and existence of cash.",
+   "population": "Daily till records and bankings.",
+   "procedure_type": "Recalculation",
+   "reason": "The till-to-bank trail is where skimming shows up.",
+   "review_status": "Verified",
+   "sampling_notes": "Surprise selection; include high-cash outlets.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Select a sample of trading days and outlets.",
+    "Agree till Z-readings to daily sales records and to bankings.",
+    "Investigate differences and inspect supporting void/refund documentation."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Reconcile till records to bankings and investigate differences"
+  },
+  {
+   "exception_criteria": "Outlets with abnormal void/refund rates or sales dips without cause.",
+   "expected_result": "Outlet metrics are consistent; outliers have valid explanations.",
+   "follow_up": "Target substantive testing at outlier outlets; discuss findings with management.",
+   "id": "P-RTL-001-2",
+   "objective": "Identify unusual patterns indicative of skimming or error.",
+   "population": "Outlet-level sales data.",
+   "procedure_type": "Analytical procedures",
+   "reason": "Analytics directs scarce testing effort to the riskiest outlets.",
+   "review_status": "Verified",
+   "sampling_notes": "Full-population analytics; threshold-based investigation.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Compare sales, void rates, refund rates and discounts by outlet and period.",
+    "Investigate outlets or periods that are outliers.",
+    "Correlate with inventory shrinkage where available."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Perform analytical procedures on sales, voids and refunds"
+  },
+  {
+   "exception_criteria": "Unsigned or disputed terms; confirmations disagreeing; income recognised above earned tiers.",
+   "expected_result": "Rebates agree to signed terms and earned volumes; supplier confirmations agree.",
+   "follow_up": "Propose adjustments for unconfirmed or unearned rebates; extend confirmation where disputes exist.",
+   "id": "P-RTL-002-1",
+   "objective": "Test that recognised rebates are agreed and earned.",
+   "population": "Rebate income and receivables.",
+   "procedure_type": "Vouching",
+   "reason": "External confirmation addresses the agreement uncertainty directly.",
+   "review_status": "Verified",
+   "sampling_notes": "Cover the largest suppliers and all material accruals.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Select material rebate streams and inspect the underlying supplier agreements.",
+    "Recompute the rebate earned from purchase volumes and agreed tiers.",
+    "Confirm material year-end accruals directly with suppliers."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Vouch rebate income to supplier agreements and confirm with suppliers"
+  },
+  {
+   "exception_criteria": "Accruals based on forecast volumes; terms agreed after year-end.",
+   "expected_result": "Accruals reflect volumes achieved in the period on agreed terms.",
+   "follow_up": "Reverse or adjust premature accruals; assess whether the pattern indicates systematic optimism.",
+   "id": "P-RTL-002-2",
+   "objective": "Verify rebates are recognised in the correct period.",
+   "population": "Year-end rebate accruals.",
+   "procedure_type": "Cut-off testing",
+   "reason": "Year-end is where premature recognition concentrates.",
+   "review_status": "Verified",
+   "sampling_notes": "Census of material accruals.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Obtain the year-end rebate accrual and the volume data behind it.",
+    "Verify qualifying volumes were achieved before the reporting date.",
+    "Check post-year-end supplier statements for contradictory terms."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Test cut-off of rebate accruals"
+  },
+  {
+   "exception_criteria": "Unreconciled differences; breakage rates without historical support; releases without redemption.",
+   "expected_result": "Liabilities reconcile; breakage is consistent with redemption history.",
+   "follow_up": "Propose adjustments for unsupported breakage; extend testing where liabilities do not reconcile.",
+   "id": "P-RTL-003-1",
+   "objective": "Test completeness of deferred revenue and reasonableness of breakage.",
+   "population": "Gift card and loyalty liabilities.",
+   "procedure_type": "Recalculation",
+   "reason": "Completeness of the liability is the primary risk.",
+   "review_status": "Verified",
+   "sampling_notes": "Full reconciliation; sample redemptions across schemes.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Reconcile the loyalty/POS liability reports to the general ledger.",
+    "Test a sample of redemptions from liability to revenue.",
+    "Challenge the breakage rate against historical redemption patterns."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Reconcile gift card and loyalty liabilities and test breakage"
+  },
+  {
+   "exception_criteria": "Bulk releases without redemption evidence; inconsistent expiry application.",
+   "expected_result": "Releases match genuine redemptions in the correct period.",
+   "follow_up": "Reverse unsupported releases; investigate the business rationale for bulk adjustments.",
+   "id": "P-RTL-003-2",
+   "objective": "Verify releases from deferred revenue occur on actual redemption.",
+   "population": "Redemptions near the reporting date.",
+   "procedure_type": "Cut-off testing",
+   "reason": "Premature release is the mechanism of understatement.",
+   "review_status": "Verified",
+   "sampling_notes": "Focus on the last and first days of the period.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Select redemptions around year-end and trace to POS/loyalty system evidence.",
+    "Verify releases before year-end relate to genuine redemptions.",
+    "Inspect expiry policies and their consistent application."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Test cut-off of redemptions around the reporting date"
+  },
+  {
+   "exception_criteria": "Systematic staging overrides deferring stage 2; stale parameters; overlays suppressing the charge without basis.",
+   "expected_result": "Staging follows the criteria; parameters are supportable; overlays are justified and directionally consistent.",
+   "follow_up": "Develop an independent range; propose adjustments where the booked ECL falls outside it; evaluate disclosure adequacy.",
+   "id": "P-BNK-001-1",
+   "objective": "Test the reasonableness of the impairment estimate.",
+   "population": "Loan portfolio and ECL model.",
+   "procedure_type": "Reperformance",
+   "reason": "Staging and parameters are the levers of ECL measurement.",
+   "review_status": "Verified",
+   "sampling_notes": "Risk-based: borderline staging cases, large exposures, overlays.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Understand the model, staging criteria and forward-looking scenarios.",
+    "Test a sample of staging decisions, including overrides, against the criteria.",
+    "Challenge PD/LGD parameters and the rationale for management overlays; perform sensitivity analysis."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Challenge staging, parameters and overlays in the ECL model"
+  },
+  {
+   "exception_criteria": "Disclosed figures that do not agree; missing sensitivity or staging disclosures.",
+   "expected_result": "Disclosures agree to underlying records and describe the key judgments.",
+   "follow_up": "Require corrected or expanded disclosure; consider the implication for the audit report if refused.",
+   "id": "P-BNK-001-2",
+   "objective": "Verify completeness and accuracy of credit risk disclosures.",
+   "population": "Credit risk disclosures.",
+   "procedure_type": "Inspection",
+   "reason": "ECL disclosures are where estimation uncertainty must be visible.",
+   "review_status": "Verified",
+   "sampling_notes": "Not applicable - full disclosure set.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Agree disclosed exposures, staging movements and coverage ratios to the model outputs.",
+    "Verify sensitivity disclosures reflect the model's actual sensitivities.",
+    "Check that significant judgments are described."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Test credit risk disclosures"
+  },
+  {
+   "exception_criteria": "Interest accruing on loans meeting suspension criteria; unprovided NPL interest.",
+   "expected_result": "Accrual stops per policy; uncollectible interest is provided for.",
+   "follow_up": "Quantify the overstatement; propose reversal/provision; assess whether the policy itself is adequate.",
+   "id": "P-BNK-002-1",
+   "objective": "Verify interest is not accrued where collection is doubtful.",
+   "population": "Non-performing loans and accrued interest.",
+   "procedure_type": "Reperformance",
+   "reason": "Tests both the income accuracy and the receivable valuation.",
+   "review_status": "Verified",
+   "sampling_notes": "Focus on newly classified NPLs and large exposures.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Obtain the NPL population and the interest accrued on it.",
+    "Test that suspension criteria were applied; reperform the suspended-interest calculation.",
+    "Verify accrued interest on NPLs is provided for or reversed per policy."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Test suspension of interest on non-performing loans"
+  },
+  {
+   "exception_criteria": "Reclassifications without business-model change; valuations outside the auditor's range; unsupported unobservable inputs.",
+   "expected_result": "Classifications follow the documented basis; valuations are within a reasonable range.",
+   "follow_up": "Develop an independent valuation range; propose adjustments; consider valuation-expert involvement.",
+   "id": "P-BNK-003-1",
+   "objective": "Test that instruments are correctly classified and fairly valued.",
+   "population": "Treasury financial instruments.",
+   "procedure_type": "Reperformance",
+   "reason": "Classification and valuation are the two decisions at risk.",
+   "review_status": "Verified",
+   "sampling_notes": "Focus on level 3 instruments and period-end reclassifications.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Inspect classification decisions against the documented business model and contractual cash-flow characteristics.",
+    "For a sample of instruments, independently reperform or challenge the valuation model and its inputs.",
+    "Investigate period-end reclassifications."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Challenge classification and reperform valuations"
+  },
+  {
+   "exception_criteria": "Level 3 instruments disclosed as level 2; missing sensitivities.",
+   "expected_result": "Disclosures agree and describe the techniques and sensitivities.",
+   "follow_up": "Require corrected disclosure; evaluate the audit-report implication if refused.",
+   "id": "P-BNK-003-2",
+   "objective": "Verify hierarchy, sensitivity and technique disclosures.",
+   "population": "Fair value disclosures.",
+   "procedure_type": "Inspection",
+   "reason": "Disclosure is where valuation uncertainty must be transparent.",
+   "review_status": "Verified",
+   "sampling_notes": "Not applicable - full set.",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "steps": [
+    "Agree disclosed fair values and hierarchy levels to valuation outputs.",
+    "Verify sensitivity disclosures reflect stressed inputs.",
+    "Check valuation techniques are described."
+   ],
+   "test_type": "Substantive procedure",
+   "title": "Test fair value disclosures"
+  }
+ ],
+ "risk_assertions": [
+  {
+   "assertion_id": "BAL-COM",
+   "conditions": "Relevant where lease or legal restoration obligations exist.",
+   "risk_id": "R-TEL-001",
+   "why_relevant": "A dismantling obligation that exists at the reporting date but is not recognised leaves the provision population incomplete."
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "conditions": "Relevant whenever a provision is recognised; measurement risk is the dominant risk.",
+   "risk_id": "R-TEL-001",
+   "why_relevant": "The provision is measured using estimated future costs, timing and a discount rate - each an input that can be materially wrong."
+  },
+  {
+   "assertion_id": "DIS-COM",
+   "conditions": "Relevant where the provision is material.",
+   "risk_id": "R-TEL-001",
+   "why_relevant": "Material uncertainties and assumptions behind decommissioning provisions require disclosure; omission hides the estimation uncertainty."
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "conditions": "Relevant for all bundled contracts.",
+   "risk_id": "R-TEL-002",
+   "why_relevant": "Revenue is only accurate if consideration is allocated across bundle components on a supportable basis."
+  },
+  {
+   "assertion_id": "TRN-CUT",
+   "conditions": "Relevant where service extends beyond the reporting date.",
+   "risk_id": "R-TEL-002",
+   "why_relevant": "Service revenue recognised before the service period elapses is a cut-off error."
+  },
+  {
+   "assertion_id": "TRN-CLS",
+   "conditions": "Relevant where the financial statements disaggregate revenue.",
+   "risk_id": "R-TEL-002",
+   "why_relevant": "Equipment revenue and service revenue are distinct lines; misallocation misclassifies them."
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "conditions": "Relevant for all rated usage revenue.",
+   "risk_id": "R-TEL-003",
+   "why_relevant": "Each rated transaction must reflect the correct tariff; a configuration error makes every affected transaction inaccurate."
+  },
+  {
+   "assertion_id": "TRN-COM",
+   "conditions": "Relevant where rating exceptions and rejections occur.",
+   "risk_id": "R-TEL-003",
+   "why_relevant": "Usage records dropped or rejected by the rating engine may never reach billing, leaving revenue incomplete."
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "conditions": "Relevant wherever overhead absorption is material.",
+   "risk_id": "R-MFG-001",
+   "why_relevant": "WIP carrying amount depends directly on the overhead absorbed; wrong rates or bases misstate valuation."
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "conditions": "Relevant for the cost-of-production entries in the period.",
+   "risk_id": "R-MFG-001",
+   "why_relevant": "Production cost transfers (WIP movements) are only accurate if the absorbed amounts are."
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "conditions": "Relevant where standards are outdated.",
+   "risk_id": "R-MFG-002",
+   "why_relevant": "Production and purchase transactions recorded at stale standards are not recorded at appropriate amounts."
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "conditions": "Relevant at the reporting date.",
+   "risk_id": "R-MFG-002",
+   "why_relevant": "Closing inventory valued at standard cost inherits any standard-to-actual gap."
+  },
+  {
+   "assertion_id": "BAL-COM",
+   "conditions": "Relevant where warranties are offered.",
+   "risk_id": "R-MFG-003",
+   "why_relevant": "Warranty obligations arising from past sales that are not provided for leave the liability incomplete."
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "conditions": "Relevant whenever the provision is recognised.",
+   "risk_id": "R-MFG-003",
+   "why_relevant": "The provision must reflect expected future claims; wrong failure-rate or cost assumptions misstate it."
+  },
+  {
+   "assertion_id": "TRN-COM",
+   "conditions": "Relevant where cash handling controls are weak.",
+   "risk_id": "R-RTL-001",
+   "why_relevant": "Skimmed sales never enter the records at all - the recorded-sales population is incomplete."
+  },
+  {
+   "assertion_id": "BAL-EXI",
+   "conditions": "Relevant where bankings lag till records.",
+   "risk_id": "R-RTL-001",
+   "why_relevant": "Recorded cash balances may include takings already removed, so the cash that is recorded may not exist."
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "conditions": "Relevant for all recognised rebate income.",
+   "risk_id": "R-RTL-002",
+   "why_relevant": "Rebate income is only accurate if measured against agreed terms and achieved volumes."
+  },
+  {
+   "assertion_id": "TRN-CUT",
+   "conditions": "Relevant for year-end accruals.",
+   "risk_id": "R-RTL-002",
+   "why_relevant": "Rebates recognised before qualifying volumes are achieved belong to a later period."
+  },
+  {
+   "assertion_id": "BAL-COM",
+   "conditions": "Relevant for the full outstanding population.",
+   "risk_id": "R-RTL-003",
+   "why_relevant": "Every unredeemed card and outstanding point is an obligation that must remain in deferred revenue until redeemed or expired."
+  },
+  {
+   "assertion_id": "DIS-COM",
+   "conditions": "Relevant where breakage is material.",
+   "risk_id": "R-RTL-003",
+   "why_relevant": "Breakage methods and significant judgments require disclosure."
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "conditions": "Relevant for the entire loan book.",
+   "risk_id": "R-BNK-001",
+   "why_relevant": "The loan carrying amount is net of ECL; every model and staging judgment flows into valuation."
+  },
+  {
+   "assertion_id": "DIS-COM",
+   "conditions": "Relevant where credit risk is material.",
+   "risk_id": "R-BNK-001",
+   "why_relevant": "Credit risk exposures, staging movements and sensitivities require disclosure."
+  },
+  {
+   "assertion_id": "TRN-ACC",
+   "conditions": "Relevant for interest on classified loans.",
+   "risk_id": "R-BNK-002",
+   "why_relevant": "Interest is only accurately recorded if non-accrual policies are applied to doubtful loans."
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "conditions": "Relevant at the reporting date.",
+   "risk_id": "R-BNK-002",
+   "why_relevant": "Accrued interest on doubtful loans requires provision; unprovided accruals overstate receivables."
+  },
+  {
+   "assertion_id": "BAL-VAL",
+   "conditions": "Relevant for all fair-valued instruments.",
+   "risk_id": "R-BNK-003",
+   "why_relevant": "Model-driven valuations with unobservable inputs are the most uncertain measurements in the statements."
+  },
+  {
+   "assertion_id": "BAL-CLS",
+   "conditions": "Relevant at initial recognition and on any reclassification.",
+   "risk_id": "R-BNK-003",
+   "why_relevant": "Classification determines whether an instrument is at fair value or amortised cost."
+  },
+  {
+   "assertion_id": "DIS-VAL",
+   "conditions": "Relevant where fair value is material.",
+   "risk_id": "R-BNK-003",
+   "why_relevant": "Fair value hierarchies, sensitivities and valuation techniques must be disclosed."
+  }
+ ],
+ "risk_controls": [
+  {
+   "control_id": "C-TEL-001-1",
+   "explanation": "Completeness of the obligation population starts with a complete site register.",
+   "risk_id": "R-TEL-001"
+  },
+  {
+   "control_id": "C-TEL-001-2",
+   "explanation": "Directly addresses the measurement (valuation) risk.",
+   "risk_id": "R-TEL-001"
+  },
+  {
+   "control_id": "C-TEL-002-1",
+   "explanation": "Targets the source of allocation error: the approved selling prices.",
+   "risk_id": "R-TEL-002"
+  },
+  {
+   "control_id": "C-TEL-002-2",
+   "explanation": "Consistency of application across high volumes.",
+   "risk_id": "R-TEL-002"
+  },
+  {
+   "control_id": "C-TEL-003-1",
+   "explanation": "The main detective control over completeness and accuracy of rated revenue.",
+   "risk_id": "R-TEL-003"
+  },
+  {
+   "control_id": "C-TEL-003-2",
+   "explanation": "Addresses the systematic-error source directly.",
+   "risk_id": "R-TEL-003"
+  },
+  {
+   "control_id": "C-MFG-001-1",
+   "explanation": "Rate-setting is the root input to the valuation.",
+   "risk_id": "R-MFG-001"
+  },
+  {
+   "control_id": "C-MFG-001-2",
+   "explanation": "Directly addresses the idle-capacity valuation risk.",
+   "risk_id": "R-MFG-001"
+  },
+  {
+   "control_id": "C-MFG-002-1",
+   "explanation": "The missing detective control this factor describes.",
+   "risk_id": "R-MFG-002"
+  },
+  {
+   "control_id": "C-MFG-003-1",
+   "explanation": "Connects actual experience to the estimate - the key detective control.",
+   "risk_id": "R-MFG-003"
+  },
+  {
+   "control_id": "C-RTL-001-1",
+   "explanation": "The frontline detective control over takings.",
+   "risk_id": "R-RTL-001"
+  },
+  {
+   "control_id": "C-RTL-001-2",
+   "explanation": "Voids and refunds are the classic skimming channel.",
+   "risk_id": "R-RTL-001"
+  },
+  {
+   "control_id": "C-RTL-002-1",
+   "explanation": "The agreed terms are the foundation of accurate measurement.",
+   "risk_id": "R-RTL-002"
+  },
+  {
+   "control_id": "C-RTL-003-1",
+   "explanation": "Completeness of the liability population.",
+   "risk_id": "R-RTL-003"
+  },
+  {
+   "control_id": "C-BNK-001-1",
+   "explanation": "The governance control over the key estimate.",
+   "risk_id": "R-BNK-001"
+  },
+  {
+   "control_id": "C-BNK-002-1",
+   "explanation": "The preventive control at the source of the risk.",
+   "risk_id": "R-BNK-002"
+  },
+  {
+   "control_id": "C-BNK-003-1",
+   "explanation": "Segregation between valuation and trading addresses the information asymmetry.",
+   "risk_id": "R-BNK-003"
+  }
+ ],
+ "risk_procedures": [
+  {
+   "procedure_id": "P-TEL-001-1",
+   "reason": "Tests completeness of the obligation population at its source.",
+   "risk_id": "R-TEL-001"
+  },
+  {
+   "procedure_id": "P-TEL-001-2",
+   "reason": "Directly tests the valuation assertion, the dominant risk for provisions.",
+   "risk_id": "R-TEL-001"
+  },
+  {
+   "procedure_id": "P-TEL-002-1",
+   "reason": "Directly tests the two assertions at risk.",
+   "risk_id": "R-TEL-002"
+  },
+  {
+   "procedure_id": "P-TEL-002-2",
+   "reason": "Tests the preventive control over allocation inputs.",
+   "risk_id": "R-TEL-002"
+  },
+  {
+   "procedure_id": "P-TEL-003-1",
+   "reason": "Independent reperformance is the strongest test of rating accuracy.",
+   "risk_id": "R-TEL-003"
+  },
+  {
+   "procedure_id": "P-TEL-003-2",
+   "reason": "Exceptions are where completeness leaks out of automated billing.",
+   "risk_id": "R-TEL-003"
+  },
+  {
+   "procedure_id": "P-MFG-001-1",
+   "reason": "Independent reperformance of the valuation mechanics.",
+   "risk_id": "R-MFG-001"
+  },
+  {
+   "procedure_id": "P-MFG-001-2",
+   "reason": "Physical reality check on the most judgmental inventory category.",
+   "risk_id": "R-MFG-001"
+  },
+  {
+   "procedure_id": "P-MFG-002-1",
+   "reason": "Variances are the direct evidence of standard-cost accuracy.",
+   "risk_id": "R-MFG-002"
+  },
+  {
+   "procedure_id": "P-MFG-002-2",
+   "reason": "Tests that the accounting for variances does not distort inventory valuation.",
+   "risk_id": "R-MFG-002"
+  },
+  {
+   "procedure_id": "P-MFG-003-1",
+   "reason": "Back-testing is the most direct evidence for a claims-driven estimate.",
+   "risk_id": "R-MFG-003"
+  },
+  {
+   "procedure_id": "P-MFG-003-2",
+   "reason": "Tests the completeness boundary of the obligation.",
+   "risk_id": "R-MFG-003"
+  },
+  {
+   "procedure_id": "P-RTL-001-1",
+   "reason": "The till-to-bank trail is where skimming shows up.",
+   "risk_id": "R-RTL-001"
+  },
+  {
+   "procedure_id": "P-RTL-001-2",
+   "reason": "Analytics directs scarce testing effort to the riskiest outlets.",
+   "risk_id": "R-RTL-001"
+  },
+  {
+   "procedure_id": "P-RTL-002-1",
+   "reason": "External confirmation addresses the agreement uncertainty directly.",
+   "risk_id": "R-RTL-002"
+  },
+  {
+   "procedure_id": "P-RTL-002-2",
+   "reason": "Year-end is where premature recognition concentrates.",
+   "risk_id": "R-RTL-002"
+  },
+  {
+   "procedure_id": "P-RTL-003-1",
+   "reason": "Completeness of the liability is the primary risk.",
+   "risk_id": "R-RTL-003"
+  },
+  {
+   "procedure_id": "P-RTL-003-2",
+   "reason": "Premature release is the mechanism of understatement.",
+   "risk_id": "R-RTL-003"
+  },
+  {
+   "procedure_id": "P-BNK-001-1",
+   "reason": "Staging and parameters are the levers of ECL measurement.",
+   "risk_id": "R-BNK-001"
+  },
+  {
+   "procedure_id": "P-BNK-001-2",
+   "reason": "ECL disclosures are where estimation uncertainty must be visible.",
+   "risk_id": "R-BNK-001"
+  },
+  {
+   "procedure_id": "P-BNK-002-1",
+   "reason": "Tests both the income accuracy and the receivable valuation.",
+   "risk_id": "R-BNK-002"
+  },
+  {
+   "procedure_id": "P-BNK-003-1",
+   "reason": "Classification and valuation are the two decisions at risk.",
+   "risk_id": "R-BNK-003"
+  },
+  {
+   "procedure_id": "P-BNK-003-2",
+   "reason": "Disclosure is where valuation uncertainty must be transparent.",
+   "risk_id": "R-BNK-003"
+  }
+ ],
+ "risks": [
+  {
+   "causes": "Thousands of dispersed sites make the obligation easy to overlook; restoration cost estimates rely on management assumptions about timing, cost and discount rates; unwinding of discount is sometimes missed.",
+   "cycle_id": "CYC-PROV",
+   "description": "The entity may fail to recognise a provision for dismantling and restoring leased network sites, or measure it using unsupported cost or discount assumptions. The related decommissioning cost that should be capitalised as part of the asset may be omitted.",
+   "id": "R-TEL-001",
+   "inherent_risk_notes": "Decommissioning measurement is inherently judgmental and the number of sites magnifies small per-site errors. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Provisions may be understated or missing entirely, understating liabilities. Property, plant and equipment may be understated where the capitalised decommissioning cost is omitted, with a corresponding understatement of depreciation.",
+   "review_status": "Verified",
+   "significance": "Significant risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Decommissioning provision omitted or understated; related asset-retirement cost not capitalised"
+  },
+  {
+   "causes": "Allocation requires judgment about stand-alone selling prices; high transaction volumes are processed by automated rating engines whose configuration is rarely re-tested; promotions change frequently.",
+   "cycle_id": "CYC-REV",
+   "description": "Consideration may be allocated using unsupported stand-alone selling prices, or recognised before the related service is delivered, accelerating revenue into earlier periods.",
+   "id": "R-TEL-002",
+   "inherent_risk_notes": "Complexity and volume magnify small systematic allocation errors. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Revenue may be overstated in early periods and understated later; equipment and service revenue may be misclassified between lines.",
+   "review_status": "Verified",
+   "significance": "Other",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Incorrect allocation of consideration across bundle components and premature revenue recognition"
+  },
+  {
+   "causes": "Error is systematic: one defect affects thousands of records identically. Detection depends on exception monitoring and reconciliation, which may be weak.",
+   "cycle_id": "CYC-REV",
+   "description": "A misconfigured tariff, discount or rating rule is applied to every affected transaction until detected, producing systematic over- or under-billing across the subscriber base.",
+   "id": "R-TEL-003",
+   "inherent_risk_notes": "Automation concentrates risk in configuration rather than individual transactions. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Revenue may be materially misstated in either direction; related receivables and deferred revenue are affected in the same direction.",
+   "review_status": "Verified",
+   "significance": "Other",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Systematic billing errors from rating or tariff configuration"
+  },
+  {
+   "causes": "Overhead absorption is an estimate built on estimates; idle-capacity treatment requires judgment; WIP is harder to verify physically than finished goods.",
+   "cycle_id": "CYC-INV",
+   "description": "Overhead rates may be based on outdated budgets, normal capacity may be overstated (absorbing abnormal idle costs), or allocation bases may not reflect actual consumption - misstating WIP and cost of sales.",
+   "id": "R-MFG-001",
+   "inherent_risk_notes": "Judgment concentrates in the rate-setting and capacity assumptions. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Inventory (WIP) may be overstated with a corresponding understatement of cost of sales; or understated where rates lag actual costs.",
+   "review_status": "Verified",
+   "significance": "Other",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Misallocated overheads and misstated work in progress"
+  },
+  {
+   "causes": "Variances are the system's own diagnostic signal; ignoring them removes the detective control the system was designed to provide.",
+   "cycle_id": "CYC-INV",
+   "description": "Material variances may indicate that standards are outdated (misstating inventory) or that real inefficiencies, waste or price changes are being hidden in cost of sales without investigation.",
+   "id": "R-MFG-002",
+   "inherent_risk_notes": "The variance pattern is evidence to investigate, not a conclusion. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Inventory may be misstated where standards no longer reflect actual costs; cost of sales absorbs unexplained amounts.",
+   "review_status": "Verified",
+   "significance": "Other",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Variances buried rather than analysed, misstating inventory and cost of sales"
+  },
+  {
+   "causes": "Measurement relies on historical claim rates that may not predict new products; management has an incentive to minimise the charge.",
+   "cycle_id": "CYC-PROV",
+   "description": "The provision may be based on outdated failure rates, ignore new-product risk, or simply not be updated for actual claim experience - understating liabilities.",
+   "id": "R-MFG-003",
+   "inherent_risk_notes": "Estimation uncertainty is the core risk, highest for new products. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Liabilities understated; expenses understated in the period of sale.",
+   "review_status": "Verified",
+   "significance": "Other",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Understated warranty provision"
+  },
+  {
+   "causes": "Cash is the most stealable asset and high volumes hide small diversions; detection depends on reconciliations that may be perfunctory.",
+   "cycle_id": "CYC-REV",
+   "description": "Cash sales may be skimmed before recording, voids and refunds may be fictitious, and shrinkage may go unrecorded - understating revenue and overstating the resulting loss only when discovered.",
+   "id": "R-RTL-001",
+   "inherent_risk_notes": "Volume provides cover for small, repeated diversions. The presence of this factor does NOT prove that a misstatement or theft exists.",
+   "potential_consequences": "Revenue understated (skimmed sales never recorded); cash understated; shrinkage losses unrecorded until count.",
+   "review_status": "Verified",
+   "significance": "Significant risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Unrecorded sales and theft of takings (shrinkage)"
+  },
+  {
+   "causes": "Recognition depends on future volumes and supplier confirmation, both uncertain at the reporting date; commercial pressure favours optimism.",
+   "cycle_id": "CYC-REV",
+   "description": "Rebate income may be recognised before the qualifying purchase volumes are achieved, or accrued on terms the supplier has not agreed - overstating income and receivables.",
+   "id": "R-RTL-002",
+   "inherent_risk_notes": "Rebates reward optimism: the estimate almost always favours the retailer. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Other income and rebate receivables overstated; recognised in the wrong period.",
+   "review_status": "Verified",
+   "significance": "Other",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Premature or overstated recognition of supplier rebates"
+  },
+  {
+   "causes": "Redemption patterns are behavioural estimates; breakage is invisible until enough time passes; the liability is a prime target for earnings management.",
+   "cycle_id": "CYC-REV",
+   "description": "Liabilities for unredeemed cards and points may be released prematurely, or breakage recognised aggressively - understating deferred revenue and overstating current revenue.",
+   "id": "R-RTL-003",
+   "inherent_risk_notes": "Breakage is estimated, not observed, at the reporting date. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Deferred revenue understated; revenue overstated in the current period.",
+   "review_status": "Verified",
+   "significance": "Other",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Understated deferred revenue from unredeemed gift cards and loyalty points"
+  },
+  {
+   "causes": "ECL is the most judgmental number in a bank: it combines models, staging judgments and economic forecasts, each of which can be tilted.",
+   "cycle_id": "CYC-FRP",
+   "description": "Staging may be optimistic, model parameters stale, forward-looking scenarios benign, or overlays used to suppress the charge - understating impairment and overstating the loan book.",
+   "id": "R-BNK-001",
+   "inherent_risk_notes": "Model risk and staging judgment dominate. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Loans overstated; impairment charge understated; disclosures may hide the sensitivity.",
+   "review_status": "Verified",
+   "significance": "Significant risk",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Understated loan impairment (expected credit losses)"
+  },
+  {
+   "causes": "Accrual is automatic; stopping it requires an active decision that may be delayed for performance reasons.",
+   "cycle_id": "CYC-REV",
+   "description": "Interest accrued on doubtful loans may never be collected; without suspension or adequate provision against the accrued interest, income and receivables are overstated.",
+   "id": "R-BNK-002",
+   "inherent_risk_notes": "The policy boundary for suspension is the key judgment. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Interest income overstated; loan receivables overstated to the extent accrued interest is unprovided.",
+   "review_status": "Verified",
+   "significance": "Other",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Overstated interest income on non-performing loans"
+  },
+  {
+   "causes": "Valuation models are complex and their inputs partly unobservable, creating information asymmetry between management and the auditor.",
+   "cycle_id": "CYC-FRP",
+   "description": "Instruments may be classified to achieve a desired measurement outcome, and model valuations may use optimistic inputs - misstating assets, liabilities and profit or loss.",
+   "id": "R-BNK-003",
+   "inherent_risk_notes": "Model complexity is the risk multiplier. The presence of this factor does NOT prove that a misstatement exists.",
+   "potential_consequences": "Financial assets/liabilities misstated; gains or losses recognised in the wrong period or the wrong statement section.",
+   "review_status": "Verified",
+   "significance": "Other",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "title": "Misclassification and valuation error in financial instruments"
+  }
+ ],
+ "rules": [
+  {
+   "effective_date": "2026-10-21",
+   "name": "Telecom towers and network sites carry dismantling and site-restoration (decommissioning) obligations -> Decommissioning provision omitted or understated; related asset-retirement cost not capitalised",
+   "priority": 20,
+   "rationale": "A large, dispersed site estate makes decommissioning obligations easy to overlook, so the rule directs the auditor first to the completeness of the obligation population (contracts to register) and then to measurement.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-TEL-001",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "BAL-COM",
+     "BAL-VAL",
+     "DIS-COM"
+    ],
+    "control_ids": [
+     "C-TEL-001-1",
+     "C-TEL-001-2"
+    ],
+    "missing_information": [
+     "Whether restoration obligations are enforceable under the site contracts and local regulation.",
+     "The number of sites and the materiality of the aggregate obligation.",
+     "The discount rate and cost assumptions used, and who approved them."
+    ],
+    "note": "The provision addresses obligations existing at the reporting date; future network expansion plans are not provided for.",
+    "procedure_ids": [
+     "P-TEL-001-1",
+     "P-TEL-001-2"
+    ],
+    "risk_ids": [
+     "R-TEL-001"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-TEL-001",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "Multi-element customer contracts (handset plus service bundles) -> Incorrect allocation of consideration across bundle components and premature revenue recognition",
+   "priority": 20,
+   "rationale": "Allocation error is systematic rather than random, so the rule focuses on reperforming the allocation logic on new plans and testing the approval control that authorises the inputs.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-TEL-002",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "TRN-ACC",
+     "TRN-CUT",
+     "TRN-CLS"
+    ],
+    "control_ids": [
+     "C-TEL-002-1",
+     "C-TEL-002-2"
+    ],
+    "missing_information": [
+     "The stand-alone selling prices used and how they were determined.",
+     "Whether any manual journals adjust system-generated allocation.",
+     "The volume of bundled contracts and their revenue share."
+    ],
+    "note": "Manual top-side adjustments to allocation are a separate fraud-relevant consideration.",
+    "procedure_ids": [
+     "P-TEL-002-1",
+     "P-TEL-002-2"
+    ],
+    "risk_ids": [
+     "R-TEL-002"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-TEL-002",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "High-volume automated billing with complex rating and tariff logic -> Systematic billing errors from rating or tariff configuration",
+   "priority": 20,
+   "rationale": "Because one defect replicates across millions of transactions, the rule emphasises independent reperformance and exception follow-up over vouching individual bills.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-TEL-003",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "TRN-ACC",
+     "TRN-COM"
+    ],
+    "control_ids": [
+     "C-TEL-003-1",
+     "C-TEL-003-2"
+    ],
+    "missing_information": [
+     "Whether IT general controls over the billing system are effective.",
+     "The volume and ageing of unresolved rating exceptions.",
+     "How tariff changes are tested before deployment."
+    ],
+    "note": "Findings here may indicate a need for IT audit specialist involvement.",
+    "procedure_ids": [
+     "P-TEL-003-1",
+     "P-TEL-003-2"
+    ],
+    "risk_ids": [
+     "R-TEL-003"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-TEL-003",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "Work in progress with absorbed production overheads -> Misallocated overheads and misstated work in progress",
+   "priority": 20,
+   "rationale": "Overhead valuation fails at the rate-setting stage, so the rule leads with reperformance of the model and a physical reality check on WIP stages.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-MFG-001",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "BAL-VAL",
+     "TRN-ACC"
+    ],
+    "control_ids": [
+     "C-MFG-001-1",
+     "C-MFG-001-2"
+    ],
+    "missing_information": [
+     "The normal-capacity level assumed and how it compares with actual utilisation.",
+     "Whether overhead rates were updated for the current budget.",
+     "The ageing of open WIP jobs."
+    ],
+    "note": "Abnormal amounts of wasted material or idle time are expensed, not absorbed.",
+    "procedure_ids": [
+     "P-MFG-001-1",
+     "P-MFG-001-2"
+    ],
+    "risk_ids": [
+     "R-MFG-001"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-MFG-001",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "Standard costing with material variances not investigated -> Variances buried rather than analysed, misstating inventory and cost of sales",
+   "priority": 20,
+   "rationale": "Variances are the costing system's built-in diagnostic, so the rule treats them as the primary evidence and tests both their investigation and their accounting.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-MFG-002",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "TRN-ACC",
+     "BAL-VAL"
+    ],
+    "control_ids": [
+     "C-MFG-002-1"
+    ],
+    "missing_information": [
+     "When standards were last revised and for which inputs.",
+     "How material variances are currently disposed of.",
+     "Whether variance investigations are documented."
+    ],
+    "note": "Persistent adverse variances may also signal operational issues beyond the financial statements.",
+    "procedure_ids": [
+     "P-MFG-002-1",
+     "P-MFG-002-2"
+    ],
+    "risk_ids": [
+     "R-MFG-002"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-MFG-002",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "Warranty obligations on goods sold -> Understated warranty provision",
+   "priority": 20,
+   "rationale": "Warranty estimates live or die on claim experience, so the rule centres on back-testing and cohort analysis rather than accepting the model.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-MFG-003",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "BAL-COM",
+     "BAL-VAL"
+    ],
+    "control_ids": [
+     "C-MFG-003-1"
+    ],
+    "missing_information": [
+     "The warranty terms offered and which products they cover.",
+     "Claims history by cohort, especially for new products.",
+     "How the provision has compared with actual claims in prior periods."
+    ],
+    "note": "A falling provision alongside rising sales is an analytical red flag, not proof of error.",
+    "procedure_ids": [
+     "P-MFG-003-1",
+     "P-MFG-003-2"
+    ],
+    "risk_ids": [
+     "R-MFG-003"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-MFG-003",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "High-volume cash and card sales with shrinkage exposure -> Unrecorded sales and theft of takings (shrinkage)",
+   "priority": 20,
+   "rationale": "Cash volume is the risk driver, so the rule focuses on the till-to-bank trail and outlet-level analytics rather than individual transaction vouching.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-RTL-001",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "TRN-COM",
+     "BAL-EXI"
+    ],
+    "control_ids": [
+     "C-RTL-001-1",
+     "C-RTL-001-2"
+    ],
+    "missing_information": [
+     "The proportion of cash versus card sales.",
+     "Void, refund and discount rates by outlet.",
+     "How shrinkage is measured and provided for."
+    ],
+    "note": "Findings of systematic shortfalls are fraud indicators to investigate, never automatic conclusions.",
+    "procedure_ids": [
+     "P-RTL-001-1",
+     "P-RTL-001-2"
+    ],
+    "risk_ids": [
+     "R-RTL-001"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-RTL-001",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "Supplier rebates and promotional income -> Premature or overstated recognition of supplier rebates",
+   "priority": 20,
+   "rationale": "Supplier agreement is the key uncertainty, so the rule emphasises vouching to signed terms and external confirmation.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-RTL-002",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "TRN-ACC",
+     "TRN-CUT"
+    ],
+    "control_ids": [
+     "C-RTL-002-1"
+    ],
+    "missing_information": [
+     "Which rebate streams are material and their agreement status.",
+     "Whether terms are confirmed in writing by suppliers.",
+     "The basis of year-end accruals - actual or forecast volumes."
+    ],
+    "note": "Rebates netted against cost of sales versus presented as income is a presentation consideration.",
+    "procedure_ids": [
+     "P-RTL-002-1",
+     "P-RTL-002-2"
+    ],
+    "risk_ids": [
+     "R-RTL-002"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-RTL-002",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "Gift cards sold and loyalty points outstanding -> Understated deferred revenue from unredeemed gift cards and loyalty points",
+   "priority": 20,
+   "rationale": "The liability is the risk, so the rule works from the liability population outward: reconcile it, then test releases and breakage.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-RTL-003",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "BAL-COM",
+     "DIS-COM"
+    ],
+    "control_ids": [
+     "C-RTL-003-1"
+    ],
+    "missing_information": [
+     "The size of outstanding gift card and loyalty balances.",
+     "The breakage rate assumed and its historical support.",
+     "Expiry terms and how consistently they are applied."
+    ],
+    "note": "Changes in breakage methodology are a classic earnings-management lever.",
+    "procedure_ids": [
+     "P-RTL-003-1",
+     "P-RTL-003-2"
+    ],
+    "risk_ids": [
+     "R-RTL-003"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-RTL-003",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "Loan book subject to expected credit losses -> Understated loan impairment (expected credit losses)",
+   "priority": 20,
+   "rationale": "ECL fails at staging and parameter judgments, so the rule targets borderline cases and overlays rather than re-running the whole model naively.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-BNK-001",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "BAL-VAL",
+     "DIS-COM"
+    ],
+    "control_ids": [
+     "C-BNK-001-1"
+    ],
+    "missing_information": [
+     "The staging criteria and the volume of overrides.",
+     "How forward-looking scenarios are weighted.",
+     "The size and direction of management overlays."
+    ],
+    "note": "This is typically a significant risk requiring special audit consideration and possible expertise.",
+    "procedure_ids": [
+     "P-BNK-001-1",
+     "P-BNK-001-2"
+    ],
+    "risk_ids": [
+     "R-BNK-001"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-BNK-001",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "Interest income recognised on non-performing loans -> Overstated interest income on non-performing loans",
+   "priority": 20,
+   "rationale": "Accrual is automatic and stopping it is the decision, so the rule tests the suspension boundary and the provision against continuing accruals.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-BNK-002",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "TRN-ACC",
+     "BAL-VAL"
+    ],
+    "control_ids": [
+     "C-BNK-002-1"
+    ],
+    "missing_information": [
+     "The policy criteria for suspending interest accrual.",
+     "The ageing and size of the NPL book.",
+     "Whether suspended interest is tracked for disclosure."
+    ],
+    "note": "Regulatory definitions of non-performance may differ from accounting ones - both matter.",
+    "procedure_ids": [
+     "P-BNK-002-1"
+    ],
+    "risk_ids": [
+     "R-BNK-002"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-BNK-002",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  },
+  {
+   "effective_date": "2026-10-21",
+   "name": "Complex treasury and financial instruments -> Misclassification and valuation error in financial instruments",
+   "priority": 20,
+   "rationale": "Information asymmetry is the core problem, so the rule prioritises independent challenge of inputs and classification over accepting model outputs.",
+   "review_status": "Verified",
+   "reviewed_by": "Library build - deterministic rules",
+   "rule_id": "RULE-BNK-003",
+   "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+   "status": "Active",
+   "then": {
+    "assertion_ids": [
+     "BAL-VAL",
+     "BAL-CLS",
+     "DIS-VAL"
+    ],
+    "control_ids": [
+     "C-BNK-003-1"
+    ],
+    "missing_information": [
+     "The size of level 3 exposures.",
+     "How often independent price verification is performed and by whom.",
+     "Any period-end reclassifications and their rationale."
+    ],
+    "note": "Valuation expertise beyond the core audit team is often needed here.",
+    "procedure_ids": [
+     "P-BNK-003-1",
+     "P-BNK-003-2"
+    ],
+    "risk_ids": [
+     "R-BNK-003"
+    ]
+   },
+   "version": 1,
+   "when": {
+    "all": [
+     {
+      "factor_id": "F-BNK-003",
+      "type": "factor_selected"
+     }
+    ],
+    "any": [],
+    "exclude": []
+   }
+  }
+ ]
+}

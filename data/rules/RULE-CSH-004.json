@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-CSH-004",
+    "then": {
+      "assertion_ids": [
+        "BAL-EXI",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-CSH-007",
+        "C-CSH-008"
+      ],
+      "missing_information": [
+        "Whether cash on hand is material, and where cash is held.",
+        "Who has custody of cash and whether any independent counts are performed.",
+        "The volume of cash transactions and how receipts are controlled."
+      ],
+      "note": "Existence of cash is established by direct count, not by agreement of records. IOUs and other non-cash items found in the cash balance are not cash.",
+      "procedure_ids": [
+        "P-CSH-012",
+        "P-CSH-013",
+        "P-CSH-014"
+      ],
+      "risk_ids": [
+        "R-CSH-004"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-CSH-004",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Cash not physically verified -> existence risk for cash on hand",
+  "priority": 40,
+  "rationale": "Cash is the most portable asset; without independent physical verification, shortages accumulate undetected. The rule directs surprise physical verification by the auditor, reconciliation of the count to records, and testing of the entity's own count controls.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-CSH-004",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-EXI",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-CSH-007",
+      "C-CSH-008"
+    ],
+    "missing_information": [
+      "Whether cash on hand is material, and where cash is held.",
+      "Who has custody of cash and whether any independent counts are performed.",
+      "The volume of cash transactions and how receipts are controlled."
+    ],
+    "note": "Existence of cash is established by direct count, not by agreement of records. IOUs and other non-cash items found in the cash balance are not cash.",
+    "procedure_ids": [
+      "P-CSH-012",
+      "P-CSH-013",
+      "P-CSH-014"
+    ],
+    "risk_ids": [
+      "R-CSH-004"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-CSH-004",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

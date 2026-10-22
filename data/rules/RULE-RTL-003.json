@@ -1,0 +1,79 @@
+{
+  "definition": {
+    "rule_id": "RULE-RTL-003",
+    "then": {
+      "assertion_ids": [
+        "BAL-COM",
+        "DIS-COM"
+      ],
+      "control_ids": [
+        "C-RTL-003-1"
+      ],
+      "missing_information": [
+        "The size of outstanding gift card and loyalty balances.",
+        "The breakage rate assumed and its historical support.",
+        "Expiry terms and how consistently they are applied."
+      ],
+      "note": "Changes in breakage methodology are a classic earnings-management lever.",
+      "procedure_ids": [
+        "P-RTL-003-1",
+        "P-RTL-003-2"
+      ],
+      "risk_ids": [
+        "R-RTL-003"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-RTL-003",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Gift cards sold and loyalty points outstanding -> Understated deferred revenue from unredeemed gift cards and loyalty points",
+  "priority": 20,
+  "rationale": "The liability is the risk, so the rule works from the liability population outward: reconcile it, then test releases and breakage.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-RTL-003",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-COM",
+      "DIS-COM"
+    ],
+    "control_ids": [
+      "C-RTL-003-1"
+    ],
+    "missing_information": [
+      "The size of outstanding gift card and loyalty balances.",
+      "The breakage rate assumed and its historical support.",
+      "Expiry terms and how consistently they are applied."
+    ],
+    "note": "Changes in breakage methodology are a classic earnings-management lever.",
+    "procedure_ids": [
+      "P-RTL-003-1",
+      "P-RTL-003-2"
+    ],
+    "risk_ids": [
+      "R-RTL-003"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-RTL-003",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

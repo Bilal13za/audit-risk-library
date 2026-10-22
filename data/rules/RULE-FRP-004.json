@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRP-004",
+    "then": {
+      "assertion_ids": [
+        "BAL-VAL",
+        "BAL-COM"
+      ],
+      "control_ids": [
+        "C-FRP-007",
+        "C-FRP-008"
+      ],
+      "missing_information": [
+        "Which provisions are significant and judgmental, and what assumptions drive them.",
+        "What supporting evidence exists for the key assumptions.",
+        "How sensitive each significant provision is to its assumptions."
+      ],
+      "note": "Distinguish honest estimation uncertainty from bias: challenge the evidence, not the person. A one-sided pattern of assumptions is a fraud risk factor, not proof of fraud.",
+      "procedure_ids": [
+        "P-FRP-004-001",
+        "P-FRP-004-002",
+        "P-FRP-004-003"
+      ],
+      "risk_ids": [
+        "R-FRP-004"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRP-004",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Unsupported provision assumptions -> measurement and completeness risk",
+  "priority": 30,
+  "rationale": "A provision is only as good as its assumptions; undocumented assumptions cannot be distinguished from biased ones. The rule directs the auditor to challenge each key assumption against evidence, to recalculate and sensitivity-test the amounts, and to search for obligations never provided for - developing an independent expectation rather than accepting management's number.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRP-004",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-VAL",
+      "BAL-COM"
+    ],
+    "control_ids": [
+      "C-FRP-007",
+      "C-FRP-008"
+    ],
+    "missing_information": [
+      "Which provisions are significant and judgmental, and what assumptions drive them.",
+      "What supporting evidence exists for the key assumptions.",
+      "How sensitive each significant provision is to its assumptions."
+    ],
+    "note": "Distinguish honest estimation uncertainty from bias: challenge the evidence, not the person. A one-sided pattern of assumptions is a fraud risk factor, not proof of fraud.",
+    "procedure_ids": [
+      "P-FRP-004-001",
+      "P-FRP-004-002",
+      "P-FRP-004-003"
+    ],
+    "risk_ids": [
+      "R-FRP-004"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRP-004",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

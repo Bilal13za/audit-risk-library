@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRP-001",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-FRP-001",
+        "C-FRP-002"
+      ],
+      "missing_information": [
+        "The volume and nature of manual journals, especially at period-end.",
+        "Who can post and approve journals, and whether support is filed or routinely missing.",
+        "Whether the journal population can be extracted completely from the system."
+      ],
+      "note": "A cluster of unsupported period-end journals is a suspected fraud indicator: investigate thoroughly on evidence, but never conclude fraud from the absence of support alone.",
+      "procedure_ids": [
+        "P-FRP-001-001",
+        "P-FRP-001-002",
+        "P-FRP-001-003"
+      ],
+      "risk_ids": [
+        "R-FRP-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRP-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Undocumented manual journals -> occurrence and accuracy risk",
+  "priority": 10,
+  "rationale": "Supporting documentation is what allows a journal to be vouched to a genuine event; without it the auditor cannot distinguish valid adjustments from invented ones. The rule directs the auditor to vouch journals to support, test the approval control, and scan the full population for unusual entries - treating unsupported journals as exceptions to investigate, never as proof of misstatement or of fraud.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRP-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-FRP-001",
+      "C-FRP-002"
+    ],
+    "missing_information": [
+      "The volume and nature of manual journals, especially at period-end.",
+      "Who can post and approve journals, and whether support is filed or routinely missing.",
+      "Whether the journal population can be extracted completely from the system."
+    ],
+    "note": "A cluster of unsupported period-end journals is a suspected fraud indicator: investigate thoroughly on evidence, but never conclude fraud from the absence of support alone.",
+    "procedure_ids": [
+      "P-FRP-001-001",
+      "P-FRP-001-002",
+      "P-FRP-001-003"
+    ],
+    "risk_ids": [
+      "R-FRP-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRP-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

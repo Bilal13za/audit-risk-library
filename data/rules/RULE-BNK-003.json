@@ -1,0 +1,81 @@
+{
+  "definition": {
+    "rule_id": "RULE-BNK-003",
+    "then": {
+      "assertion_ids": [
+        "BAL-VAL",
+        "BAL-CLS",
+        "DIS-VAL"
+      ],
+      "control_ids": [
+        "C-BNK-003-1"
+      ],
+      "missing_information": [
+        "The size of level 3 exposures.",
+        "How often independent price verification is performed and by whom.",
+        "Any period-end reclassifications and their rationale."
+      ],
+      "note": "Valuation expertise beyond the core audit team is often needed here.",
+      "procedure_ids": [
+        "P-BNK-003-1",
+        "P-BNK-003-2"
+      ],
+      "risk_ids": [
+        "R-BNK-003"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-BNK-003",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Complex treasury and financial instruments -> Misclassification and valuation error in financial instruments",
+  "priority": 20,
+  "rationale": "Information asymmetry is the core problem, so the rule prioritises independent challenge of inputs and classification over accepting model outputs.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-BNK-003",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-VAL",
+      "BAL-CLS",
+      "DIS-VAL"
+    ],
+    "control_ids": [
+      "C-BNK-003-1"
+    ],
+    "missing_information": [
+      "The size of level 3 exposures.",
+      "How often independent price verification is performed and by whom.",
+      "Any period-end reclassifications and their rationale."
+    ],
+    "note": "Valuation expertise beyond the core audit team is often needed here.",
+    "procedure_ids": [
+      "P-BNK-003-1",
+      "P-BNK-003-2"
+    ],
+    "risk_ids": [
+      "R-BNK-003"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-BNK-003",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

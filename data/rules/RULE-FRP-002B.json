@@ -1,0 +1,93 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRP-002B",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-FRP-001",
+        "C-FRP-003"
+      ],
+      "missing_information": [
+        "Whether the journal population can be extracted completely, including post-closing entries.",
+        "Which individuals posted and approved the unusual entries identified.",
+        "Whether governance is aware of the override indicators found."
+      ],
+      "note": "Priority 5 makes this rule take precedence over RULE-FRP-002A when both factors are selected; its procedure set is the union of journal testing and override testing. Findings here are suspected fraud indicators to be investigated on evidence - never presumed to be fraud.",
+      "procedure_ids": [
+        "P-FRP-001-001",
+        "P-FRP-001-002",
+        "P-FRP-001-003",
+        "P-FRP-002-001"
+      ],
+      "risk_ids": [
+        "R-FRP-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRP-002",
+          "type": "factor_selected"
+        },
+        {
+          "factor_id": "F-FRP-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Override plus undocumented journals -> intensified journal testing",
+  "priority": 5,
+  "rationale": "Management override capability combined with a population of undocumented manual journals is the highest-risk combination in financial reporting: the means (override) and the vehicle (unsupported journals) are both present. The narrower rule takes precedence over the general override rule and adds the full journal-testing battery - vouching, approval testing and population scanning - to the override procedures.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRP-002B",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-FRP-001",
+      "C-FRP-003"
+    ],
+    "missing_information": [
+      "Whether the journal population can be extracted completely, including post-closing entries.",
+      "Which individuals posted and approved the unusual entries identified.",
+      "Whether governance is aware of the override indicators found."
+    ],
+    "note": "Priority 5 makes this rule take precedence over RULE-FRP-002A when both factors are selected; its procedure set is the union of journal testing and override testing. Findings here are suspected fraud indicators to be investigated on evidence - never presumed to be fraud.",
+    "procedure_ids": [
+      "P-FRP-001-001",
+      "P-FRP-001-002",
+      "P-FRP-001-003",
+      "P-FRP-002-001"
+    ],
+    "risk_ids": [
+      "R-FRP-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRP-002",
+        "type": "factor_selected"
+      },
+      {
+        "factor_id": "F-FRP-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

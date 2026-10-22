@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-PUR-001",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-PUR-001",
+        "C-PUR-002"
+      ],
+      "missing_information": [
+        "Whether any matching is performed at all, and by whom.",
+        "The volume and value of invoices approved without matches.",
+        "Whether segregation exists between receiving and payment approval."
+      ],
+      "note": "An unmatched invoice is an exception to investigate, not a confirmed invalid purchase.",
+      "procedure_ids": [
+        "P-PUR-001",
+        "P-PUR-002",
+        "P-PUR-003"
+      ],
+      "risk_ids": [
+        "R-PUR-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PUR-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Unmatched supplier invoices -> invalid purchase risk",
+  "priority": 10,
+  "rationale": "Without matching to receipt evidence, nothing stops invoices for goods never delivered from being recorded and paid. The rule directs vouching to GRNs, a test of the matching control, and follow-up of the exception population most at risk.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PUR-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-PUR-001",
+      "C-PUR-002"
+    ],
+    "missing_information": [
+      "Whether any matching is performed at all, and by whom.",
+      "The volume and value of invoices approved without matches.",
+      "Whether segregation exists between receiving and payment approval."
+    ],
+    "note": "An unmatched invoice is an exception to investigate, not a confirmed invalid purchase.",
+    "procedure_ids": [
+      "P-PUR-001",
+      "P-PUR-002",
+      "P-PUR-003"
+    ],
+    "risk_ids": [
+      "R-PUR-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PUR-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

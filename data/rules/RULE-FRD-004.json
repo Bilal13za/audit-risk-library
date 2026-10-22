@@ -1,0 +1,81 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRD-004",
+    "then": {
+      "assertion_ids": [
+        "BAL-VAL",
+        "DIS-VAL",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-FRD-004"
+      ],
+      "missing_information": [
+        "Headroom under each covenant and the consequences of breach.",
+        "Timing of covenant tests relative to the reporting date.",
+        "Which estimates most affect the covenant ratios."
+      ],
+      "note": "Covenant pressure is an incentive indicator. The retrospective estimate review is the key response: look for a pattern of favourable outcomes, not a single optimistic estimate.",
+      "procedure_ids": [
+        "P-FRD-003",
+        "P-FRD-001"
+      ],
+      "risk_ids": [
+        "R-FRD-004"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRD-004",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Covenant pressure -> estimate bias fraud risk",
+  "priority": 5,
+  "rationale": "Threatened loss of financing concentrates pressure on period-end balances and the estimates that determine them. Fraud rules run first (priority 5).",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRD-004",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-VAL",
+      "DIS-VAL",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-FRD-004"
+    ],
+    "missing_information": [
+      "Headroom under each covenant and the consequences of breach.",
+      "Timing of covenant tests relative to the reporting date.",
+      "Which estimates most affect the covenant ratios."
+    ],
+    "note": "Covenant pressure is an incentive indicator. The retrospective estimate review is the key response: look for a pattern of favourable outcomes, not a single optimistic estimate.",
+    "procedure_ids": [
+      "P-FRD-003",
+      "P-FRD-001"
+    ],
+    "risk_ids": [
+      "R-FRD-004"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRD-004",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

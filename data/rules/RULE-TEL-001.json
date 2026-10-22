@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-TEL-001",
+    "then": {
+      "assertion_ids": [
+        "BAL-COM",
+        "BAL-VAL",
+        "DIS-COM"
+      ],
+      "control_ids": [
+        "C-TEL-001-1",
+        "C-TEL-001-2"
+      ],
+      "missing_information": [
+        "Whether restoration obligations are enforceable under the site contracts and local regulation.",
+        "The number of sites and the materiality of the aggregate obligation.",
+        "The discount rate and cost assumptions used, and who approved them."
+      ],
+      "note": "The provision addresses obligations existing at the reporting date; future network expansion plans are not provided for.",
+      "procedure_ids": [
+        "P-TEL-001-1",
+        "P-TEL-001-2"
+      ],
+      "risk_ids": [
+        "R-TEL-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-TEL-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Telecom towers and network sites carry dismantling and site-restoration (decommissioning) obligations -> Decommissioning provision omitted or understated; related asset-retirement cost not capitalised",
+  "priority": 20,
+  "rationale": "A large, dispersed site estate makes decommissioning obligations easy to overlook, so the rule directs the auditor first to the completeness of the obligation population (contracts to register) and then to measurement.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-TEL-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-COM",
+      "BAL-VAL",
+      "DIS-COM"
+    ],
+    "control_ids": [
+      "C-TEL-001-1",
+      "C-TEL-001-2"
+    ],
+    "missing_information": [
+      "Whether restoration obligations are enforceable under the site contracts and local regulation.",
+      "The number of sites and the materiality of the aggregate obligation.",
+      "The discount rate and cost assumptions used, and who approved them."
+    ],
+    "note": "The provision addresses obligations existing at the reporting date; future network expansion plans are not provided for.",
+    "procedure_ids": [
+      "P-TEL-001-1",
+      "P-TEL-001-2"
+    ],
+    "risk_ids": [
+      "R-TEL-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-TEL-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

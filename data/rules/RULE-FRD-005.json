@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRD-005",
+    "then": {
+      "assertion_ids": [
+        "BAL-EXI",
+        "BAL-COM",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-FRD-002",
+        "C-FRD-003"
+      ],
+      "missing_information": [
+        "Reasons for departures and length of vacancies.",
+        "Whether handovers were documented and cover is competent.",
+        "Which reconciliations and reviews lapsed during gaps."
+      ],
+      "note": "Turnover is an opportunity indicator with innocent explanations. Focus extended procedures on periods with weak coverage.",
+      "procedure_ids": [
+        "P-FRD-001",
+        "P-FRD-002",
+        "P-FRD-005"
+      ],
+      "risk_ids": [
+        "R-FRD-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRD-005",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Finance turnover -> misappropriation fraud risk",
+  "priority": 5,
+  "rationale": "Instability in finance weakens review disciplines and creates gaps in which diversion and concealment go unchallenged. Fraud rules run first (priority 5).",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRD-005",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-EXI",
+      "BAL-COM",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-FRD-002",
+      "C-FRD-003"
+    ],
+    "missing_information": [
+      "Reasons for departures and length of vacancies.",
+      "Whether handovers were documented and cover is competent.",
+      "Which reconciliations and reviews lapsed during gaps."
+    ],
+    "note": "Turnover is an opportunity indicator with innocent explanations. Focus extended procedures on periods with weak coverage.",
+    "procedure_ids": [
+      "P-FRD-001",
+      "P-FRD-002",
+      "P-FRD-005"
+    ],
+    "risk_ids": [
+      "R-FRD-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRD-005",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

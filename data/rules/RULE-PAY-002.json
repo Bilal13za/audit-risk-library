@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-PAY-002",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-PAY-003",
+        "C-PAY-004"
+      ],
+      "missing_information": [
+        "Which users hold payroll master-change and payment-release rights.",
+        "Whether master changes require independent approval in the system or on paper.",
+        "Whether the payroll payment file is reviewed before release."
+      ],
+      "note": "Access rights alone do not prove misstatement; they establish opportunity. Substantive testing of master changes and payments is required to determine whether the opportunity was exploited.",
+      "procedure_ids": [
+        "P-PAY-005",
+        "P-PAY-006",
+        "P-PAY-007",
+        "P-PAY-008"
+      ],
+      "risk_ids": [
+        "R-PAY-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PAY-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "No segregation of payroll duties -> fictitious payee risk",
+  "priority": 20,
+  "rationale": "Combined control of employee master records and payment processing removes the primary barrier to creating fictitious payees. The rule directs the auditor to test access rights, vouch master changes to independent approval, and scan for fictitious-employee indicators.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PAY-002",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-PAY-003",
+      "C-PAY-004"
+    ],
+    "missing_information": [
+      "Which users hold payroll master-change and payment-release rights.",
+      "Whether master changes require independent approval in the system or on paper.",
+      "Whether the payroll payment file is reviewed before release."
+    ],
+    "note": "Access rights alone do not prove misstatement; they establish opportunity. Substantive testing of master changes and payments is required to determine whether the opportunity was exploited.",
+    "procedure_ids": [
+      "P-PAY-005",
+      "P-PAY-006",
+      "P-PAY-007",
+      "P-PAY-008"
+    ],
+    "risk_ids": [
+      "R-PAY-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PAY-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

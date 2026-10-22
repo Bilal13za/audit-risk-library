@@ -1,0 +1,93 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRP-002A",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-FRP-003",
+        "C-FRP-004"
+      ],
+      "missing_information": [
+        "Who holds privileged system access and what it permits.",
+        "The governance structure and whether independent challenge of management is realistic.",
+        "Any past instances of override or control breaches."
+      ],
+      "note": "This rule fires on the override factor alone. Where undocumented manual journals are also present, the narrower priority-5 rule (RULE-FRP-002B) takes precedence and adds intensified journal testing.",
+      "procedure_ids": [
+        "P-FRP-002-001",
+        "P-FRP-002-002",
+        "P-FRP-002-003"
+      ],
+      "risk_ids": [
+        "R-FRP-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRP-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": [
+        {
+          "factor_id": "F-FRP-001",
+          "type": "factor_selected"
+        }
+      ]
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Management override capability -> fraud risk responses",
+  "priority": 10,
+  "rationale": "Those who design and oversee controls can bypass them, so normal controls provide no protection against override. The rule directs the auditor to the specific responses override requires: targeted journal-entry testing, inquiries of those charged with governance, and evaluation of estimates for bias - while preserving the distinction between opportunity, suspected indicator and confirmed fraud. v2: excludes F-FRP-001 - when unsupported manual journals are also present, the narrower RULE-FRP-002B (priority 5) fires instead, adding the journal-testing battery without duplicating the override procedures.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRP-002A",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-FRP-003",
+      "C-FRP-004"
+    ],
+    "missing_information": [
+      "Who holds privileged system access and what it permits.",
+      "The governance structure and whether independent challenge of management is realistic.",
+      "Any past instances of override or control breaches."
+    ],
+    "note": "This rule fires on the override factor alone. Where undocumented manual journals are also present, the narrower priority-5 rule (RULE-FRP-002B) takes precedence and adds intensified journal testing.",
+    "procedure_ids": [
+      "P-FRP-002-001",
+      "P-FRP-002-002",
+      "P-FRP-002-003"
+    ],
+    "risk_ids": [
+      "R-FRP-002"
+    ]
+  },
+  "version": 2,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRP-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": [
+      {
+        "factor_id": "F-FRP-001",
+        "type": "factor_selected"
+      }
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "definition": {
+    "rule_id": "RULE-TEL-003",
+    "then": {
+      "assertion_ids": [
+        "TRN-ACC",
+        "TRN-COM"
+      ],
+      "control_ids": [
+        "C-TEL-003-1",
+        "C-TEL-003-2"
+      ],
+      "missing_information": [
+        "Whether IT general controls over the billing system are effective.",
+        "The volume and ageing of unresolved rating exceptions.",
+        "How tariff changes are tested before deployment."
+      ],
+      "note": "Findings here may indicate a need for IT audit specialist involvement.",
+      "procedure_ids": [
+        "P-TEL-003-1",
+        "P-TEL-003-2"
+      ],
+      "risk_ids": [
+        "R-TEL-003"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-TEL-003",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "High-volume automated billing with complex rating and tariff logic -> Systematic billing errors from rating or tariff configuration",
+  "priority": 20,
+  "rationale": "Because one defect replicates across millions of transactions, the rule emphasises independent reperformance and exception follow-up over vouching individual bills.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-TEL-003",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-ACC",
+      "TRN-COM"
+    ],
+    "control_ids": [
+      "C-TEL-003-1",
+      "C-TEL-003-2"
+    ],
+    "missing_information": [
+      "Whether IT general controls over the billing system are effective.",
+      "The volume and ageing of unresolved rating exceptions.",
+      "How tariff changes are tested before deployment."
+    ],
+    "note": "Findings here may indicate a need for IT audit specialist involvement.",
+    "procedure_ids": [
+      "P-TEL-003-1",
+      "P-TEL-003-2"
+    ],
+    "risk_ids": [
+      "R-TEL-003"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-TEL-003",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

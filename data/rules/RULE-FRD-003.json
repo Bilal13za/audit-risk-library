@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRD-003",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-CLS",
+        "TRN-CUT"
+      ],
+      "control_ids": [
+        "C-FRD-001",
+        "C-FRD-002"
+      ],
+      "missing_information": [
+        "The documented business purpose of each structure or vehicle.",
+        "The identity of counterparties and whether terms are arm's length.",
+        "Which related parties management has disclosed vs omitted."
+      ],
+      "note": "Opacity is an opportunity indicator. Respond with journal testing and a related-party completeness search; do not assume the structures are shams.",
+      "procedure_ids": [
+        "P-FRD-001",
+        "P-FRD-004",
+        "P-FRD-006"
+      ],
+      "risk_ids": [
+        "R-FRD-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRD-003",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Opaque related-party structures -> journal manipulation fraud risk",
+  "priority": 5,
+  "rationale": "Undocumented related-party structures provide the channels through which manipulated journals and off-book arrangements flow. Fraud rules run first (priority 5).",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRD-003",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-CLS",
+      "TRN-CUT"
+    ],
+    "control_ids": [
+      "C-FRD-001",
+      "C-FRD-002"
+    ],
+    "missing_information": [
+      "The documented business purpose of each structure or vehicle.",
+      "The identity of counterparties and whether terms are arm's length.",
+      "Which related parties management has disclosed vs omitted."
+    ],
+    "note": "Opacity is an opportunity indicator. Respond with journal testing and a related-party completeness search; do not assume the structures are shams.",
+    "procedure_ids": [
+      "P-FRD-001",
+      "P-FRD-004",
+      "P-FRD-006"
+    ],
+    "risk_ids": [
+      "R-FRD-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRD-003",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

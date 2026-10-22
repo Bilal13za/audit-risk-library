@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRD-007",
+    "then": {
+      "assertion_ids": [
+        "BAL-EXI",
+        "BAL-COM",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-FRD-003",
+        "C-FRD-002"
+      ],
+      "missing_information": [
+        "Business reasons for cash intensity and who handles cash.",
+        "Whether cash is banked promptly and reconciled independently.",
+        "When cash was last independently counted."
+      ],
+      "note": "Cash opportunity is a direct misappropriation indicator. Surprise verification is the key response; predictable counts have limited value.",
+      "procedure_ids": [
+        "P-FRD-005",
+        "P-FRD-001",
+        "P-FRD-002"
+      ],
+      "risk_ids": [
+        "R-FRD-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRD-007",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Weak cash oversight -> misappropriation fraud risk",
+  "priority": 5,
+  "rationale": "Material cash volumes without independent oversight are a direct opportunity for diversion, and cash leaves little trail. Fraud rules run first (priority 5).",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRD-007",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-EXI",
+      "BAL-COM",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-FRD-003",
+      "C-FRD-002"
+    ],
+    "missing_information": [
+      "Business reasons for cash intensity and who handles cash.",
+      "Whether cash is banked promptly and reconciled independently.",
+      "When cash was last independently counted."
+    ],
+    "note": "Cash opportunity is a direct misappropriation indicator. Surprise verification is the key response; predictable counts have limited value.",
+    "procedure_ids": [
+      "P-FRD-005",
+      "P-FRD-001",
+      "P-FRD-002"
+    ],
+    "risk_ids": [
+      "R-FRD-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRD-007",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

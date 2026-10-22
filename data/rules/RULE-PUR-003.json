@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-PUR-003",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "BAL-EXI"
+      ],
+      "control_ids": [
+        "C-PUR-005",
+        "C-PUR-006"
+      ],
+      "missing_information": [
+        "Who can change master data and who processes payments.",
+        "Whether a tamper-evident change log exists.",
+        "Whether bank-detail changes are verified independently."
+      ],
+      "note": "An unapproved change is a control deviation to investigate - it is not proof that any payment was diverted or that fraud occurred.",
+      "procedure_ids": [
+        "P-PUR-007",
+        "P-PUR-008",
+        "P-PUR-009"
+      ],
+      "risk_ids": [
+        "R-PUR-003"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PUR-003",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Uncontrolled supplier master changes -> fictitious supplier risk",
+  "priority": 30,
+  "rationale": "Master data decides who gets paid and into which account, so uncontrolled changes create both error and fraud opportunity. The rule directs a test of the approval control, substantive vouching of payments to new or changed suppliers, and full-population analysis for fictitious-supplier indicators.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PUR-003",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "BAL-EXI"
+    ],
+    "control_ids": [
+      "C-PUR-005",
+      "C-PUR-006"
+    ],
+    "missing_information": [
+      "Who can change master data and who processes payments.",
+      "Whether a tamper-evident change log exists.",
+      "Whether bank-detail changes are verified independently."
+    ],
+    "note": "An unapproved change is a control deviation to investigate - it is not proof that any payment was diverted or that fraud occurred.",
+    "procedure_ids": [
+      "P-PUR-007",
+      "P-PUR-008",
+      "P-PUR-009"
+    ],
+    "risk_ids": [
+      "R-PUR-003"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PUR-003",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRD-008",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-CLS",
+        "TRN-CUT"
+      ],
+      "control_ids": [
+        "C-FRD-002",
+        "C-FRD-001"
+      ],
+      "missing_information": [
+        "Whether a channel exists on paper and how reports are handled.",
+        "Staff perceptions of retaliation risk.",
+        "Whether any reports were ever made and investigated."
+      ],
+      "note": "Absence of a channel is an opportunity indicator. The auditor compensates with extended procedures and direct enquiry, not with assumptions about management integrity.",
+      "procedure_ids": [
+        "P-FRD-001",
+        "P-FRD-004",
+        "P-FRD-006"
+      ],
+      "risk_ids": [
+        "R-FRD-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRD-008",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "No trusted whistleblowing channel -> journal manipulation fraud risk",
+  "priority": 5,
+  "rationale": "Without a safe reporting route, observed wrongdoing - especially involving management - goes unreported, removing a key deterrent and detection channel. Fraud rules run first (priority 5).",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRD-008",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-CLS",
+      "TRN-CUT"
+    ],
+    "control_ids": [
+      "C-FRD-002",
+      "C-FRD-001"
+    ],
+    "missing_information": [
+      "Whether a channel exists on paper and how reports are handled.",
+      "Staff perceptions of retaliation risk.",
+      "Whether any reports were ever made and investigated."
+    ],
+    "note": "Absence of a channel is an opportunity indicator. The auditor compensates with extended procedures and direct enquiry, not with assumptions about management integrity.",
+    "procedure_ids": [
+      "P-FRD-001",
+      "P-FRD-004",
+      "P-FRD-006"
+    ],
+    "risk_ids": [
+      "R-FRD-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRD-008",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

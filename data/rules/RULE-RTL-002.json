@@ -1,0 +1,79 @@
+{
+  "definition": {
+    "rule_id": "RULE-RTL-002",
+    "then": {
+      "assertion_ids": [
+        "TRN-ACC",
+        "TRN-CUT"
+      ],
+      "control_ids": [
+        "C-RTL-002-1"
+      ],
+      "missing_information": [
+        "Which rebate streams are material and their agreement status.",
+        "Whether terms are confirmed in writing by suppliers.",
+        "The basis of year-end accruals - actual or forecast volumes."
+      ],
+      "note": "Rebates netted against cost of sales versus presented as income is a presentation consideration.",
+      "procedure_ids": [
+        "P-RTL-002-1",
+        "P-RTL-002-2"
+      ],
+      "risk_ids": [
+        "R-RTL-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-RTL-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Supplier rebates and promotional income -> Premature or overstated recognition of supplier rebates",
+  "priority": 20,
+  "rationale": "Supplier agreement is the key uncertainty, so the rule emphasises vouching to signed terms and external confirmation.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-RTL-002",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-ACC",
+      "TRN-CUT"
+    ],
+    "control_ids": [
+      "C-RTL-002-1"
+    ],
+    "missing_information": [
+      "Which rebate streams are material and their agreement status.",
+      "Whether terms are confirmed in writing by suppliers.",
+      "The basis of year-end accruals - actual or forecast volumes."
+    ],
+    "note": "Rebates netted against cost of sales versus presented as income is a presentation consideration.",
+    "procedure_ids": [
+      "P-RTL-002-1",
+      "P-RTL-002-2"
+    ],
+    "risk_ids": [
+      "R-RTL-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-RTL-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

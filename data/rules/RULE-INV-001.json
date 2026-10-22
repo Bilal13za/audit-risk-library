@@ -1,0 +1,95 @@
+{
+  "definition": {
+    "rule_id": "RULE-INV-001",
+    "then": {
+      "assertion_ids": [
+        "BAL-EXI",
+        "BAL-COM",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-INV-001",
+        "C-INV-002"
+      ],
+      "missing_information": [
+        "Whether inventory is material to the financial statements.",
+        "Whether a physical count is performed at or near the reporting date, and whether the auditor can attend.",
+        "Whether perpetual inventory records are maintained."
+      ],
+      "note": "Physical safeguarding is the primary preventive control over inventory existence; its absence elevates existence risk and requires direct substantive evidence (observation, test counts) rather than reliance on records.",
+      "procedure_ids": [
+        "P-INV-001",
+        "P-INV-002",
+        "P-INV-003",
+        "P-INV-004",
+        "P-INV-005",
+        "P-INV-006",
+        "P-INV-007",
+        "P-INV-008"
+      ],
+      "risk_ids": [
+        "R-INV-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-INV-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Inadequate warehouse security -> inventory loss risk",
+  "priority": 10,
+  "rationale": "Unrestricted physical access removes the main barrier to unauthorised removal of goods, so recorded quantities may exceed quantities actually held. The rule directs the auditor to existence-focused substantive procedures and to test the completeness of loss records, with explicit per-assertion reasoning.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-INV-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-EXI",
+      "BAL-COM",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-INV-001",
+      "C-INV-002"
+    ],
+    "missing_information": [
+      "Whether inventory is material to the financial statements.",
+      "Whether a physical count is performed at or near the reporting date, and whether the auditor can attend.",
+      "Whether perpetual inventory records are maintained."
+    ],
+    "note": "Physical safeguarding is the primary preventive control over inventory existence; its absence elevates existence risk and requires direct substantive evidence (observation, test counts) rather than reliance on records.",
+    "procedure_ids": [
+      "P-INV-001",
+      "P-INV-002",
+      "P-INV-003",
+      "P-INV-004",
+      "P-INV-005",
+      "P-INV-006",
+      "P-INV-007",
+      "P-INV-008"
+    ],
+    "risk_ids": [
+      "R-INV-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-INV-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

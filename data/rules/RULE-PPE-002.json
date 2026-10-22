@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-PPE-002",
+    "then": {
+      "assertion_ids": [
+        "BAL-VAL",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-PPE-003",
+        "C-PPE-004"
+      ],
+      "missing_information": [
+        "The depreciation policy, rates and useful lives currently applied.",
+        "When the parameters were last reviewed, by whom, and with what conclusion.",
+        "Information on asset usage, condition and technological change."
+      ],
+      "note": "Accurate application of inappropriate parameters still produces a misstatement: recalculation alone is insufficient without evaluating the parameters.",
+      "procedure_ids": [
+        "P-PPE-002-001",
+        "P-PPE-002-002",
+        "P-PPE-002-003"
+      ],
+      "risk_ids": [
+        "R-PPE-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PPE-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Unreviewed depreciation parameters -> charge and carrying amount risk",
+  "priority": 20,
+  "rationale": "Depreciation parameters set in the past drift from economic reality without periodic review. The rule directs the auditor beyond arithmetical accuracy (recalculation) to the appropriateness of the parameters themselves (evaluation against usage, condition and industry practice), plus testing of change controls.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PPE-002",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-VAL",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-PPE-003",
+      "C-PPE-004"
+    ],
+    "missing_information": [
+      "The depreciation policy, rates and useful lives currently applied.",
+      "When the parameters were last reviewed, by whom, and with what conclusion.",
+      "Information on asset usage, condition and technological change."
+    ],
+    "note": "Accurate application of inappropriate parameters still produces a misstatement: recalculation alone is insufficient without evaluating the parameters.",
+    "procedure_ids": [
+      "P-PPE-002-001",
+      "P-PPE-002-002",
+      "P-PPE-002-003"
+    ],
+    "risk_ids": [
+      "R-PPE-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PPE-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

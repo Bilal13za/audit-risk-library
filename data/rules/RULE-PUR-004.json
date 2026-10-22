@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-PUR-004",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-PUR-007",
+        "C-PUR-008"
+      ],
+      "missing_information": [
+        "Whether the system validates invoice number uniqueness per supplier.",
+        "How paid invoices are marked against reprocessing.",
+        "Whether manual journals bypass system checks."
+      ],
+      "note": "A duplicate invoice number still requires investigation: the supplier may have genuinely reissued the invoice.",
+      "procedure_ids": [
+        "P-PUR-010",
+        "P-PUR-011",
+        "P-PUR-012"
+      ],
+      "risk_ids": [
+        "R-PUR-004"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PUR-004",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Duplicate invoice processing -> duplicate recording risk",
+  "priority": 40,
+  "rationale": "A second recording of the same invoice is not a second purchase, and a second payment is a cash loss. The rule directs full-population duplicate analysis, documentary resolution of each suspected duplicate, and a test of the paid-invoice control.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PUR-004",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-PUR-007",
+      "C-PUR-008"
+    ],
+    "missing_information": [
+      "Whether the system validates invoice number uniqueness per supplier.",
+      "How paid invoices are marked against reprocessing.",
+      "Whether manual journals bypass system checks."
+    ],
+    "note": "A duplicate invoice number still requires investigation: the supplier may have genuinely reissued the invoice.",
+    "procedure_ids": [
+      "P-PUR-010",
+      "P-PUR-011",
+      "P-PUR-012"
+    ],
+    "risk_ids": [
+      "R-PUR-004"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PUR-004",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

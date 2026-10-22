@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-PAY-003",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-PAY-005",
+        "C-PAY-006"
+      ],
+      "missing_information": [
+        "Whether overtime is material, and at what premium rates it is paid.",
+        "How overtime hours are recorded - self-reported timesheets or independent clocking.",
+        "Who approves overtime and whether approval is independent of the claimant."
+      ],
+      "note": "A missing approval is a control deficiency, not proof the overtime was not worked. Unapproved claims require heavier substantive vouching, not automatic disallowance.",
+      "procedure_ids": [
+        "P-PAY-009",
+        "P-PAY-010",
+        "P-PAY-011",
+        "P-PAY-012"
+      ],
+      "risk_ids": [
+        "R-PAY-003"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PAY-003",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Overtime not independently approved -> inflated overtime risk",
+  "priority": 30,
+  "rationale": "Without independent approval there is no check that overtime was worked or necessary, particularly where hours are self-reported. The rule directs vouching of overtime to approved timesheets corroborated by attendance records, plus analytical procedures to find concentrations.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PAY-003",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-PAY-005",
+      "C-PAY-006"
+    ],
+    "missing_information": [
+      "Whether overtime is material, and at what premium rates it is paid.",
+      "How overtime hours are recorded - self-reported timesheets or independent clocking.",
+      "Who approves overtime and whether approval is independent of the claimant."
+    ],
+    "note": "A missing approval is a control deficiency, not proof the overtime was not worked. Unapproved claims require heavier substantive vouching, not automatic disallowance.",
+    "procedure_ids": [
+      "P-PAY-009",
+      "P-PAY-010",
+      "P-PAY-011",
+      "P-PAY-012"
+    ],
+    "risk_ids": [
+      "R-PAY-003"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PAY-003",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

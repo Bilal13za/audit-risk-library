@@ -1,0 +1,87 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRD-002",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-CUT",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-FRD-005",
+        "C-FRD-002"
+      ],
+      "missing_information": [
+        "How targets are set and whether they are realistically achievable.",
+        "The proportion of remuneration tied to the targets.",
+        "Whether revenue is the targeted metric or a different measure."
+      ],
+      "note": "Target pressure is an incentive indicator, not evidence of fraud. Extend revenue procedures with fraud-focused unpredictability and business-rationale testing.",
+      "procedure_ids": [
+        "P-FRD-001",
+        "P-FRD-002",
+        "P-FRD-004",
+        "P-FRD-006"
+      ],
+      "risk_ids": [
+        "R-FRD-003"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRD-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Aggressive earnings-linked incentives -> fictitious revenue fraud risk",
+  "priority": 5,
+  "rationale": "Material rewards tied to aggressive targets create the incentive condition for fraudulent revenue reporting. Fraud rules run first (priority 5) so fraud-focused responses are planned before standard procedures.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRD-002",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-CUT",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-FRD-005",
+      "C-FRD-002"
+    ],
+    "missing_information": [
+      "How targets are set and whether they are realistically achievable.",
+      "The proportion of remuneration tied to the targets.",
+      "Whether revenue is the targeted metric or a different measure."
+    ],
+    "note": "Target pressure is an incentive indicator, not evidence of fraud. Extend revenue procedures with fraud-focused unpredictability and business-rationale testing.",
+    "procedure_ids": [
+      "P-FRD-001",
+      "P-FRD-002",
+      "P-FRD-004",
+      "P-FRD-006"
+    ],
+    "risk_ids": [
+      "R-FRD-003"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRD-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-PUR-002",
+    "then": {
+      "assertion_ids": [
+        "TRN-CUT",
+        "TRN-COM",
+        "BAL-COM"
+      ],
+      "control_ids": [
+        "C-PUR-003",
+        "C-PUR-004"
+      ],
+      "missing_information": [
+        "Whether unmatched GRNs are accrued at period end.",
+        "The typical invoice lag by supplier.",
+        "The materiality of uninvoiced receipts."
+      ],
+      "note": "Completeness of liabilities is tested by looking for what is missing: GRN-to-ledger tracing is the key procedure.",
+      "procedure_ids": [
+        "P-PUR-004",
+        "P-PUR-005",
+        "P-PUR-006"
+      ],
+      "risk_ids": [
+        "R-PUR-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PUR-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Late supplier invoices -> unrecorded liabilities risk",
+  "priority": 20,
+  "rationale": "A liability exists on receipt, not on invoicing; late invoices therefore create unrecorded liabilities. The rule directs two-directional cut-off testing around GRNs and inspection of management's accrual, targeting completeness and cut-off.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PUR-002",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-CUT",
+      "TRN-COM",
+      "BAL-COM"
+    ],
+    "control_ids": [
+      "C-PUR-003",
+      "C-PUR-004"
+    ],
+    "missing_information": [
+      "Whether unmatched GRNs are accrued at period end.",
+      "The typical invoice lag by supplier.",
+      "The materiality of uninvoiced receipts."
+    ],
+    "note": "Completeness of liabilities is tested by looking for what is missing: GRN-to-ledger tracing is the key procedure.",
+    "procedure_ids": [
+      "P-PUR-004",
+      "P-PUR-005",
+      "P-PUR-006"
+    ],
+    "risk_ids": [
+      "R-PUR-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PUR-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

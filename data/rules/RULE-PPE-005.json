@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-PPE-005",
+    "then": {
+      "assertion_ids": [
+        "BAL-EXI",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-PPE-009",
+        "C-PPE-010"
+      ],
+      "missing_information": [
+        "The scale of replacement and overhaul programmes in the period.",
+        "Whether significant assets are componentised in the register.",
+        "How replacement work is described in work orders and communicated to finance."
+      ],
+      "note": "Derecognition is the other half of the replacement entry: testing only the capitalised cost would miss the double-count.",
+      "procedure_ids": [
+        "P-PPE-005-001",
+        "P-PPE-005-002",
+        "P-PPE-005-003"
+      ],
+      "risk_ids": [
+        "R-PPE-005"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PPE-005",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Replaced components not derecognised -> double-counted carrying amount",
+  "priority": 30,
+  "rationale": "Capitalising a replacement without derecognising the replaced part counts the same economic capacity twice. The rule directs the auditor to trace replacement work orders to derecognition entries, to test componentisation, and to corroborate the work through observation.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PPE-005",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-EXI",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-PPE-009",
+      "C-PPE-010"
+    ],
+    "missing_information": [
+      "The scale of replacement and overhaul programmes in the period.",
+      "Whether significant assets are componentised in the register.",
+      "How replacement work is described in work orders and communicated to finance."
+    ],
+    "note": "Derecognition is the other half of the replacement entry: testing only the capitalised cost would miss the double-count.",
+    "procedure_ids": [
+      "P-PPE-005-001",
+      "P-PPE-005-002",
+      "P-PPE-005-003"
+    ],
+    "risk_ids": [
+      "R-PPE-005"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PPE-005",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

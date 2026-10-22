@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRD-001",
+    "then": {
+      "assertion_ids": [
+        "BAL-EXI",
+        "BAL-COM",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-FRD-002",
+        "C-FRD-003"
+      ],
+      "missing_information": [
+        "Which incompatible functions are combined in which roles.",
+        "Whether any compensating controls (e.g. independent review) operate and are evidenced.",
+        "Whether the entity's size genuinely prevents segregation."
+      ],
+      "note": "Segregation weakness is an opportunity indicator, not evidence of fraud. Respond with extended asset-focused procedures and scepticism, not accusation.",
+      "procedure_ids": [
+        "P-FRD-001",
+        "P-FRD-002",
+        "P-FRD-005"
+      ],
+      "risk_ids": [
+        "R-FRD-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRD-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Lack of segregation of duties -> misappropriation fraud risk",
+  "priority": 5,
+  "rationale": "Incompatible functions in one person's hands remove the independent check between a transaction and its concealment - the classic opportunity condition for asset misappropriation. Fraud rules run first (priority 5) so fraud-focused responses are planned before standard procedures.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRD-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-EXI",
+      "BAL-COM",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-FRD-002",
+      "C-FRD-003"
+    ],
+    "missing_information": [
+      "Which incompatible functions are combined in which roles.",
+      "Whether any compensating controls (e.g. independent review) operate and are evidenced.",
+      "Whether the entity's size genuinely prevents segregation."
+    ],
+    "note": "Segregation weakness is an opportunity indicator, not evidence of fraud. Respond with extended asset-focused procedures and scepticism, not accusation.",
+    "procedure_ids": [
+      "P-FRD-001",
+      "P-FRD-002",
+      "P-FRD-005"
+    ],
+    "risk_ids": [
+      "R-FRD-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRD-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

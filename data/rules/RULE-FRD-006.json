@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRD-006",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-CLS",
+        "TRN-CUT"
+      ],
+      "control_ids": [
+        "C-FRD-001",
+        "C-FRD-002"
+      ],
+      "missing_information": [
+        "Specific examples of aggressive positions and their framework basis.",
+        "Whether those charged with governance challenged the positions.",
+        "Whether policies were changed toward the aggressive end."
+      ],
+      "note": "Rationalization is an attitude indicator. Apply heightened scepticism to journals and estimates; an aggressive position is not itself fraud.",
+      "procedure_ids": [
+        "P-FRD-001",
+        "P-FRD-003",
+        "P-FRD-004"
+      ],
+      "risk_ids": [
+        "R-FRD-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRD-006",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Rationalised aggressive accounting -> journal manipulation fraud risk",
+  "priority": 5,
+  "rationale": "A culture that normalises aggressive accounting blurs the boundary between aggressive and improper - the observable form of rationalization. Fraud rules run first (priority 5).",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRD-006",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-CLS",
+      "TRN-CUT"
+    ],
+    "control_ids": [
+      "C-FRD-001",
+      "C-FRD-002"
+    ],
+    "missing_information": [
+      "Specific examples of aggressive positions and their framework basis.",
+      "Whether those charged with governance challenged the positions.",
+      "Whether policies were changed toward the aggressive end."
+    ],
+    "note": "Rationalization is an attitude indicator. Apply heightened scepticism to journals and estimates; an aggressive position is not itself fraud.",
+    "procedure_ids": [
+      "P-FRD-001",
+      "P-FRD-003",
+      "P-FRD-004"
+    ],
+    "risk_ids": [
+      "R-FRD-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRD-006",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

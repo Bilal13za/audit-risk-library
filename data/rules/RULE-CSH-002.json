@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-CSH-002",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-CLS"
+      ],
+      "control_ids": [
+        "C-CSH-003",
+        "C-CSH-004"
+      ],
+      "missing_information": [
+        "The volume and value of payments to new or unfamiliar beneficiaries.",
+        "How new beneficiaries are verified before the first payment.",
+        "Payment approval thresholds and whether dual authorisation is enforced."
+      ],
+      "note": "Unusual payments are indicators to investigate, not proof of fraud. Each anomaly is vouched to independent evidence of the underlying transaction before any conclusion is drawn.",
+      "procedure_ids": [
+        "P-CSH-005",
+        "P-CSH-006",
+        "P-CSH-007",
+        "P-CSH-008"
+      ],
+      "risk_ids": [
+        "R-CSH-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-CSH-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Unusual payments to unfamiliar beneficiaries -> improper payment risk",
+  "priority": 20,
+  "rationale": "Payments to unfamiliar beneficiaries bypass the implicit control of a known supplier relationship. The rule directs full-population beneficiary analysis, vouching of unusual payments to supporting documents, and tracing of new beneficiaries to verification evidence.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-CSH-002",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-CLS"
+    ],
+    "control_ids": [
+      "C-CSH-003",
+      "C-CSH-004"
+    ],
+    "missing_information": [
+      "The volume and value of payments to new or unfamiliar beneficiaries.",
+      "How new beneficiaries are verified before the first payment.",
+      "Payment approval thresholds and whether dual authorisation is enforced."
+    ],
+    "note": "Unusual payments are indicators to investigate, not proof of fraud. Each anomaly is vouched to independent evidence of the underlying transaction before any conclusion is drawn.",
+    "procedure_ids": [
+      "P-CSH-005",
+      "P-CSH-006",
+      "P-CSH-007",
+      "P-CSH-008"
+    ],
+    "risk_ids": [
+      "R-CSH-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-CSH-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

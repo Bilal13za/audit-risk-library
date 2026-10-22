@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-PPE-001",
+    "then": {
+      "assertion_ids": [
+        "TRN-CLS",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-PPE-001",
+        "C-PPE-002"
+      ],
+      "missing_information": [
+        "The entity's capitalisation policy and how it is applied in practice.",
+        "The volume and nature of repairs and maintenance expenditure in the period.",
+        "Whether performance measures create pressure to report higher profits."
+      ],
+      "note": "The factor is a risk indicator, not evidence of misstatement: each tested item must be judged against the criteria, and inconsistent treatment investigated rather than assumed to be intentional.",
+      "procedure_ids": [
+        "P-PPE-001-001",
+        "P-PPE-001-002",
+        "P-PPE-001-003"
+      ],
+      "risk_ids": [
+        "R-PPE-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PPE-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Repairs capitalised without assessment -> classification and valuation risk",
+  "priority": 10,
+  "rationale": "Capitalisation without documented assessment against clear criteria is a recognised source of misclassification between expense and asset. The rule directs the auditor to test the classification boundary substantively (vouching near-boundary items), to inspect the policy and approval controls, and to use analytical procedures to spot systematic shifts - with per-assertion reasoning explaining why classification and valuation are affected.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PPE-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-CLS",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-PPE-001",
+      "C-PPE-002"
+    ],
+    "missing_information": [
+      "The entity's capitalisation policy and how it is applied in practice.",
+      "The volume and nature of repairs and maintenance expenditure in the period.",
+      "Whether performance measures create pressure to report higher profits."
+    ],
+    "note": "The factor is a risk indicator, not evidence of misstatement: each tested item must be judged against the criteria, and inconsistent treatment investigated rather than assumed to be intentional.",
+    "procedure_ids": [
+      "P-PPE-001-001",
+      "P-PPE-001-002",
+      "P-PPE-001-003"
+    ],
+    "risk_ids": [
+      "R-PPE-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PPE-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

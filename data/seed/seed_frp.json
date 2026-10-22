@@ -1,0 +1,1478 @@
+{
+  "controls": [
+    {
+      "description": "All manual journals above a defined threshold require documented supporting evidence and independent approval before posting; the preparer cannot approve their own journal.",
+      "evidence_of_operation": "Journal approval records showing preparer, independent approver, date, and attached support.",
+      "frequency": "Per journal",
+      "id": "C-FRP-001",
+      "limitations": "Approval may be perfunctory; approvers under time pressure at period-end may sign without review; collusion defeats segregation.",
+      "manual_automated": "Manual",
+      "objective": "Ensure manual journals are valid, supported and independently checked before they affect the ledger.",
+      "preventive_detective": "Preventive",
+      "responsible_role": "Finance manager",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "description": "A complete, sequentially controlled listing of manual journals is reviewed periodically for unusual entries - round amounts, postings outside normal hours, vague descriptions, entries by senior staff, or entries to seldom-used accounts.",
+      "evidence_of_operation": "Review working papers with follow-up notes on items investigated.",
+      "frequency": "Monthly",
+      "id": "C-FRP-002",
+      "limitations": "Only as good as the reviewer's skepticism and knowledge of what is unusual; a reviewer who does not understand the business will miss subtle indicators.",
+      "manual_automated": "Manual",
+      "objective": "Detect unusual or potentially inappropriate manual journals after posting.",
+      "preventive_detective": "Detective",
+      "responsible_role": "Financial controller",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "description": "Those charged with governance (for example an audit committee) oversee the financial reporting process, review significant judgments and unusual journals, and maintain a channel through which concerns about override or fraud can be raised.",
+      "evidence_of_operation": "Meeting minutes evidencing challenge of judgments and review of unusual items; records of concerns raised and how they were addressed.",
+      "frequency": "Quarterly",
+      "id": "C-FRP-003",
+      "limitations": "Governance oversight is periodic and high-level; it cannot prevent a determined override between meetings, and its effectiveness depends on the independence and competence of those involved.",
+      "manual_automated": "Manual",
+      "objective": "Provide independent oversight that deters and detects management override.",
+      "preventive_detective": "Detective",
+      "responsible_role": "Audit committee / board",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "description": "Privileged and administrator access to the accounting system is restricted to those who need it, all privileged actions are logged, logs are reviewed, and direct posting to closed periods is technically blocked.",
+      "evidence_of_operation": "Access-right listings, privileged-action logs and evidence of periodic log review.",
+      "frequency": "Ongoing",
+      "id": "C-FRP-004",
+      "limitations": "A privileged user can potentially alter or delete logs; the control reduces opportunity but cannot eliminate override by those who administer the system itself.",
+      "manual_automated": "Automated",
+      "objective": "Restrict and make visible the system-level actions through which override is typically exercised.",
+      "preventive_detective": "Preventive",
+      "responsible_role": "IT / system administrator",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "description": "A register of related parties is maintained and kept current for changes in directors, key management, significant shareholders and their close family members and controlled entities; declarations of interest are obtained periodically.",
+      "evidence_of_operation": "The related-party register with update history and signed declarations of interest.",
+      "frequency": "Periodic (and on change)",
+      "id": "C-FRP-005",
+      "limitations": "Relies on individuals declaring their interests honestly and completely; complex or concealed structures may not be declared.",
+      "manual_automated": "Manual",
+      "objective": "Ensure related-party relationships are known so transactions with them can be identified.",
+      "preventive_detective": "Preventive",
+      "responsible_role": "Company secretary / finance",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "description": "Transactions above a defined threshold are screened against the related-party register before approval, and identified related-party transactions are flagged for appropriate measurement and disclosure.",
+      "evidence_of_operation": "Approval records showing the related-party check and flagging of identified transactions.",
+      "frequency": "Per transaction",
+      "id": "C-FRP-006",
+      "limitations": "Screening is only as complete as the register; transactions structured to avoid thresholds escape the check.",
+      "manual_automated": "Manual",
+      "objective": "Identify related-party transactions at the point of approval.",
+      "preventive_detective": "Preventive",
+      "responsible_role": "Finance / budget holder",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "description": "Provision calculations, including all key assumptions, are prepared with supporting evidence and are reviewed and challenged by someone independent of the preparer before the financial statements are finalised.",
+      "evidence_of_operation": "Provision working papers showing preparer, independent reviewer, challenge points and how they were resolved.",
+      "frequency": "At each reporting date",
+      "id": "C-FRP-007",
+      "limitations": "A reviewer without the expertise or the willingness to challenge adds little; management bias can survive a polite review.",
+      "manual_automated": "Manual",
+      "objective": "Ensure provisions are based on supportable assumptions that have been independently challenged.",
+      "preventive_detective": "Detective",
+      "responsible_role": "Finance director",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "description": "Significant estimates are compared with subsequent actual outcomes (look-back review); systematic differences are investigated for bias.",
+      "evidence_of_operation": "Look-back analyses with investigation notes on significant variances.",
+      "frequency": "Annual",
+      "id": "C-FRP-008",
+      "limitations": "Backward-looking; detects bias only after the event, and a single year's variance may have innocent explanations.",
+      "manual_automated": "Manual",
+      "objective": "Detect patterns of optimistic or pessimistic bias in provisioning.",
+      "preventive_detective": "Detective",
+      "responsible_role": "Finance",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "description": "A disclosure checklist based on the applicable financial reporting framework is completed for each set of financial statements and reviewed by a technically competent person independent of the preparer.",
+      "evidence_of_operation": "Completed and reviewed disclosure checklist cross-referenced to the financial statements.",
+      "frequency": "At each reporting date",
+      "id": "C-FRP-009",
+      "limitations": "A checklist completed mechanically, or one not updated for new standards and transactions, gives false comfort.",
+      "manual_automated": "Manual",
+      "objective": "Ensure all required disclosures are considered and included.",
+      "preventive_detective": "Detective",
+      "responsible_role": "Financial reporting manager / technical reviewer",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "description": "New, unusual or complex transactions are assessed for disclosure implications during the close process, and the assessment is documented.",
+      "evidence_of_operation": "Close file notes assessing disclosure implications of new transactions.",
+      "frequency": "At each reporting date",
+      "id": "C-FRP-010",
+      "limitations": "Relies on preparers recognising that a transaction is new or unusual; routine carry-forward thinking misses novel items.",
+      "manual_automated": "Manual",
+      "objective": "Catch disclosure requirements arising from transactions the checklist alone might miss.",
+      "preventive_detective": "Preventive",
+      "responsible_role": "Financial reporting manager",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    }
+  ],
+  "evidence": [
+    {
+      "contradictory_evidence": "Gaps in the sequence or journals in the listing that do not appear in the population tested.",
+      "description": "The complete population of manual (non-system-generated) journal entries for the period, showing journal number, date, preparer, accounts, amounts and description.",
+      "expected_characteristics": "Complete and sequentially controlled; reconcilable to the general ledger.",
+      "id": "E-FRP-001",
+      "limitations": "The listing proves what was posted, not whether it should have been.",
+      "name": "Manual journal listing",
+      "reliability_notes": "The listing is the population under test, not corroboration of it. Its reliability for completeness depends on IT controls over journal numbering and on the auditor's own completeness checks.",
+      "review_status": "Verified",
+      "source": "Internal",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Journals described as adjustments with no calculation or agreement behind them.",
+      "description": "The calculations, agreements, correspondence or other documents cited as the basis for manual journals.",
+      "expected_characteristics": "Contemporaneous, specific to the journal, and sufficient to justify the amount and accounts used.",
+      "id": "E-FRP-002",
+      "limitations": "Documents can be created after the event to justify an entry; support proves a rationale existed, not that it was the genuine reason.",
+      "name": "Supporting documents for manual journals",
+      "reliability_notes": "Third-party or system-generated support is more reliable than internally prepared explanations. Given the factor (support often absent), missing support is itself a finding, not a neutral fact.",
+      "review_status": "Verified",
+      "source": "Internal",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Approval stamps applied in bulk at period-end with no evidence of actual review.",
+      "description": "Records of who approved each manual journal and when, relative to posting.",
+      "expected_characteristics": "Approval by someone independent of the preparer, dated before or promptly after posting.",
+      "id": "E-FRP-003",
+      "limitations": "An approval record proves a signature was obtained, not that the approver understood or challenged the entry.",
+      "name": "Journal approval records",
+      "reliability_notes": "Reliability depends on the approver's independence, competence and the timing of approval; post-dated or self-approved journals weaken the evidence significantly.",
+      "review_status": "Verified",
+      "source": "Internal",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "A population that cannot be reconciled to the ledger, suggesting journals were excluded.",
+      "description": "Manual journal entries selected or flagged because they exhibit override indicators: posted by senior management, outside normal hours, round amounts, vague descriptions, to seldom-used accounts, or at period-end.",
+      "expected_characteristics": "Traceable back to the complete journal population; selection criteria documented.",
+      "id": "E-FRP-004",
+      "limitations": "Indicators are risk flags, not proof of impropriety; most flagged entries will have innocent explanations.",
+      "name": "Journal entries flagged for override indicators",
+      "reliability_notes": "System-extracted characteristics (timestamps, user IDs, amounts) are relatively reliable as facts about the entry; the inference that an indicator suggests override requires corroboration and must never be treated as proof of fraud.",
+      "review_status": "Verified",
+      "source": "Internal / Auditor-extracted",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Minutes that record no discussion of judgments, estimates or unusual items.",
+      "description": "Minutes of board and audit committee meetings covering the financial reporting process, significant judgments, and any concerns raised about override or fraud.",
+      "expected_characteristics": "Contemporaneous, identifying matters discussed and conclusions reached.",
+      "id": "E-FRP-005",
+      "limitations": "Minutes record what was minuted; sensitive discussions may be omitted or summarised blandly.",
+      "name": "Governance meeting minutes",
+      "reliability_notes": "Inquiry of those charged with governance, documented in minutes, is a required procedure but weak standalone evidence; reliability comes from consistency with other audit evidence and from the candour of the discussion.",
+      "review_status": "Verified",
+      "source": "Internal",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Estimate documentation that merely asserts a number with no workings.",
+      "description": "Management's documentation of significant accounting estimates: the method, key assumptions, sensitivity, and how estimation uncertainty was addressed.",
+      "expected_characteristics": "Dated, showing the basis for each key assumption and consideration of alternatives.",
+      "id": "E-FRP-006",
+      "limitations": "Management-prepared and inherently judgmental; documentation can rationalise a biased outcome.",
+      "name": "Documentation of significant estimates",
+      "reliability_notes": "The documentation is the item under test for bias, not corroboration of neutrality. Reliability for the audit conclusion comes from the auditor's independent challenge, sensitivity analysis and comparison with subsequent outcomes.",
+      "review_status": "Verified",
+      "source": "Internal",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Declarations contradicted by corporate registry or other public records.",
+      "description": "The entity's register of related parties together with signed declarations of interest from directors and key management personnel.",
+      "expected_characteristics": "Current, complete as to the categories of related party, and signed and dated.",
+      "id": "E-FRP-007",
+      "limitations": "Only as complete as the declarations behind it; concealed relationships leave no trace here.",
+      "name": "Related-party register and declarations of interest",
+      "reliability_notes": "Internal and declaration-dependent, so weak as proof of completeness. The auditor corroborates with independent sources (corporate registries, board minutes, shareholder records) rather than relying on the register alone.",
+      "review_status": "Verified",
+      "source": "Internal",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Corporate records showing ownership or directorships not in the register.",
+      "description": "Shareholder registers, corporate registry filings, directorship records and organisational charts used to corroborate the related-party register.",
+      "expected_characteristics": "Independent of management's declarations; current as at the reporting date.",
+      "id": "E-FRP-008",
+      "limitations": "Public records may be out of date or may not capture de facto control or close family connections.",
+      "name": "Shareholder and corporate records",
+      "reliability_notes": "More reliable than management declarations because independent of them; still limited to formal relationships, so the auditor remains alert to substance-over-form indicators.",
+      "review_status": "Verified",
+      "source": "External",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Related-party contracts with unusual terms and no business rationale documented.",
+      "description": "Contracts, invoices and correspondence for transactions identified as being with related parties.",
+      "expected_characteristics": "Complete population of identified related-party transactions; terms identifiable and comparable.",
+      "id": "E-FRP-009",
+      "limitations": "Documents show the recorded terms; whether those terms are arm's length requires separate evaluation.",
+      "name": "Related-party transaction documentation",
+      "reliability_notes": "Third-party-style documentation (signed contracts) is moderately reliable evidence of the recorded terms; it does not by itself establish that the terms are arm's length or that the transaction has commercial substance.",
+      "review_status": "Verified",
+      "source": "Internal",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Calculations that change materially with small, plausible changes in assumptions.",
+      "description": "Management's calculation schedules for significant provisions, showing the method, inputs, assumptions and mathematical workings.",
+      "expected_characteristics": "Reconcilable to the general ledger; assumptions explicitly stated; dated.",
+      "id": "E-FRP-010",
+      "limitations": "A schedule proves arithmetic, not the validity of the assumptions driving it.",
+      "name": "Provision calculation schedules",
+      "reliability_notes": "The schedule is the item under test. Reliability of the audit conclusion comes from the auditor's challenge of the assumptions and independent recalculation, not from the neatness of the schedule.",
+      "review_status": "Verified",
+      "source": "Internal",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Legal advice that contradicts the provision recognised (or not recognised).",
+      "description": "Correspondence with legal advisers about claims, litigation and disputes underlying provisions or contingent liabilities.",
+      "expected_characteristics": "Current, specific to the matter, and addressing likelihood and quantification.",
+      "id": "E-FRP-011",
+      "limitations": "Legal advice involves judgment and may be couched in cautious language; management may select which correspondence to share.",
+      "name": "Legal correspondence on claims and disputes",
+      "reliability_notes": "External legal advice is relatively reliable evidence about the status of a dispute; its use in measuring a provision still requires the auditor's evaluation of the assumptions drawn from it. Direct confirmation from legal counsel is stronger than management summaries.",
+      "review_status": "Verified",
+      "source": "External",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Post-year-end events that contradict the assumptions used at the reporting date.",
+      "description": "Information about events after the reporting date that sheds light on conditions existing at that date - for example, settlement of claims provided for.",
+      "expected_characteristics": "Relates to conditions existing at the reporting date, not new events.",
+      "id": "E-FRP-012",
+      "limitations": "Only available for matters that resolve soon after the reporting date; absence of subsequent information proves nothing.",
+      "name": "Subsequent-event evidence for provisions",
+      "reliability_notes": "High reliability where it directly observes the outcome of the uncertainty (e.g. a claim settled); it is the closest thing to direct evidence of whether the provision was reasonable.",
+      "review_status": "Verified",
+      "source": "External / Auditor-observed",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "A checklist marked complete with required disclosures missing from the statements.",
+      "description": "The auditor's (or the entity's, re-performed by the auditor) completed disclosure checklist cross-referenced to the financial statements.",
+      "expected_characteristics": "Based on the applicable framework as at the reporting date; each requirement marked as applicable/not applicable with a reference.",
+      "id": "E-FRP-013",
+      "limitations": "A checklist confirms consideration, not the quality of the disclosure; mechanical completion misses judgment areas.",
+      "name": "Disclosure checklist",
+      "reliability_notes": "An independently completed checklist is reliable evidence that requirements were considered; whether each disclosure is adequate still requires the auditor's judgment on the underlying content.",
+      "review_status": "Verified",
+      "source": "Auditor-generated",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    },
+    {
+      "contradictory_evidence": "Prior-year notes carried forward unchanged where the underlying position has changed.",
+      "description": "The draft financial statements including all notes and disclosures.",
+      "expected_characteristics": "Complete draft, reconcilable to the trial balance.",
+      "id": "E-FRP-014",
+      "limitations": "The draft is the item under test, not evidence of its own correctness.",
+      "name": "Draft financial statements",
+      "reliability_notes": "The draft is what the auditor tests, not corroboration of it; reliability of the conclusion comes from tracing disclosures to underlying records and from the independent checklist.",
+      "review_status": "Verified",
+      "source": "Internal",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md"
+    }
+  ],
+  "factor_risk": [
+    {
+      "additional_info_needed": "The volume and nature of manual journals, especially at period-end; who can post and approve journals; whether journal support is filed or routinely missing.",
+      "applicability": "Applies where manual journals are material to the financial statements, particularly period-end adjustments. Less applicable where journals are few, routine and immaterial, or where the ledger is effectively locked to manual posting.",
+      "confidence_basis": "Established audit practice: unsupported manual journals are a classic vehicle for error and for fraudulent financial reporting; the factor removes the documentary trail the auditor would otherwise test.",
+      "explanation": "Supporting documentation is what allows a journal to be vouched to a genuine underlying event. Without it, the auditor cannot distinguish a valid adjustment from an invented one. An unsupported journal is an exception - a failure of evidence - not proof that the entry is wrong; but a population of unsupported journals, especially at period-end, is a suspected fraud indicator that must be investigated, never assumed innocent or assumed fraudulent.",
+      "factor_id": "F-FRP-001",
+      "review_status": "Verified",
+      "reviewer": "Library build - deterministic rules",
+      "risk_id": "R-FRP-001",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "trigger_condition": "Manual journals material to the financial statements are posted without supporting documentation being retained or made available."
+    },
+    {
+      "additional_info_needed": "Who holds privileged system access and what it permits; the governance structure and whether challenge of management is realistic; past instances of override or control breaches.",
+      "applicability": "Applies to every audit to some degree, because management override is by nature unpredictable; the factor elevates it from a background risk to a specific concern. No set of circumstances makes the possibility of override irrelevant - only its assessed likelihood changes.",
+      "confidence_basis": "Established audit doctrine: management is in a unique position to perpetrate fraud by overriding controls that would otherwise operate effectively; the factor describes the opportunity side of the fraud triangle.",
+      "explanation": "Controls are designed to constrain staff, but those who design and oversee controls can bypass them - posting journals directly, directing subordinates, or adjusting records outside the normal process. The factor indicates opportunity, not that override has occurred: the distinction between a risk factor (opportunity exists), a suspected fraud indicator (something actually looks wrong) and confirmed fraud (proven) must be preserved throughout the auditor's work.",
+      "factor_id": "F-FRP-002",
+      "review_status": "Verified",
+      "reviewer": "Library build - deterministic rules",
+      "risk_id": "R-FRP-002",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "trigger_condition": "Management (or holders of privileged access) can post, approve or direct entries outside the normal control process without effective independent challenge."
+    },
+    {
+      "additional_info_needed": "The complexity of the group and ownership structure; whether declarations of interest are obtained; the volume of transactions with unusual counterparties or non-standard terms.",
+      "applicability": "Applies where the entity has a group structure, significant shareholders, or directors with outside business interests. Less applicable to a simple owner-managed business with no external transactions - though even there, transactions with the owner require consideration.",
+      "confidence_basis": "Established audit practice: undisclosed related-party transactions are a recognised fraud risk and a recurring source of disclosure misstatement; identification is the necessary first step before measurement and disclosure can be tested.",
+      "explanation": "A related-party transaction can only be correctly measured and disclosed if it is first recognised as related-party. Without an identification process, transactions may be recorded at non-arm's-length amounts or omitted from disclosures entirely, and the auditor has no population to test. The missing process is a control deficiency; any particular undisclosed transaction is a potential misstatement to be investigated.",
+      "factor_id": "F-FRP-003",
+      "review_status": "Verified",
+      "reviewer": "Library build - deterministic rules",
+      "risk_id": "R-FRP-003",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "trigger_condition": "No reliable process exists to identify related-party relationships and flag transactions with related parties."
+    },
+    {
+      "additional_info_needed": "Which provisions are significant and judgmental; what assumptions drive them; what supporting evidence exists; how sensitive the amounts are to the assumptions.",
+      "applicability": "Applies where significant provisions depend on judgmental assumptions - litigation, warranties, decommissioning, onerous contracts. Less applicable where provisions are formula-driven from reliable data with little judgment.",
+      "confidence_basis": "Established audit practice: unsupported assumptions in provisions are a leading cause of misstated liabilities; professional skepticism requires the auditor to treat management's assumptions as claims to be tested.",
+      "explanation": "A provision is only as good as its assumptions. Where assumptions are undocumented or unsupported, the auditor cannot tell whether the provision reflects a best estimate or a biased one - and bias in provisions is a classic earnings-management tool. An unsupported assumption is a deficiency in evidence, not proof the provision is wrong; the auditor must develop an independent expectation.",
+      "factor_id": "F-FRP-004",
+      "review_status": "Verified",
+      "reviewer": "Library build - deterministic rules",
+      "risk_id": "R-FRP-004",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "trigger_condition": "Significant provisions are recognised on the basis of assumptions that are not documented, supported or independently challenged."
+    },
+    {
+      "additional_info_needed": "The applicable financial reporting framework and any new or amended requirements; whether new or unusual transactions occurred in the period; who prepares and reviews the disclosures.",
+      "applicability": "Applies to every set of financial statements, with heightened relevance where new standards apply, new transaction types occurred, or the prior-year notes are simply rolled forward. A small, stable entity with no new transactions presents lower risk, but the completeness assertion for disclosures still requires attention.",
+      "confidence_basis": "Established audit practice: disclosure omissions are among the most common financial reporting deficiencies; a disciplined checklist-and-review process is the recognised control, and its absence is a recognised gap.",
+      "explanation": "Disclosures are easily overlooked because they do not affect the trial balance: an omitted note changes no debit or credit. Without a checklist tied to the framework and a technical review, required disclosures - particularly for new transactions or standards - are missed. An omitted disclosure is a potential misstatement of the financial statements taken as a whole, even though no account balance is wrong.",
+      "factor_id": "F-FRP-005",
+      "review_status": "Verified",
+      "reviewer": "Library build - deterministic rules",
+      "risk_id": "R-FRP-005",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "trigger_condition": "No disclosure checklist or technical review ensures that the financial statements include all disclosures required by the applicable framework."
+    }
+  ],
+  "factors": [
+    {
+      "conditions_relevant": "Relevant where manual journals are material, particularly period-end and post-closing adjustments. Less relevant where journals are few, routine and immaterial.",
+      "cycle_id": "CYC-FRP",
+      "description": "Manual (non-system-generated) journal entries are posted to the general ledger without supporting documentation being retained or made available - no calculations, agreements, correspondence or other evidence of the underlying transaction or event, and often no record of independent approval.",
+      "id": "F-FRP-001",
+      "name": "Manual journal entries lack supporting documentation",
+      "review_status": "Verified",
+      "risk_category": "Fraud risk",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "warning_signs": "Journals posted late at night, at weekends or after period close; round-sum amounts; vague descriptions such as adjustment or correction; journals posted directly by senior management; missing or bulk approval signatures."
+    },
+    {
+      "conditions_relevant": "Relevant to every audit as a background consideration; elevated to a specific concern where privileged access is broad, governance challenge is weak, or past breaches have occurred.",
+      "cycle_id": "CYC-FRP",
+      "description": "Management, or holders of privileged system access, can post or approve journals, adjust accounting records, or direct staff to bypass established controls, without effective independent challenge - for example through unrestricted super-user access, the ability to post directly to the ledger or into closed periods, or a culture in which challenge is discouraged.",
+      "id": "F-FRP-002",
+      "name": "Management can override controls",
+      "review_status": "Verified",
+      "risk_category": "Fraud risk",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "warning_signs": "Super-user access held by finance management; journals posted by senior staff outside the normal workflow; adjustments to closed periods; staff reporting instructions to bypass controls; dominant chief executive with weak board challenge."
+    },
+    {
+      "conditions_relevant": "Relevant where the entity has a group structure, significant shareholders, or directors with outside business interests. Lower relevance for a simple business with no external transactions, though owner transactions still require consideration.",
+      "cycle_id": "CYC-FRP",
+      "description": "The entity does not maintain a complete, current register of related parties, does not obtain declarations of interest from directors and key management, or has no process to identify transactions with related parties - so such transactions may occur without being flagged for appropriate measurement and disclosure.",
+      "id": "F-FRP-003",
+      "name": "Related-party transactions are not identified",
+      "review_status": "Verified",
+      "risk_category": "Inherent risk",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "warning_signs": "Transactions with unfamiliar counterparties on unusual terms; significant transactions just below approval thresholds; complex or opaque group structures; reluctance to provide a related-party list; transactions with entities sharing addresses, directors or advisers."
+    },
+    {
+      "conditions_relevant": "Relevant where significant provisions depend on judgmental assumptions - litigation, warranties, decommissioning, onerous contracts. Less relevant where provisions are formula-driven from reliable data.",
+      "cycle_id": "CYC-FRP",
+      "description": "Significant provisions are recognised on the basis of assumptions that are not documented, not supported by evidence, or not subjected to independent challenge - for example, litigation provisions based on management's unsupported view of the likely outcome, or warranty provisions carried forward unchanged without analysis.",
+      "id": "F-FRP-004",
+      "name": "Provisions are based on unsupported assumptions",
+      "review_status": "Verified",
+      "risk_category": "Inherent risk",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "warning_signs": "Provisions unchanged year on year despite changing circumstances; assumptions that always resolve in management's favour; absence of working papers behind significant estimates; reluctance to obtain external advice on material disputes."
+    },
+    {
+      "conditions_relevant": "Relevant to every set of financial statements; heightened where new standards apply, new transaction types occurred, or prior-year notes are rolled forward without updating.",
+      "cycle_id": "CYC-FRP",
+      "description": "The financial reporting close process includes no disclosure checklist tied to the applicable financial reporting framework and no technical review of the notes - so required disclosures, particularly for new transactions, new standards or changed circumstances, may be omitted or left outdated.",
+      "id": "F-FRP-005",
+      "name": "Financial statement disclosures are incomplete",
+      "review_status": "Verified",
+      "risk_category": "Control risk",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "warning_signs": "Prior-year notes carried forward verbatim; new transactions or standards with no corresponding new disclosure; disclosures that do not reconcile to the primary statements; no evidence of any disclosure review."
+    }
+  ],
+  "procedure_assertions": [
+    {
+      "assertion_id": "TRN-OCC",
+      "procedure_id": "P-FRP-001-001"
+    },
+    {
+      "assertion_id": "TRN-ACC",
+      "procedure_id": "P-FRP-001-001"
+    },
+    {
+      "assertion_id": "TRN-OCC",
+      "procedure_id": "P-FRP-001-002"
+    },
+    {
+      "assertion_id": "TRN-OCC",
+      "procedure_id": "P-FRP-001-003"
+    },
+    {
+      "assertion_id": "TRN-ACC",
+      "procedure_id": "P-FRP-002-001"
+    },
+    {
+      "assertion_id": "TRN-OCC",
+      "procedure_id": "P-FRP-002-002"
+    },
+    {
+      "assertion_id": "BAL-VAL",
+      "procedure_id": "P-FRP-002-003"
+    },
+    {
+      "assertion_id": "DIS-COM",
+      "procedure_id": "P-FRP-003-001"
+    },
+    {
+      "assertion_id": "DIS-OCC",
+      "procedure_id": "P-FRP-003-001"
+    },
+    {
+      "assertion_id": "DIS-COM",
+      "procedure_id": "P-FRP-003-002"
+    },
+    {
+      "assertion_id": "DIS-COM",
+      "procedure_id": "P-FRP-003-003"
+    },
+    {
+      "assertion_id": "DIS-VAL",
+      "procedure_id": "P-FRP-003-003"
+    },
+    {
+      "assertion_id": "BAL-VAL",
+      "procedure_id": "P-FRP-004-001"
+    },
+    {
+      "assertion_id": "BAL-VAL",
+      "procedure_id": "P-FRP-004-002"
+    },
+    {
+      "assertion_id": "BAL-COM",
+      "procedure_id": "P-FRP-004-003"
+    },
+    {
+      "assertion_id": "DIS-COM",
+      "procedure_id": "P-FRP-005-001"
+    },
+    {
+      "assertion_id": "DIS-CLS",
+      "procedure_id": "P-FRP-005-001"
+    },
+    {
+      "assertion_id": "DIS-COM",
+      "procedure_id": "P-FRP-005-002"
+    },
+    {
+      "assertion_id": "DIS-CLS",
+      "procedure_id": "P-FRP-005-003"
+    }
+  ],
+  "procedure_evidence": [
+    {
+      "evidence_id": "E-FRP-001",
+      "notes": "Listing is the population the sample is drawn from.",
+      "procedure_id": "P-FRP-001-001"
+    },
+    {
+      "evidence_id": "E-FRP-002",
+      "notes": "Support is what is vouched to.",
+      "procedure_id": "P-FRP-001-001"
+    },
+    {
+      "evidence_id": "E-FRP-003",
+      "notes": "Approval records evidence the control tested.",
+      "procedure_id": "P-FRP-001-002"
+    },
+    {
+      "evidence_id": "E-FRP-001",
+      "notes": "Listing is the population scanned.",
+      "procedure_id": "P-FRP-001-003"
+    },
+    {
+      "evidence_id": "E-FRP-004",
+      "notes": "Flagged entries are the output of the scan.",
+      "procedure_id": "P-FRP-001-003"
+    },
+    {
+      "evidence_id": "E-FRP-004",
+      "notes": "Flagged entries are the population tested.",
+      "procedure_id": "P-FRP-002-001"
+    },
+    {
+      "evidence_id": "E-FRP-002",
+      "notes": "Support (or its absence) is investigated for each flagged entry.",
+      "procedure_id": "P-FRP-002-001"
+    },
+    {
+      "evidence_id": "E-FRP-005",
+      "notes": "Minutes document the inquiries and responses.",
+      "procedure_id": "P-FRP-002-002"
+    },
+    {
+      "evidence_id": "E-FRP-006",
+      "notes": "Estimate documentation is the subject of the bias evaluation.",
+      "procedure_id": "P-FRP-002-003"
+    },
+    {
+      "evidence_id": "E-FRP-007",
+      "notes": "Register and declarations are directly inspected.",
+      "procedure_id": "P-FRP-003-001"
+    },
+    {
+      "evidence_id": "E-FRP-008",
+      "notes": "Independent records corroborate or contradict the register.",
+      "procedure_id": "P-FRP-003-002"
+    },
+    {
+      "evidence_id": "E-FRP-007",
+      "notes": "The register defines the population of identified related parties.",
+      "procedure_id": "P-FRP-003-002"
+    },
+    {
+      "evidence_id": "E-FRP-009",
+      "notes": "Transaction documentation is inspected for terms and rationale.",
+      "procedure_id": "P-FRP-003-003"
+    },
+    {
+      "evidence_id": "E-FRP-010",
+      "notes": "Calculation schedules are the subject of the challenge.",
+      "procedure_id": "P-FRP-004-001"
+    },
+    {
+      "evidence_id": "E-FRP-011",
+      "notes": "Legal correspondence corroborates or contradicts the assumptions.",
+      "procedure_id": "P-FRP-004-001"
+    },
+    {
+      "evidence_id": "E-FRP-010",
+      "notes": "Schedules provide the inputs for recalculation.",
+      "procedure_id": "P-FRP-004-002"
+    },
+    {
+      "evidence_id": "E-FRP-012",
+      "notes": "Subsequent outcomes test the reasonableness of the provision.",
+      "procedure_id": "P-FRP-004-002"
+    },
+    {
+      "evidence_id": "E-FRP-011",
+      "notes": "Legal correspondence is a source for identifying unrecorded obligations.",
+      "procedure_id": "P-FRP-004-003"
+    },
+    {
+      "evidence_id": "E-FRP-013",
+      "notes": "The checklist is the primary output of this procedure.",
+      "procedure_id": "P-FRP-005-001"
+    },
+    {
+      "evidence_id": "E-FRP-014",
+      "notes": "The draft statements are what the checklist is applied to.",
+      "procedure_id": "P-FRP-005-001"
+    },
+    {
+      "evidence_id": "E-FRP-014",
+      "notes": "Draft disclosures are traced to these records.",
+      "procedure_id": "P-FRP-005-002"
+    },
+    {
+      "evidence_id": "E-FRP-013",
+      "notes": "New transactions are checked against the checklist requirements.",
+      "procedure_id": "P-FRP-005-003"
+    }
+  ],
+  "procedures": [
+    {
+      "exception_criteria": "Journals with no support, inadequate support, or support that does not justify the amount or accounts used; self-approved or unapproved material journals.",
+      "expected_result": "Each tested journal is supported by documentation that justifies the amount, the accounts used and the period, and was approved independently of the preparer.",
+      "follow_up": "Investigate each unsupported journal: obtain the business rationale, quantify the effect, and consider whether the pattern (timing, preparer, accounts) indicates a systematic issue. A cluster of unsupported period-end journals is a suspected fraud indicator - investigate thoroughly, document the basis for conclusions, and never dismiss it without evidence. Do not conclude fraud from the absence of support alone.",
+      "id": "P-FRP-001-001",
+      "objective": "Determine whether manual journals represent genuine, supportable adjustments.",
+      "population": "All manual journal entries posted in the period.",
+      "procedure_type": "Vouching",
+      "review_status": "Verified",
+      "sampling_notes": "Stratified selection weighted toward period-end and post-closing journals, large or round amounts, and journals posted by senior staff; include a random element.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Obtain the complete listing of manual journal entries for the period and confirm its completeness to the general ledger.",
+        "Select journals for testing, weighting selection toward period-end entries, large or round amounts, and entries posted by senior management.",
+        "For each selected journal, inspect the supporting documentation and evaluate whether it justifies the amount, the accounts debited and credited, and the period recorded.",
+        "Verify that each material journal was approved by someone independent of the preparer.",
+        "Document journals lacking adequate support as exceptions for follow-up."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Inspect manual journals and vouch to supporting documentation"
+    },
+    {
+      "exception_criteria": "Material journals posted without independent approval; preparers approving their own journals; approvals obtained long after posting as a formality.",
+      "expected_result": "Material manual journals are approved by an independent person before, or promptly after, posting.",
+      "follow_up": "Treat approval failures as control exceptions; extend substantive testing of journals where the approval control did not operate; report the deficiency.",
+      "id": "P-FRP-001-002",
+      "objective": "Test whether the independent-approval control over manual journals operated.",
+      "population": "Manual journals above the approval threshold in the period.",
+      "procedure_type": "Inspection",
+      "review_status": "Verified",
+      "sampling_notes": "Sample across the period with emphasis on period-end; include journals just above and below the threshold.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Select a sample of manual journals above the approval threshold.",
+        "Inspect the approval record for each: identity of approver, independence from the preparer, and timing relative to posting.",
+        "Test for journals that bypassed approval by comparing the journal population with approval records.",
+        "Note self-approvals and post-dated bulk approvals as control exceptions."
+      ],
+      "test_type": "Test of controls",
+      "title": "Test independent approval of manual journals"
+    },
+    {
+      "exception_criteria": "Entries exhibiting override indicators for which no satisfactory explanation and corroboration is obtained.",
+      "expected_result": "Unusual entries are identified, investigated, and either satisfactorily explained with corroborating evidence or reported as exceptions.",
+      "follow_up": "Investigate each unexplained unusual entry with the preparer and approver; corroborate explanations; if explanations are unsatisfactory, extend testing to related accounts and consider the fraud risk implications - without presuming fraud.",
+      "id": "P-FRP-001-003",
+      "objective": "Identify unusual manual journals that warrant individual investigation.",
+      "population": "The full manual journal population (computer-assisted scan).",
+      "procedure_type": "Analytical procedures",
+      "review_status": "Verified",
+      "sampling_notes": "Full-population scan; investigation thresholds set with regard to materiality and the fraud risk assessment.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Define unusual-entry criteria: postings outside normal hours, round amounts, vague descriptions, entries by senior management, entries to seldom-used or sensitive accounts, and post-closing adjustments.",
+        "Scan the full manual journal population against these criteria.",
+        "For each flagged entry, obtain an explanation and corroborating evidence.",
+        "Summarise flagged entries, explanations obtained, and items remaining unexplained."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Scan the manual journal population for unusual entries"
+    },
+    {
+      "exception_criteria": "Flagged entries with unsatisfactory explanations or corroboration; a pattern of entries directed by management outside the normal process.",
+      "expected_result": "Each flagged entry is explained by a valid business reason supported by corroborating evidence; no pattern of inappropriate override is identified.",
+      "follow_up": "Where explanations are unsatisfactory, extend procedures to the affected accounts, inquire of those charged with governance, and evaluate whether the matter represents a suspected fraud indicator requiring further response. Document every conclusion; do not dismiss indicators without evidence.",
+      "id": "P-FRP-002-001",
+      "objective": "Respond to the override risk with targeted testing of journal entries most susceptible to manipulation.",
+      "population": "Journal entries (including non-standard and consolidation entries) exhibiting override indicators.",
+      "procedure_type": "Inspection",
+      "review_status": "Verified",
+      "sampling_notes": "Targeted selection on indicators, not statistical sampling; the population is defined by the risk, not by size.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Extract journal entries exhibiting override indicators: entries made by senior management, outside normal hours, at period-end, in round amounts, to seldom-used accounts, or with vague descriptions.",
+        "For each selected entry, inspect the entry, its support and its approval, and evaluate the business rationale.",
+        "Inquire of the preparer and approver about the purpose of entries that lack an obvious rationale, and corroborate responses.",
+        "Evaluate the pattern of findings taken together for signs of systematic override."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Perform targeted testing of journal entries for management override indicators"
+    },
+    {
+      "exception_criteria": "Responses that are evasive, inconsistent with other audit evidence, or that reveal actual override or fraud.",
+      "expected_result": "Inquiries are documented, responses are consistent with other audit evidence, and any matters raised are followed up.",
+      "follow_up": "Corroborate responses against other evidence; follow up any matter raised; if responses indicate actual override or fraud, respond accordingly under the applicable standards - escalating, extending procedures and considering implications for the audit.",
+      "id": "P-FRP-002-002",
+      "objective": "Obtain the perspective of those charged with governance on override and fraud risks.",
+      "population": "Those charged with governance and, separately, management.",
+      "procedure_type": "Inquiry",
+      "review_status": "Verified",
+      "sampling_notes": "Not a sampling procedure; inquire of the appropriate individuals, including at least one person independent of management where such a person exists.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Inquire of those charged with governance about their awareness of any actual, suspected or alleged fraud, and about their views on the risk of management override.",
+        "Inquire how those charged with governance exercise oversight of management's processes for identifying and responding to fraud risks.",
+        "Inquire of management about the same matters and compare responses.",
+        "Document the inquiries and follow up inconsistencies or matters raised."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Inquire of those charged with governance about override and fraud"
+    },
+    {
+      "exception_criteria": "A pattern of assumptions consistently favouring management's reported position; estimates at the extreme optimistic end of a reasonable range without justification.",
+      "expected_result": "Significant estimates are neutral: assumptions are supportable, within a reasonable range, and any bias identified is quantified and evaluated.",
+      "follow_up": "Quantify the effect of neutral assumptions and evaluate whether bias, individually or in aggregate, indicates a risk of material misstatement due to fraud. A one-sided pattern is a suspected fraud indicator: extend procedures, challenge further, and document the conclusion without presuming intent.",
+      "id": "P-FRP-002-003",
+      "objective": "Detect whether significant accounting estimates show signs of management bias.",
+      "population": "All significant accounting estimates in the period.",
+      "procedure_type": "Analytical procedures",
+      "review_status": "Verified",
+      "sampling_notes": "Census of significant estimates; professional judgment determines significance.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "For each significant estimate, compare management's assumptions with historical outcomes, market data and the auditor's independent expectations.",
+        "Perform sensitivity analysis to show how the estimate moves with plausible changes in assumptions.",
+        "Look back at prior-period estimates against actual outcomes for a pattern of optimism or pessimism.",
+        "Step back and evaluate whether the estimates, taken together, lean consistently in one direction."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Evaluate significant accounting estimates for indicators of management bias"
+    },
+    {
+      "exception_criteria": "No register maintained; register materially incomplete when compared with independent sources; declarations not obtained or outdated.",
+      "expected_result": "A current, complete register of related parties exists, supported by recent declarations of interest.",
+      "follow_up": "Where the register is incomplete, the auditor must build the related-party population independently (see the search procedure) and treat the gap as a control deficiency.",
+      "id": "P-FRP-003-001",
+      "objective": "Establish the population of related parties the entity claims to have identified.",
+      "population": "The related-party register and declarations of interest.",
+      "procedure_type": "Inspection",
+      "review_status": "Verified",
+      "sampling_notes": "Inspect the register in full; it is a population, not a sample.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Obtain the related-party register and inspect it for completeness across the categories of related party.",
+        "Inspect declarations of interest from directors and key management for currency and coverage.",
+        "Compare the register with the prior period and investigate additions and removals.",
+        "Note gaps, outdated entries and missing declarations as exceptions."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Inspect the related-party register and declarations of interest"
+    },
+    {
+      "exception_criteria": "Relationships or transactions identified that were not in the entity's register or disclosures.",
+      "expected_result": "The auditor's independent search either confirms the register's completeness or identifies omissions for follow-up and disclosure.",
+      "follow_up": "Investigate each newly identified relationship: establish the transactions with it, evaluate measurement and disclosure, and quantify omissions. Consider why the process missed it.",
+      "id": "P-FRP-003-002",
+      "objective": "Independently identify related-party relationships the entity's process may have missed.",
+      "population": "Shareholder and corporate records, board minutes, significant contracts, and unusual transactions.",
+      "procedure_type": "Analytical procedures",
+      "review_status": "Verified",
+      "sampling_notes": "Targeted search; focus on unfamiliar counterparties, non-standard terms, and transactions lacking commercial logic.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Inspect shareholder registers, corporate registry filings and organisational charts for relationships not in the register.",
+        "Review board minutes and significant contracts for transactions with unfamiliar counterparties or on unusual terms.",
+        "Scan significant and unusual transactions for indicators of related-party involvement (shared addresses, common directors or advisers, non-arm's-length terms).",
+        "For each indication, investigate and establish whether a related-party relationship exists."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Search for undisclosed related-party relationships and transactions"
+    },
+    {
+      "exception_criteria": "Transactions without commercial substance, on terms significantly off-market without justification, or lacking business rationale.",
+      "expected_result": "Each tested related-party transaction has commercial substance, is measured appropriately, and its terms and rationale are documented.",
+      "follow_up": "Challenge unsupported assertions of arm's-length terms; quantify measurement effects; evaluate disclosure; where substance is doubtful, consider the fraud risk implications without presuming fraud.",
+      "id": "P-FRP-003-003",
+      "objective": "Evaluate whether identified related-party transactions are genuine, appropriately measured and adequately disclosed.",
+      "population": "All identified related-party transactions in the period.",
+      "procedure_type": "Vouching",
+      "review_status": "Verified",
+      "sampling_notes": "Census of material transactions; sample smaller recurring ones.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Obtain the population of identified related-party transactions.",
+        "For each selected transaction, inspect the underlying contract or agreement and evaluate its commercial substance and business rationale.",
+        "Evaluate whether the terms are consistent with arm's-length terms or, where not, whether measurement reflects the actual terms.",
+        "Verify that the transaction is completely and understandably disclosed."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Inspect the terms and business rationale of related-party transactions"
+    },
+    {
+      "exception_criteria": "Assumptions that are undocumented, contradicted by available evidence, or at an unjustified extreme of a reasonable range.",
+      "expected_result": "Each key assumption is documented, consistent with available evidence (including legal advice where relevant), and within a reasonable range.",
+      "follow_up": "Develop the auditor's independent expectation and quantify the difference; propose adjustments for material differences; where assumptions cannot be supported, treat the estimate as a significant risk and extend procedures. Distinguish honest estimation uncertainty from bias: challenge the evidence, not the person.",
+      "id": "P-FRP-004-001",
+      "objective": "Test whether the assumptions behind significant provisions are supportable.",
+      "population": "Significant provisions at the reporting date.",
+      "procedure_type": "Inspection",
+      "review_status": "Verified",
+      "sampling_notes": "Census of significant provisions; professional judgment determines significance.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Obtain the provision calculation schedules and identify the key assumptions driving each significant provision.",
+        "Inspect the supporting evidence for each assumption: legal correspondence, historical claims data, expert reports, contracts.",
+        "Challenge the assumptions: are they consistent with each other, with other audit evidence, and with conditions at the reporting date?",
+        "Inquire of management about how the assumptions were developed and corroborate the responses."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Inspect and challenge the assumptions underlying significant provisions"
+    },
+    {
+      "exception_criteria": "Recalculation differences; provisions highly sensitive to small, plausible assumption changes such that the range of reasonable outcomes includes material misstatement.",
+      "expected_result": "Provisions are mathematically accurate and the auditor understands the sensitivity of each significant provision to its key assumptions.",
+      "follow_up": "Where sensitivity shows a wide range of reasonable outcomes, evaluate whether the recognised amount is the best estimate within the range and whether estimation uncertainty is adequately disclosed.",
+      "id": "P-FRP-004-002",
+      "objective": "Verify the arithmetic of provisions and understand their sensitivity to assumptions.",
+      "population": "Significant provision calculations.",
+      "procedure_type": "Recalculation",
+      "review_status": "Verified",
+      "sampling_notes": "Census of significant provisions.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Independently recalculate each significant provision from its stated method and inputs.",
+        "Perform sensitivity analysis on key assumptions to establish the range of reasonable outcomes.",
+        "Compare the recognised amount with the auditor's independent range and with subsequent-event evidence where available.",
+        "Evaluate whether estimation uncertainty is adequately disclosed."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Recalculate provisions and perform sensitivity analysis"
+    },
+    {
+      "exception_criteria": "Obligating events or exposures identified that have no corresponding provision or disclosure.",
+      "expected_result": "No material unrecorded provisions are identified; where identified, they are quantified and recognised or disclosed as appropriate.",
+      "follow_up": "Quantify the omitted provision, propose adjustment, and investigate why the process missed it - a systematic gap is a control deficiency.",
+      "id": "P-FRP-004-003",
+      "objective": "Detect obligations requiring provision or disclosure that management has not recognised.",
+      "population": "Legal correspondence, board minutes, contracts, and correspondence about claims and disputes.",
+      "procedure_type": "Inquiry",
+      "review_status": "Verified",
+      "sampling_notes": "Targeted search; focus on new litigation, regulatory matters, warranties and onerous contracts.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Review legal correspondence and board minutes for claims, disputes and regulatory matters.",
+        "Inquire of management and, where appropriate, legal counsel about unasserted claims and exposures.",
+        "Inspect contracts for onerous terms, guarantees and decommissioning obligations.",
+        "For each matter identified, evaluate whether a provision or disclosure is required and whether it has been made."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Search for unrecorded provisions"
+    },
+    {
+      "exception_criteria": "Required disclosures missing, outdated, or not updated for new transactions or standards.",
+      "expected_result": "The checklist identifies all disclosures required by the applicable framework, and each is present in the financial statements or its omission is justified.",
+      "follow_up": "List each missing or inadequate disclosure, discuss with management, and evaluate whether the omission is material to the financial statements taken as a whole.",
+      "id": "P-FRP-005-001",
+      "objective": "Independently verify the completeness of financial statement disclosures.",
+      "population": "The disclosure requirements of the applicable financial reporting framework as at the reporting date.",
+      "procedure_type": "Inspection",
+      "review_status": "Verified",
+      "sampling_notes": "Not a sampling procedure; the checklist covers the full framework, tailored for applicability.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Complete an independent disclosure checklist based on the applicable framework, marking each requirement as applicable or not applicable with a cross-reference.",
+        "Compare the checklist with the draft financial statements and identify missing or outdated disclosures.",
+        "Pay particular attention to new standards, new transaction types, and changed circumstances in the period.",
+        "Discuss each gap with management and evaluate its materiality."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Complete an independent disclosure checklist"
+    },
+    {
+      "exception_criteria": "Disclosure amounts that do not agree to the underlying records; narrative disclosures contradicted by audit evidence.",
+      "expected_result": "Disclosed amounts agree to the underlying accounting records and narrative disclosures are consistent with audit evidence.",
+      "follow_up": "Investigate and resolve each disagreement; propose corrections; evaluate whether disagreements indicate wider disclosure-control weaknesses.",
+      "id": "P-FRP-005-002",
+      "objective": "Verify the accuracy of disclosed amounts and the consistency of narrative disclosures.",
+      "population": "Material disclosures in the notes to the financial statements.",
+      "procedure_type": "Tracing",
+      "review_status": "Verified",
+      "sampling_notes": "Focus on material and judgmental disclosures; census of new disclosures in the period.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Select material disclosures and trace the amounts to the underlying accounting records and supporting schedules.",
+        "Read narrative disclosures critically and compare them with audit evidence obtained elsewhere.",
+        "Verify that accounting policies disclosed are those actually applied.",
+        "Check internal consistency between the notes and the primary statements."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Trace disclosure amounts to underlying records"
+    },
+    {
+      "exception_criteria": "New or unusual transactions with disclosure implications that were not considered.",
+      "expected_result": "All new, unusual or complex transactions in the period have been assessed for disclosure implications and the assessment is documented.",
+      "follow_up": "Where implications were missed, draft the required disclosure considerations and discuss with management; treat a pattern of misses as a control deficiency.",
+      "id": "P-FRP-005-003",
+      "objective": "Ensure novel transactions have been considered for disclosure.",
+      "population": "New, unusual or complex transactions in the period.",
+      "procedure_type": "Inquiry",
+      "review_status": "Verified",
+      "sampling_notes": "Judgmental selection based on the auditor's knowledge of the period's activity.",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "steps": [
+        "Identify new, unusual or complex transactions from other audit work (journals, board minutes, contracts).",
+        "Inquire of management what disclosure consideration was given to each.",
+        "Evaluate independently whether disclosure is required and whether the proposed disclosure is adequate.",
+        "Document the assessment for each transaction."
+      ],
+      "test_type": "Substantive procedure",
+      "title": "Review new and unusual transactions for disclosure implications"
+    }
+  ],
+  "risk_assertions": [
+    {
+      "assertion_id": "TRN-OCC",
+      "conditions": "Relevant where manual journals are material; occurrence is the primary assertion at risk when entries lack support.",
+      "risk_id": "R-FRP-001",
+      "why_relevant": "A journal without supporting documentation may not represent a genuine transaction or event; the occurrence assertion for the recorded entries is therefore at risk."
+    },
+    {
+      "assertion_id": "TRN-ACC",
+      "conditions": "Relevant where manual journals adjust material balances; the amounts must still be correctly calculated.",
+      "risk_id": "R-FRP-001",
+      "why_relevant": "Even where a journal reflects a genuine event, the absence of supporting calculations means the recorded amount may be inaccurate."
+    },
+    {
+      "assertion_id": "TRN-OCC",
+      "conditions": "Relevant wherever override could be exercised through journal entries - which is the typical vehicle for override.",
+      "risk_id": "R-FRP-002",
+      "why_relevant": "Management override most commonly manifests as fictitious or unsupported journal entries; the occurrence of recorded transactions and events is the assertion directly threatened."
+    },
+    {
+      "assertion_id": "BAL-VAL",
+      "conditions": "Relevant where override could be used to manipulate estimates, valuations or impairment conclusions rather than journals alone.",
+      "risk_id": "R-FRP-002",
+      "why_relevant": "Override may also operate through biased assumptions in estimates and valuations, affecting the carrying amounts of assets and liabilities."
+    },
+    {
+      "assertion_id": "DIS-COM",
+      "conditions": "Relevant wherever related-party transactions have occurred; the disclosure population depends on identification.",
+      "risk_id": "R-FRP-003",
+      "why_relevant": "A related-party transaction that is never identified can never be disclosed; completeness of related-party disclosures fails at the identification step."
+    },
+    {
+      "assertion_id": "DIS-OCC",
+      "conditions": "Relevant where related-party transactions are disclosed; the disclosures must reflect genuine transactions with genuine related parties.",
+      "risk_id": "R-FRP-003",
+      "why_relevant": "Undisclosed related-party involvement can also mean the stated counterparty to a transaction is not the real one - the occurrence and rights-and-obligations assertions for the disclosed transactions are affected."
+    },
+    {
+      "assertion_id": "BAL-VAL",
+      "conditions": "Relevant where significant provisions depend on judgmental assumptions.",
+      "risk_id": "R-FRP-004",
+      "why_relevant": "The measurement of a provision is driven by its assumptions; unsupported assumptions mean the recognised amount may not represent a best estimate."
+    },
+    {
+      "assertion_id": "BAL-COM",
+      "conditions": "Relevant where obligating events may exist that management has not provided for.",
+      "risk_id": "R-FRP-004",
+      "why_relevant": "A process that does not support its assumptions may equally fail to recognise obligations at all; the population of provisions may be incomplete."
+    },
+    {
+      "assertion_id": "DIS-COM",
+      "conditions": "Relevant to every set of financial statements; heightened where new standards or transactions apply.",
+      "risk_id": "R-FRP-005",
+      "why_relevant": "The risk is precisely that required disclosures are missing - completeness of presentation and disclosure is the assertion directly affected."
+    },
+    {
+      "assertion_id": "DIS-CLS",
+      "conditions": "Relevant where disclosures exist but may be poorly organised, unclear or misclassified, particularly for new or complex matters.",
+      "risk_id": "R-FRP-005",
+      "why_relevant": "Even where information is disclosed, it may not be classified and presented understandably; incomplete processes also produce disclosures that confuse rather than inform."
+    },
+    {
+      "risk_id": "R-FRP-002",
+      "assertion_id": "TRN-ACC",
+      "why_relevant": "Where override is exercised through journal entries - the combined scenario this rule addresses - the amounts recorded by those entries may be deliberately inaccurate, not merely fictitious.",
+      "conditions": "Relevant in the combined scenario where management override capability coincides with undocumented manual journals."
+    }
+  ],
+  "risk_controls": [
+    {
+      "control_id": "C-FRP-001",
+      "explanation": "Directly addresses the factor by requiring the support and approval whose absence is the finding.",
+      "risk_id": "R-FRP-001"
+    },
+    {
+      "control_id": "C-FRP-002",
+      "explanation": "Detects unusual journals that slipped through, or where, the approval control - the backstop the factor removes.",
+      "risk_id": "R-FRP-001"
+    },
+    {
+      "control_id": "C-FRP-003",
+      "explanation": "Independent governance oversight is the primary deterrent and detection mechanism for override.",
+      "risk_id": "R-FRP-002"
+    },
+    {
+      "control_id": "C-FRP-004",
+      "explanation": "Restricts the technical means (privileged access, closed-period posting) through which override is typically exercised.",
+      "risk_id": "R-FRP-002"
+    },
+    {
+      "control_id": "C-FRP-005",
+      "explanation": "The register and declarations are the identification process the factor says is missing.",
+      "risk_id": "R-FRP-003"
+    },
+    {
+      "control_id": "C-FRP-006",
+      "explanation": "Screens transactions so identified related parties actually trigger the right accounting treatment.",
+      "risk_id": "R-FRP-003"
+    },
+    {
+      "control_id": "C-FRP-007",
+      "explanation": "Independent challenge is the control that would force assumptions to be supported.",
+      "risk_id": "R-FRP-004"
+    },
+    {
+      "control_id": "C-FRP-008",
+      "explanation": "Look-back analysis detects the pattern of bias that unsupported assumptions can conceal.",
+      "risk_id": "R-FRP-004"
+    },
+    {
+      "control_id": "C-FRP-009",
+      "explanation": "The checklist-and-review control is the process whose absence is the factor.",
+      "risk_id": "R-FRP-005"
+    },
+    {
+      "control_id": "C-FRP-010",
+      "explanation": "Catches the novel items a checklist alone might miss.",
+      "risk_id": "R-FRP-005"
+    },
+    {
+      "risk_id": "R-FRP-002",
+      "control_id": "C-FRP-001",
+      "explanation": "Relevant to override risk in the combined scenario (RULE-FRP-002B): supported, independently approved journals narrow the channel through which override is exercised."
+    }
+  ],
+  "risk_procedures": [
+    {
+      "procedure_id": "P-FRP-001-001",
+      "reason": "Core test: vouches journals to the support the factor says is missing.",
+      "risk_id": "R-FRP-001"
+    },
+    {
+      "procedure_id": "P-FRP-001-002",
+      "reason": "Tests whether the approval control that should compensate for weak support operated.",
+      "risk_id": "R-FRP-001"
+    },
+    {
+      "procedure_id": "P-FRP-001-003",
+      "reason": "Full-population scan to find the unusual entries most likely to be problematic.",
+      "risk_id": "R-FRP-001"
+    },
+    {
+      "procedure_id": "P-FRP-002-001",
+      "reason": "The standard, required response to an assessed override risk: targeted journal testing.",
+      "risk_id": "R-FRP-002"
+    },
+    {
+      "procedure_id": "P-FRP-002-002",
+      "reason": "Obtains the governance perspective on override and fraud, as required where the risk is assessed.",
+      "risk_id": "R-FRP-002"
+    },
+    {
+      "procedure_id": "P-FRP-002-003",
+      "reason": "Addresses the non-journal channel of override: bias in significant estimates.",
+      "risk_id": "R-FRP-002"
+    },
+    {
+      "procedure_id": "P-FRP-003-001",
+      "reason": "Establishes the claimed population of related parties.",
+      "risk_id": "R-FRP-003"
+    },
+    {
+      "procedure_id": "P-FRP-003-002",
+      "reason": "Independently tests the completeness the entity's process cannot assure.",
+      "risk_id": "R-FRP-003"
+    },
+    {
+      "procedure_id": "P-FRP-003-003",
+      "reason": "Tests measurement and disclosure for the transactions identified.",
+      "risk_id": "R-FRP-003"
+    },
+    {
+      "procedure_id": "P-FRP-004-001",
+      "reason": "Directly challenges the unsupported assumptions at the heart of the risk.",
+      "risk_id": "R-FRP-004"
+    },
+    {
+      "procedure_id": "P-FRP-004-002",
+      "reason": "Tests arithmetic and establishes how much the answer depends on the assumptions.",
+      "risk_id": "R-FRP-004"
+    },
+    {
+      "procedure_id": "P-FRP-004-003",
+      "reason": "Tests the completeness assertion: obligations never provided for.",
+      "risk_id": "R-FRP-004"
+    },
+    {
+      "procedure_id": "P-FRP-005-001",
+      "reason": "The auditor's independent substitute for the missing checklist control.",
+      "risk_id": "R-FRP-005"
+    },
+    {
+      "procedure_id": "P-FRP-005-002",
+      "reason": "Tests that what is disclosed is accurate and consistent.",
+      "risk_id": "R-FRP-005"
+    },
+    {
+      "procedure_id": "P-FRP-005-003",
+      "reason": "Catches disclosure implications of novel transactions the checklist might miss.",
+      "risk_id": "R-FRP-005"
+    },
+    {
+      "risk_id": "R-FRP-002",
+      "procedure_id": "P-FRP-001-001",
+      "reason": "Relevant to override risk specifically in the combined scenario (RULE-FRP-002B): where override capability coincides with undocumented journals, vouching journals to support is a direct override response."
+    },
+    {
+      "risk_id": "R-FRP-002",
+      "procedure_id": "P-FRP-001-002",
+      "reason": "Relevant to override risk in the combined scenario (RULE-FRP-002B): testing whether journal approval operated is part of the intensified journal testing override demands."
+    },
+    {
+      "risk_id": "R-FRP-002",
+      "procedure_id": "P-FRP-001-003",
+      "reason": "Relevant to override risk in the combined scenario (RULE-FRP-002B): scanning the full journal population for unusual entries targets the entries most susceptible to override."
+    }
+  ],
+  "risks": [
+    {
+      "causes": "Period-end time pressure; weak journal approval discipline; preparers who do not understand what constitutes adequate support; deliberate omission of support to conceal inappropriate entries.",
+      "cycle_id": "CYC-FRP",
+      "description": "Manual journal entries may be invalid, inaccurate or unsupported, and the absence of documentation means the auditor cannot vouch them to genuine underlying transactions or events. Period-end journals are particularly susceptible because of the pressure to close and the opportunity to adjust reported results.",
+      "id": "R-FRP-001",
+      "inherent_risk_notes": "Risk increases with the volume of manual journals, the extent of period-end adjustment, and the seniority of those posting. An unsupported journal is an exception - a failure of evidence - and a cluster of unsupported period-end journals is a suspected fraud indicator. Neither proves that a misstatement exists; each must be investigated on its own evidence, and fraud must never be concluded from the absence of support alone.",
+      "potential_consequences": "Account balances and transaction totals may be misstated by invalid or inaccurate journals. Errors and irregularities may be concealed within unsupported adjustments. The financial statements may reflect management's desired outcome rather than underlying performance.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Unsupported manual journal entries misstate the financial statements"
+    },
+    {
+      "causes": "Concentration of authority in senior management; weak or dominated governance; broad privileged system access; performance pressure combined with opportunity; a culture in which challenge is discouraged.",
+      "cycle_id": "CYC-FRP",
+      "description": "Management may override controls that would otherwise operate effectively - posting journals directly, directing staff to process inappropriate entries, or adjusting records outside the normal process - in order to misstate the financial statements. Override is by nature unpredictable and can affect any account or disclosure.",
+      "id": "R-FRP-002",
+      "inherent_risk_notes": "The factor describes opportunity, not occurrence: the ability to override does not prove that override has happened. Throughout the work the auditor must distinguish the risk factor (opportunity exists), the identified risk (override could cause material misstatement), a suspected fraud indicator (something actually looks wrong), and confirmed fraud (proven). A failed test in this area raises the assessed risk; it does not by itself prove fraud.",
+      "potential_consequences": "Material misstatement anywhere in the financial statements, including through fictitious journals, biased estimates, or concealed transactions. Normal controls provide no protection against override, so the auditor's response must be specifically designed for it.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Fraudulent financial reporting through management override of controls"
+    },
+    {
+      "causes": "Complex or opaque group and ownership structures; directors with undisclosed outside interests; no assigned responsibility for maintaining related-party information; transactions deliberately structured to obscure the relationship.",
+      "cycle_id": "CYC-FRP",
+      "description": "Transactions with related parties may occur at non-arm's-length terms, lack commercial substance, or remain entirely undisclosed, because no process identifies the relationships in the first place. Both measurement and disclosure may then be wrong.",
+      "id": "R-FRP-003",
+      "inherent_risk_notes": "Risk increases with structural complexity and with the volume of transactions lacking obvious commercial logic. The missing identification process is a control deficiency; any particular undisclosed transaction is a potential misstatement to be investigated. The presence of this factor does not prove that undisclosed related-party transactions exist.",
+      "potential_consequences": "Related-party disclosures may be incomplete or misleading. Transactions may be measured on terms that do not reflect their substance. Users may be unaware of relationships that affect their assessment of the entity.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Undisclosed or improperly measured related-party transactions"
+    },
+    {
+      "causes": "Genuine estimation uncertainty combined with inadequate discipline; management optimism or pessimism; reluctance to obtain external advice; assumptions carried forward without re-examination; earnings-management incentives.",
+      "cycle_id": "CYC-FRP",
+      "description": "Provisions may be materially over- or understated, or required provisions omitted entirely, because the assumptions underlying them are undocumented, unsupported by evidence, or never independently challenged.",
+      "id": "R-FRP-004",
+      "inherent_risk_notes": "Estimation uncertainty is inherent in provisions; the risk here is the absence of the support and challenge that would keep estimates honest. An unsupported assumption is a deficiency in evidence, not proof the provision is wrong - the auditor must develop an independent expectation. The presence of this factor does not prove that a misstatement exists.",
+      "potential_consequences": "Liabilities may be materially misstated, affecting profit, net assets and key ratios. Estimation uncertainty may not be disclosed. A pattern of one-sided assumptions may indicate bias, which is a fraud risk factor.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Materially misstated provisions from unsupported assumptions"
+    },
+    {
+      "causes": "No assigned responsibility for disclosures; prior-year notes rolled forward without updating; new standards or transactions not assessed; preparers focused on the trial balance rather than the notes.",
+      "cycle_id": "CYC-FRP",
+      "description": "Financial statements may omit disclosures required by the applicable financial reporting framework, or present outdated or unclear disclosures, because no checklist or technical review ensures completeness. The primary statements may balance perfectly while the notes mislead by omission.",
+      "id": "R-FRP-005",
+      "inherent_risk_notes": "An omitted disclosure does not affect any account balance, which is why the risk is easily overlooked. The factor is a control gap in the reporting process; whether any particular omission is material requires judgment. The presence of this factor does not prove that required disclosures are missing.",
+      "potential_consequences": "Users may lack information material to their decisions - about risks, uncertainties, related parties, or subsequent events. The financial statements taken as a whole may be misleading despite accurate primary statements.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Incomplete or inadequate financial statement disclosures"
+    }
+  ],
+  "rules": [
+    {
+      "effective_date": "2026-10-21",
+      "name": "Undocumented manual journals -> occurrence and accuracy risk",
+      "priority": 10,
+      "rationale": "Supporting documentation is what allows a journal to be vouched to a genuine event; without it the auditor cannot distinguish valid adjustments from invented ones. The rule directs the auditor to vouch journals to support, test the approval control, and scan the full population for unusual entries - treating unsupported journals as exceptions to investigate, never as proof of misstatement or of fraud.",
+      "review_status": "Verified",
+      "reviewed_by": "Library build - deterministic rules",
+      "rule_id": "RULE-FRP-001",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "status": "Active",
+      "then": {
+        "assertion_ids": [
+          "TRN-OCC",
+          "TRN-ACC"
+        ],
+        "control_ids": [
+          "C-FRP-001",
+          "C-FRP-002"
+        ],
+        "missing_information": [
+          "The volume and nature of manual journals, especially at period-end.",
+          "Who can post and approve journals, and whether support is filed or routinely missing.",
+          "Whether the journal population can be extracted completely from the system."
+        ],
+        "note": "A cluster of unsupported period-end journals is a suspected fraud indicator: investigate thoroughly on evidence, but never conclude fraud from the absence of support alone.",
+        "procedure_ids": [
+          "P-FRP-001-001",
+          "P-FRP-001-002",
+          "P-FRP-001-003"
+        ],
+        "risk_ids": [
+          "R-FRP-001"
+        ]
+      },
+      "version": 1,
+      "when": {
+        "all": [
+          {
+            "factor_id": "F-FRP-001",
+            "type": "factor_selected"
+          }
+        ],
+        "any": [],
+        "exclude": []
+      }
+    },
+    {
+      "effective_date": "2026-10-21",
+      "name": "Management override capability -> fraud risk responses",
+      "priority": 10,
+      "rationale": "Those who design and oversee controls can bypass them, so normal controls provide no protection against override. The rule directs the auditor to the specific responses override requires: targeted journal-entry testing, inquiries of those charged with governance, and evaluation of estimates for bias - while preserving the distinction between opportunity, suspected indicator and confirmed fraud. v2: excludes F-FRP-001 - when unsupported manual journals are also present, the narrower RULE-FRP-002B (priority 5) fires instead, adding the journal-testing battery without duplicating the override procedures.",
+      "review_status": "Verified",
+      "reviewed_by": "Library build - deterministic rules",
+      "rule_id": "RULE-FRP-002A",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "status": "Active",
+      "then": {
+        "assertion_ids": [
+          "TRN-OCC",
+          "BAL-VAL"
+        ],
+        "control_ids": [
+          "C-FRP-003",
+          "C-FRP-004"
+        ],
+        "missing_information": [
+          "Who holds privileged system access and what it permits.",
+          "The governance structure and whether independent challenge of management is realistic.",
+          "Any past instances of override or control breaches."
+        ],
+        "note": "This rule fires on the override factor alone. Where undocumented manual journals are also present, the narrower priority-5 rule (RULE-FRP-002B) takes precedence and adds intensified journal testing.",
+        "procedure_ids": [
+          "P-FRP-002-001",
+          "P-FRP-002-002",
+          "P-FRP-002-003"
+        ],
+        "risk_ids": [
+          "R-FRP-002"
+        ]
+      },
+      "version": 2,
+      "when": {
+        "all": [
+          {
+            "factor_id": "F-FRP-002",
+            "type": "factor_selected"
+          }
+        ],
+        "any": [],
+        "exclude": [
+          {
+            "type": "factor_selected",
+            "factor_id": "F-FRP-001"
+          }
+        ]
+      }
+    },
+    {
+      "effective_date": "2026-10-21",
+      "name": "Override plus undocumented journals -> intensified journal testing",
+      "priority": 5,
+      "rationale": "Management override capability combined with a population of undocumented manual journals is the highest-risk combination in financial reporting: the means (override) and the vehicle (unsupported journals) are both present. The narrower rule takes precedence over the general override rule and adds the full journal-testing battery - vouching, approval testing and population scanning - to the override procedures.",
+      "review_status": "Verified",
+      "reviewed_by": "Library build - deterministic rules",
+      "rule_id": "RULE-FRP-002B",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "status": "Active",
+      "then": {
+        "assertion_ids": [
+          "TRN-OCC",
+          "TRN-ACC"
+        ],
+        "control_ids": [
+          "C-FRP-001",
+          "C-FRP-003"
+        ],
+        "missing_information": [
+          "Whether the journal population can be extracted completely, including post-closing entries.",
+          "Which individuals posted and approved the unusual entries identified.",
+          "Whether governance is aware of the override indicators found."
+        ],
+        "note": "Priority 5 makes this rule take precedence over RULE-FRP-002A when both factors are selected; its procedure set is the union of journal testing and override testing. Findings here are suspected fraud indicators to be investigated on evidence - never presumed to be fraud.",
+        "procedure_ids": [
+          "P-FRP-001-001",
+          "P-FRP-001-002",
+          "P-FRP-001-003",
+          "P-FRP-002-001"
+        ],
+        "risk_ids": [
+          "R-FRP-002"
+        ]
+      },
+      "version": 1,
+      "when": {
+        "all": [
+          {
+            "factor_id": "F-FRP-002",
+            "type": "factor_selected"
+          },
+          {
+            "factor_id": "F-FRP-001",
+            "type": "factor_selected"
+          }
+        ],
+        "any": [],
+        "exclude": []
+      }
+    },
+    {
+      "effective_date": "2026-10-21",
+      "name": "No related-party identification -> disclosure completeness risk",
+      "priority": 20,
+      "rationale": "A related-party transaction can only be correctly measured and disclosed if it is first recognised as related-party. The rule directs the auditor to inspect the claimed population, to independently search for what the entity's process missed, and to test the substance, measurement and disclosure of what is found.",
+      "review_status": "Verified",
+      "reviewed_by": "Library build - deterministic rules",
+      "rule_id": "RULE-FRP-003",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "status": "Active",
+      "then": {
+        "assertion_ids": [
+          "DIS-COM",
+          "DIS-OCC"
+        ],
+        "control_ids": [
+          "C-FRP-005",
+          "C-FRP-006"
+        ],
+        "missing_information": [
+          "The complexity of the group and ownership structure.",
+          "Whether declarations of interest are obtained and how current they are.",
+          "The volume of transactions with unfamiliar counterparties or non-standard terms."
+        ],
+        "note": "The missing process is a control deficiency; any particular undisclosed transaction found is a potential misstatement to investigate, not an assumed fraud.",
+        "procedure_ids": [
+          "P-FRP-003-001",
+          "P-FRP-003-002",
+          "P-FRP-003-003"
+        ],
+        "risk_ids": [
+          "R-FRP-003"
+        ]
+      },
+      "version": 1,
+      "when": {
+        "all": [
+          {
+            "factor_id": "F-FRP-003",
+            "type": "factor_selected"
+          }
+        ],
+        "any": [],
+        "exclude": []
+      }
+    },
+    {
+      "effective_date": "2026-10-21",
+      "name": "Unsupported provision assumptions -> measurement and completeness risk",
+      "priority": 30,
+      "rationale": "A provision is only as good as its assumptions; undocumented assumptions cannot be distinguished from biased ones. The rule directs the auditor to challenge each key assumption against evidence, to recalculate and sensitivity-test the amounts, and to search for obligations never provided for - developing an independent expectation rather than accepting management's number.",
+      "review_status": "Verified",
+      "reviewed_by": "Library build - deterministic rules",
+      "rule_id": "RULE-FRP-004",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "status": "Active",
+      "then": {
+        "assertion_ids": [
+          "BAL-VAL",
+          "BAL-COM"
+        ],
+        "control_ids": [
+          "C-FRP-007",
+          "C-FRP-008"
+        ],
+        "missing_information": [
+          "Which provisions are significant and judgmental, and what assumptions drive them.",
+          "What supporting evidence exists for the key assumptions.",
+          "How sensitive each significant provision is to its assumptions."
+        ],
+        "note": "Distinguish honest estimation uncertainty from bias: challenge the evidence, not the person. A one-sided pattern of assumptions is a fraud risk factor, not proof of fraud.",
+        "procedure_ids": [
+          "P-FRP-004-001",
+          "P-FRP-004-002",
+          "P-FRP-004-003"
+        ],
+        "risk_ids": [
+          "R-FRP-004"
+        ]
+      },
+      "version": 1,
+      "when": {
+        "all": [
+          {
+            "type": "factor_selected",
+            "factor_id": "F-FRP-004"
+          }
+        ],
+        "any": [],
+        "exclude": []
+      }
+    },
+    {
+      "effective_date": "2026-10-21",
+      "name": "No disclosure completeness process -> omitted disclosures risk",
+      "priority": 40,
+      "rationale": "Disclosures do not affect the trial balance, so they are missed without a disciplined process. The rule directs the auditor to act as the missing control: complete an independent disclosure checklist, trace disclosed amounts to the records, and assess novel transactions for disclosure implications.",
+      "review_status": "Verified",
+      "reviewed_by": "Library build - deterministic rules",
+      "rule_id": "RULE-FRP-005",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "status": "Active",
+      "then": {
+        "assertion_ids": [
+          "DIS-COM",
+          "DIS-CLS"
+        ],
+        "control_ids": [
+          "C-FRP-009",
+          "C-FRP-010"
+        ],
+        "missing_information": [
+          "The applicable financial reporting framework and any new or amended requirements.",
+          "Whether new or unusual transactions occurred in the period.",
+          "Who prepares and reviews the disclosures."
+        ],
+        "note": "An omitted disclosure misstates the financial statements taken as a whole even though no account balance is wrong; materiality is judged on the needs of users.",
+        "procedure_ids": [
+          "P-FRP-005-001",
+          "P-FRP-005-002",
+          "P-FRP-005-003"
+        ],
+        "risk_ids": [
+          "R-FRP-005"
+        ]
+      },
+      "version": 1,
+      "when": {
+        "all": [
+          {
+            "factor_id": "F-FRP-005",
+            "type": "factor_selected"
+          }
+        ],
+        "any": [],
+        "exclude": []
+      }
+    }
+  ]
+}

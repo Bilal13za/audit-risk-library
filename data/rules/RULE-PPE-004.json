@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-PPE-004",
+    "then": {
+      "assertion_ids": [
+        "BAL-VAL",
+        "DIS-COM"
+      ],
+      "control_ids": [
+        "C-PPE-007",
+        "C-PPE-008"
+      ],
+      "missing_information": [
+        "Whether any assets, operations or markets show signs of underperformance, idleness, damage or adverse change.",
+        "How management currently considers impairment, if at all.",
+        "The definition and composition of cash-generating units."
+      ],
+      "note": "The absence of an assessment process does not prove impairment exists; the auditor must form an independent view on indicators before concluding on measurement.",
+      "procedure_ids": [
+        "P-PPE-004-001",
+        "P-PPE-004-002",
+        "P-PPE-004-003"
+      ],
+      "risk_ids": [
+        "R-PPE-004"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PPE-004",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "No impairment indicator process -> unrecognised impairment risk",
+  "priority": 25,
+  "rationale": "Impairment is only recognised if indicators are first noticed; without a process to look for them, carrying amounts can remain overstated. The rule directs the auditor to evaluate management's assessment (or its absence), to independently identify indicators through analytical procedures, and to test measurement where indicators exist.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PPE-004",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-VAL",
+      "DIS-COM"
+    ],
+    "control_ids": [
+      "C-PPE-007",
+      "C-PPE-008"
+    ],
+    "missing_information": [
+      "Whether any assets, operations or markets show signs of underperformance, idleness, damage or adverse change.",
+      "How management currently considers impairment, if at all.",
+      "The definition and composition of cash-generating units."
+    ],
+    "note": "The absence of an assessment process does not prove impairment exists; the auditor must form an independent view on indicators before concluding on measurement.",
+    "procedure_ids": [
+      "P-PPE-004-001",
+      "P-PPE-004-002",
+      "P-PPE-004-003"
+    ],
+    "risk_ids": [
+      "R-PPE-004"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PPE-004",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

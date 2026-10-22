@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-PUR-005",
+    "then": {
+      "assertion_ids": [
+        "TRN-CUT",
+        "TRN-COM"
+      ],
+      "control_ids": [
+        "C-PUR-009",
+        "C-PUR-010"
+      ],
+      "missing_information": [
+        "How posting dates are determined (receipt date vs invoice date).",
+        "The lag between receipt and processing at period end.",
+        "Whether cut-off errors were found in prior periods."
+      ],
+      "note": "Cut-off errors can fall in either direction and are often error rather than fraud; testing covers both directions.",
+      "procedure_ids": [
+        "P-PUR-013",
+        "P-PUR-014",
+        "P-PUR-015"
+      ],
+      "risk_ids": [
+        "R-PUR-005"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PUR-005",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Wrong-period purchase recording -> cut-off risk",
+  "priority": 50,
+  "rationale": "The correct period for a purchase is determined by receipt, not by invoice processing. The rule directs two-directional cut-off testing, GRN tracing for completeness, and trend analysis to focus testing on the months most at risk.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PUR-005",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-CUT",
+      "TRN-COM"
+    ],
+    "control_ids": [
+      "C-PUR-009",
+      "C-PUR-010"
+    ],
+    "missing_information": [
+      "How posting dates are determined (receipt date vs invoice date).",
+      "The lag between receipt and processing at period end.",
+      "Whether cut-off errors were found in prior periods."
+    ],
+    "note": "Cut-off errors can fall in either direction and are often error rather than fraud; testing covers both directions.",
+    "procedure_ids": [
+      "P-PUR-013",
+      "P-PUR-014",
+      "P-PUR-015"
+    ],
+    "risk_ids": [
+      "R-PUR-005"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PUR-005",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

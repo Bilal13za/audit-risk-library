@@ -1,0 +1,508 @@
+{
+  "analytical_procedures": [
+    {
+      "area": "Revenue",
+      "cycle_id": "CYC-REV",
+      "detail": "Plot monthly revenue for the current year against the prior year and the approved budget. Compute the percentage change for each month and for the year to date. Document known business changes (new product launches, price changes, lost customers) before concluding.",
+      "expected_relationship": "Revenue should follow the prior-year seasonal pattern and move broadly in line with budget, adjusted for documented business changes.",
+      "follow_up": "Disaggregate the variance by product line, customer or branch. Corroborate explanations with dispatch records and sales orders. If the spike is concentrated in the final days of the period, extend cut-off testing; consider fraud risk indicators where the explanation is unsupported.",
+      "id": "AP-REV-101",
+      "investigation_threshold": "Any monthly variance exceeding 10% against prior year or budget, or a break in the established seasonal trend.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Monthly revenue trend vs prior year and budget"
+    },
+    {
+      "area": "Revenue",
+      "cycle_id": "CYC-REV",
+      "detail": "Compute gross margin percentage (revenue less cost of sales, divided by revenue) by product line or business segment for each month or quarter, and compare with the same periods in the prior year.",
+      "expected_relationship": "Gross margins should be broadly stable period to period unless the sales mix, pricing or input costs have changed in a documented way.",
+      "follow_up": "Analyse the cost-of-sales components behind the movement (purchase prices, production costs, discounts). Check for unrecorded costs, misclassified expenses, or revenue recognised before the related costs. Disaggregate further where the movement is concentrated.",
+      "id": "AP-REV-102",
+      "investigation_threshold": "A margin shift of more than 3-5 percentage points on a product line without a documented commercial reason.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Gross margin by product line vs prior periods"
+    },
+    {
+      "area": "Revenue",
+      "cycle_id": "CYC-REV",
+      "detail": "Compare recorded revenue with non-financial operating data: units dispatched per shipping logs, production volumes, or (for services) billable hours or headcount. Compute implied average price per unit and track it over time.",
+      "expected_relationship": "Recorded revenue should move with dispatch or service-delivery volumes; the implied average price should be consistent with the approved price list and discount policy.",
+      "follow_up": "Investigate pricing, discount and rebate changes. Vouch a sample of revenue entries to dispatch notes or service records. Where revenue grows without corresponding volumes, treat as a fraud risk indicator and extend occurrence testing - do not assume fraud has occurred.",
+      "id": "AP-REV-103",
+      "investigation_threshold": "Divergence of more than 5% between revenue growth and volume growth, or an implied average price materially out of line with the price list.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Revenue vs non-financial data (units dispatched)"
+    },
+    {
+      "area": "Trade receivables",
+      "cycle_id": "CYC-REV",
+      "detail": "Compute receivables days as (trade receivables / credit sales) x 365 each month, and compare with the entity's stated credit terms and with the prior-year trend.",
+      "expected_relationship": "Receivables days should approximate the stated credit terms and remain broadly stable unless terms or the customer mix have changed.",
+      "follow_up": "Review the aged receivables listing, focusing on the oldest balances. Test the adequacy of the bad-debt provision, examine subsequent cash receipts, and consider whether revenue recognition or collectability assumptions need revision.",
+      "id": "AP-REV-201",
+      "investigation_threshold": "Receivables days exceeding credit terms by more than 15 days, or a deteriorating trend over three or more consecutive months.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Receivables days vs credit terms trend"
+    },
+    {
+      "area": "Trade receivables",
+      "cycle_id": "CYC-REV",
+      "detail": "Bucket gross receivables into current, 1-30, 31-60, 61-90 and 90+ days overdue at the reporting date and at the prior year-end. Compare the percentage of the balance in each bucket.",
+      "expected_relationship": "The ageing profile should resemble the prior year unless credit policy, the customer base or economic conditions have changed.",
+      "follow_up": "For balances migrating into older buckets, test specific provisions, review correspondence with the customer, and test subsequent receipts. Consider whether the change indicates revenue recognised without genuine sales.",
+      "id": "AP-REV-202",
+      "investigation_threshold": "The 90+ days bucket growing by more than 20%, or doubling as a share of total receivables, without a documented reason.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Ageing profile vs prior year"
+    },
+    {
+      "area": "Trade receivables",
+      "cycle_id": "CYC-REV",
+      "detail": "Express the bad-debt provision as a percentage of gross receivables and compare it with actual write-offs as a percentage of sales over the last three years.",
+      "expected_relationship": "The provision rate should cover the historical loss experience, adjusted for current conditions affecting specific debtors.",
+      "follow_up": "Challenge management's assumptions with the aged listing and subsequent receipts. If write-offs consistently exceed the provision, treat the estimation process as biased and extend recoverability testing.",
+      "id": "AP-REV-203",
+      "investigation_threshold": "Provision below half of the three-year average loss rate, or actual write-offs exceeding the provision in two consecutive years.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Bad-debt provision vs write-off history"
+    },
+    {
+      "area": "Inventory",
+      "cycle_id": "CYC-INV",
+      "detail": "Compute inventory days as (inventory / cost of sales) x 365 by inventory category (raw materials, work in progress, finished goods) and compare with the prior year.",
+      "expected_relationship": "Inventory days should be stable unless purchasing, production or sales patterns have changed in a documented way.",
+      "follow_up": "For categories with rising days, perform obsolescence and net realisable value testing, review slow-moving reports, and inspect the physical condition of aged stock.",
+      "id": "AP-INV-301",
+      "investigation_threshold": "An increase of more than 20% or 30 days in any category without an operational explanation.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Inventory days by category vs prior year"
+    },
+    {
+      "area": "Inventory",
+      "cycle_id": "CYC-INV",
+      "detail": "Compare the percentage growth in the inventory balance with the percentage growth in revenue and in cost of sales over the same period.",
+      "expected_relationship": "Inventory should grow broadly in line with the level of activity; a business selling more normally needs more inventory, not disproportionately more.",
+      "follow_up": "Investigate purchasing activity and production planning. Inspect whether the growth sits in slow-moving lines, and test the obsolescence provision. Consider whether costs are being capitalised into inventory that should be expensed.",
+      "id": "AP-INV-302",
+      "investigation_threshold": "Inventory growth exceeding revenue growth by more than 15 percentage points.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Inventory growth vs revenue growth (overstocking signal)"
+    },
+    {
+      "area": "Inventory",
+      "cycle_id": "CYC-INV",
+      "detail": "Identify inventory items with no movement for 6 and 12 months, value them, and express slow-moving stock as a percentage of total inventory. Compare the obsolescence provision against the slow-moving value.",
+      "expected_relationship": "The provision for obsolescence should cover a reasonable share of slow-moving and aged stock, consistent with past write-off experience.",
+      "follow_up": "Perform net realisable value testing on aged lines (subsequent sales prices less costs to sell). Challenge management where the provision has not moved with the slow-moving balance.",
+      "id": "AP-INV-303",
+      "investigation_threshold": "Slow-moving stock above 15% of inventory with a provision covering less than a quarter of the slow-moving value.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Slow-moving ratio vs obsolescence provision"
+    },
+    {
+      "area": "Trade payables",
+      "cycle_id": "CYC-PUR",
+      "detail": "Compute payables days as (trade payables / purchases) x 365 each month and compare with supplier payment terms and the prior-year trend.",
+      "expected_relationship": "Payables days should approximate agreed payment terms and remain stable unless terms or purchasing patterns changed.",
+      "follow_up": "For significant movements, perform supplier statement reconciliations and unrecorded-liability procedures. A sharp fall may indicate liabilities settled to flatter the year-end position; a sharp rise may indicate cash-flow strain or unrecorded liabilities.",
+      "id": "AP-PUR-401",
+      "investigation_threshold": "A year-on-year movement of more than 25% in payables days without a documented change in terms.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Payables days vs payment terms trend"
+    },
+    {
+      "area": "Trade payables",
+      "cycle_id": "CYC-PUR",
+      "detail": "Reconcile recorded purchases to cost of sales plus the movement in inventory (purchases should approximately equal cost of sales plus closing inventory less opening inventory), investigating the reconciling difference.",
+      "expected_relationship": "Purchases should reconcile to cost of sales adjusted for the inventory movement, subject to timing and classification differences that can be explained.",
+      "follow_up": "Investigate the difference through cut-off testing around the reporting date and completeness testing of goods received notes. An unexplained shortfall in purchases relative to cost of sales may indicate unrecorded liabilities.",
+      "id": "AP-PUR-402",
+      "investigation_threshold": "An unexplained reconciling difference exceeding 5% of recorded purchases.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Purchases vs inventory movement reasonableness"
+    },
+    {
+      "area": "Trade payables",
+      "cycle_id": "CYC-PUR",
+      "detail": "List all payments made in the first four to six weeks after the reporting date above a defined threshold. For each, trace back to the supplier invoice and the goods received note or service date to establish when the liability was incurred.",
+      "expected_relationship": "Post-year-end payments should relate to liabilities incurred after the reporting date; any payment for pre-year-end goods or services should have been accrued.",
+      "follow_up": "Propose accruals for unrecorded liabilities identified. If the pattern is widespread, extend the search period and the threshold downwards, and reconsider the completeness risk assessment for payables.",
+      "id": "AP-PUR-403",
+      "investigation_threshold": "Any payment relating to goods or services received before the reporting date that was not accrued.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Post-year-end payment scan for unrecorded liabilities"
+    },
+    {
+      "area": "Payroll",
+      "cycle_id": "CYC-PAY",
+      "detail": "Compute total payroll cost per head (gross pay plus employer contributions) by department each month, and compare with the prior year and the approved budget. Adjust for known pay awards.",
+      "expected_relationship": "Cost per head should move with approved pay awards and inflation, and remain consistent across comparable departments.",
+      "follow_up": "Analyse the drivers: starters, leavers, overtime, bonuses and rate changes. Unexplained increases may indicate ghost employees or unauthorised payments - test leaver processing and perform headcount reconciliations.",
+      "id": "AP-PAY-501",
+      "investigation_threshold": "A variance above 8% against prior year or budget that cannot be tied to a documented pay award or headcount change.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Payroll cost per head vs prior year and budget"
+    },
+    {
+      "area": "Payroll",
+      "cycle_id": "CYC-PAY",
+      "detail": "Express overtime cost as a percentage of gross payroll each month by department, and plot the trend over the year and against the prior year.",
+      "expected_relationship": "Overtime should be broadly stable with explainable seasonal or operational peaks (for example, production shutdowns or peak trading).",
+      "follow_up": "Test the independent approval of overtime for the spike periods and compare claimed hours with production or time-recording records. Persistent unexplained overtime may indicate fictitious hours claimed.",
+      "id": "AP-PAY-502",
+      "investigation_threshold": "A sustained increase of more than 30%, or a spike in a period with no operational reason.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Overtime as a percentage of payroll trend"
+    },
+    {
+      "area": "Payroll",
+      "cycle_id": "CYC-PAY",
+      "detail": "Reconcile the headcount on the payroll master file to HR establishment records (joiners, leavers, transfers) each month, and investigate every difference.",
+      "expected_relationship": "The payroll headcount should agree with HR records at all times; every leaver should be removed before the next pay run.",
+      "follow_up": "For each unexplained difference, verify the employee's existence and employment status, trace payments made after the leaving date, and quantify any overpayment for recovery and adjustment.",
+      "id": "AP-PAY-503",
+      "investigation_threshold": "Any unexplained difference between payroll and HR headcount records.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Headcount per payroll vs HR records"
+    },
+    {
+      "area": "Property, plant and equipment",
+      "cycle_id": "CYC-PPE",
+      "detail": "Compute the depreciation charge as a percentage of average gross property, plant and equipment by asset class, and compare with the weighted-average depreciation rate implied by the stated useful lives.",
+      "expected_relationship": "The ratio should approximate the stated depreciation rate for each class, adjusted for the timing of additions and disposals in the year.",
+      "follow_up": "Recalculate depreciation on a sample of assets. Review whether useful lives and residual values remain appropriate, and check that additions were depreciated from the correct date and disposals ceased on disposal.",
+      "id": "AP-PPE-601",
+      "investigation_threshold": "A variance of more than 10% from the expected rate for an asset class.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Depreciation charge vs asset base reasonableness"
+    },
+    {
+      "area": "Property, plant and equipment",
+      "cycle_id": "CYC-PPE",
+      "detail": "Compare actual capital expenditure with the approved budget, and compare the growth in capital expenditure with the growth in revenue over the same period.",
+      "expected_relationship": "Capital expenditure should be broadly in line with budget, and sustained capex growth should be accompanied by capacity or revenue growth.",
+      "follow_up": "Vouch material additions to invoices and completion certificates, test that capitalisation criteria were met (and repairs were not capitalised), and confirm authorisation levels were observed.",
+      "id": "AP-PPE-602",
+      "investigation_threshold": "Capital expenditure more than 20% over budget, or a capex surge with no corresponding revenue or capacity growth.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Capital expenditure vs budget and revenue growth"
+    },
+    {
+      "area": "Property, plant and equipment",
+      "cycle_id": "CYC-PPE",
+      "detail": "Express repairs and maintenance expense as a percentage of gross property, plant and equipment and plot the trend over three years, alongside the average age of the asset base.",
+      "expected_relationship": "Repairs and maintenance should rise gradually as assets age; a stable or gently rising ratio is normal.",
+      "follow_up": "A sudden fall may indicate repairs being capitalised - inspect the repairs accounts for capital items and test capitalisation decisions. A spike may indicate deferred maintenance or an unrecorded impairment indicator.",
+      "id": "AP-PPE-603",
+      "investigation_threshold": "A year-on-year fall of more than 20% in the ratio, or a spike inconsistent with the asset age profile.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Repairs and maintenance vs asset age trend"
+    },
+    {
+      "area": "Cash and bank",
+      "cycle_id": "CYC-CSH",
+      "detail": "Compute the effective yield as interest received divided by average cash and bank balances for the year, and compare with prevailing market deposit rates.",
+      "expected_relationship": "The yield should be in line with market rates for the types of account held; significant interest with minimal balances (or vice versa) is not plausible.",
+      "follow_up": "Confirm the completeness of bank accounts through bank confirmations and a review of all facilities. Investigate interest arising without corresponding balances, which may indicate unrecorded accounts or misclassified income.",
+      "id": "AP-CSH-701",
+      "investigation_threshold": "An effective yield materially below market rates, or interest recorded in a period with negligible average balances.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Interest income vs average cash balances"
+    },
+    {
+      "area": "Cash and bank",
+      "cycle_id": "CYC-CSH",
+      "detail": "Plot the cash and bank balance trend over the year against revenue and working-capital movements, noting persistent overdrafts, period-end spikes, or unexplained build-ups.",
+      "expected_relationship": "Cash should move broadly with the operating cycle; profits should generally convert into cash over time, subject to working-capital investment.",
+      "follow_up": "Understand restrictions on balances (for example, margin deposits or escrow). Persistent overdrafts alongside reported profits, or large period-end movements that reverse afterwards, warrant extended cash testing and fraud consideration.",
+      "id": "AP-CSH-702",
+      "investigation_threshold": "A period-end cash movement exceeding 25% of average balances that reverses in the following month, or profits with no corresponding cash generation over two consecutive years.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Cash vs working-capital trend"
+    },
+    {
+      "area": "Cash and bank",
+      "cycle_id": "CYC-CSH",
+      "detail": "Extract all bank transfers above a defined threshold, with emphasis on round amounts, transfers to unfamiliar beneficiaries, and transfers in the final and first weeks of the reporting period. List them chronologically with purpose.",
+      "expected_relationship": "Every material transfer should have a documented business purpose and, for new beneficiaries, evidence of independent verification.",
+      "follow_up": "Vouch each flagged transfer to supporting documentation and the underlying business rationale. For unexplained transfers, especially around year-end, consider fraud risk indicators and extend procedures to related accounts - do not assume fraud has occurred.",
+      "id": "AP-CSH-703",
+      "investigation_threshold": "Any round-amount transfer to a new or unfamiliar beneficiary, or any material transfer around year-end without a clear business purpose.",
+      "review_status": "Verified",
+      "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+      "title": "Large and round-amount transfer scan"
+    }
+  ],
+  "control_objective_links": [
+    {
+      "control_id": "C-REV-001",
+      "objective_id": "OBJ-001",
+      "explanation": "Billing is blocked until delivery or performance evidence is matched, so recorded sales have a genuine underlying transaction."
+    },
+    {
+      "control_id": "C-REV-005",
+      "objective_id": "OBJ-001",
+      "explanation": "The three-way match of order, dispatch note and invoice confirms the sale was ordered, delivered and billed consistently."
+    },
+    {
+      "control_id": "C-REV-006",
+      "objective_id": "OBJ-001",
+      "explanation": "The exception report catches invoices raised without dispatch evidence, and independent clearance forces each case to be justified."
+    },
+    {
+      "control_id": "C-REV-003",
+      "objective_id": "OBJ-002",
+      "explanation": "Reconciling sequential dispatch notes to invoices (and accruing unmatched dispatches) ensures every genuine dispatch becomes a recorded sale."
+    },
+    {
+      "control_id": "C-REV-004",
+      "objective_id": "OBJ-002",
+      "explanation": "Recording sales by dispatch date through system rules or a cut-off checklist ensures valid sales fall in the correct period and none are omitted."
+    },
+    {
+      "control_id": "C-PUR-001",
+      "objective_id": "OBJ-003",
+      "explanation": "The three-way match of invoice, purchase order and goods received note confirms the purchase was ordered and the goods arrived before payment is approved."
+    },
+    {
+      "control_id": "C-PUR-002",
+      "objective_id": "OBJ-003",
+      "explanation": "Independent review of invoices approved without matching GRNs challenges purchases that bypassed the validity check."
+    },
+    {
+      "control_id": "C-PUR-007",
+      "objective_id": "OBJ-003",
+      "explanation": "Automatic rejection of duplicate invoice numbers prevents the same purchase being recorded and paid twice."
+    },
+    {
+      "control_id": "C-PUR-003",
+      "objective_id": "OBJ-004",
+      "explanation": "Sequential control of GRNs with period-end accrual of unmatched receipts ensures liabilities exist for all goods received."
+    },
+    {
+      "control_id": "C-PUR-004",
+      "objective_id": "OBJ-004",
+      "explanation": "Recording purchases by goods receipt date puts the liability in the correct period."
+    },
+    {
+      "control_id": "C-PUR-009",
+      "objective_id": "OBJ-004",
+      "explanation": "The cut-off checklist forces payables staff to capture pre-period receipts found on post-period invoices."
+    },
+    {
+      "control_id": "C-PUR-010",
+      "objective_id": "OBJ-004",
+      "explanation": "Reviewing post-year-end invoices for pre-year-end receipts is a detective control over unrecorded liabilities."
+    },
+    {
+      "control_id": "C-PAY-001",
+      "objective_id": "OBJ-005",
+      "explanation": "Timely leaver notification with confirmed removal stops payments to employees who have left."
+    },
+    {
+      "control_id": "C-PAY-002",
+      "objective_id": "OBJ-005",
+      "explanation": "Independent reconciliation of payroll headcount to HR records detects ghost or terminated employees remaining on the payroll."
+    },
+    {
+      "control_id": "C-PAY-003",
+      "objective_id": "OBJ-005",
+      "explanation": "Independent approval of master changes prevents fictitious employees or altered pay rates and bank details being inserted."
+    },
+    {
+      "control_id": "C-PAY-008",
+      "objective_id": "OBJ-005",
+      "explanation": "Independent review of the payroll summary against the ledger before release provides a final check that only valid payroll is paid."
+    },
+    {
+      "control_id": "C-INV-001",
+      "objective_id": "OBJ-006",
+      "explanation": "Restricting warehouse access to authorised personnel prevents unauthorised removal, protecting the existence of recorded inventory."
+    },
+    {
+      "control_id": "C-INV-002",
+      "objective_id": "OBJ-006",
+      "explanation": "Independent physical counts with investigated differences verify that recorded quantities actually exist."
+    },
+    {
+      "control_id": "C-INV-001",
+      "objective_id": "OBJ-007",
+      "explanation": "Physical restriction of warehouse and high-value storage areas is the direct access control over inventory."
+    },
+    {
+      "control_id": "C-FRP-004",
+      "objective_id": "OBJ-007",
+      "explanation": "Restricting privileged system access with logged and reviewed actions protects accounting records from unauthorised change."
+    },
+    {
+      "control_id": "C-PAY-004",
+      "objective_id": "OBJ-007",
+      "explanation": "Segregating payroll master maintenance from payment processing prevents one person creating an employee and paying them."
+    },
+    {
+      "control_id": "C-FRP-001",
+      "objective_id": "OBJ-008",
+      "explanation": "Threshold-based independent approval with supporting evidence, and no self-approval, validates manual journals before posting."
+    },
+    {
+      "control_id": "C-FRP-002",
+      "objective_id": "OBJ-008",
+      "explanation": "Periodic review of the complete journal listing for unusual entries detects invalid or override journals after posting."
+    },
+    {
+      "control_id": "C-FRP-003",
+      "objective_id": "OBJ-008",
+      "explanation": "Governance oversight of significant judgments and unusual journals, with a reporting channel, counters management override."
+    },
+    {
+      "control_id": "C-REV-008",
+      "objective_id": "OBJ-008",
+      "explanation": "Independent approval of material revenue journals addresses the highest-risk journal population specifically."
+    },
+    {
+      "control_id": "C-CSH-001",
+      "objective_id": "OBJ-009",
+      "explanation": "Prompt monthly reconciliations with independent review and investigation of unusual items keep bank balances accurate."
+    },
+    {
+      "control_id": "C-CSH-002",
+      "objective_id": "OBJ-009",
+      "explanation": "Investigating and clearing aged outstanding items prevents stale reconciling items from masking errors."
+    },
+    {
+      "control_id": "C-CSH-005",
+      "objective_id": "OBJ-009",
+      "explanation": "Logging all inter-account transfers and matching both sides prevents transfers in transit being double-counted or omitted."
+    },
+    {
+      "control_id": "C-CSH-006",
+      "objective_id": "OBJ-009",
+      "explanation": "Year-end cut-off procedures for transfers in transit ensure the reported cash position is correct."
+    },
+    {
+      "control_id": "C-FRP-005",
+      "objective_id": "OBJ-010",
+      "explanation": "A maintained register of related parties, updated for changes and supported by declarations, makes identification possible."
+    },
+    {
+      "control_id": "C-FRP-006",
+      "objective_id": "OBJ-010",
+      "explanation": "Screening material transactions against the register before approval flags related-party transactions for proper measurement and disclosure."
+    },
+    {
+      "control_id": "C-FRP-007",
+      "objective_id": "OBJ-011",
+      "explanation": "Independent review and challenge of provision calculations and assumptions ensures the estimate is supportable."
+    },
+    {
+      "control_id": "C-FRP-008",
+      "objective_id": "OBJ-011",
+      "explanation": "Look-back comparison of estimates with actual outcomes exposes systematic bias in the estimation process."
+    },
+    {
+      "control_id": "C-FRP-009",
+      "objective_id": "OBJ-012",
+      "explanation": "A framework-based disclosure checklist, completed and independently reviewed, ensures required disclosures are not omitted."
+    },
+    {
+      "control_id": "C-FRP-010",
+      "objective_id": "OBJ-012",
+      "explanation": "Assessing new, unusual or complex transactions for disclosure implications during close captures disclosures the checklist alone might miss."
+    }
+  ],
+  "control_objectives": [
+    {
+      "id": "OBJ-001",
+      "objective": "All recorded sales represent genuine goods dispatched or services rendered.",
+      "description": "Sales recorded in the ledger should correspond to real deliveries of goods or performance of services for genuine customers.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-002",
+      "objective": "All valid sales transactions are recorded.",
+      "description": "Every genuine sale made by the entity should be captured in the accounting records in the correct period.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-003",
+      "objective": "Purchases are valid and authorised.",
+      "description": "Recorded purchases should represent genuine goods and services received, ordered through proper authorisation.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-004",
+      "objective": "All liabilities incurred are recorded.",
+      "description": "Every obligation arising from goods received or services consumed should be recognised as a liability in the correct period.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-005",
+      "objective": "Payroll is paid only to bona fide employees for work performed.",
+      "description": "Salary and wage payments should go only to genuine current employees, at authorised rates, for time actually worked.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-006",
+      "objective": "Recorded inventory exists and is owned by the entity.",
+      "description": "Inventory quantities in the records should physically exist, be in saleable condition, and belong to the entity.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-007",
+      "objective": "Access to assets and records is restricted to authorised personnel.",
+      "description": "Physical assets, cash, inventory and the accounting system should be protected against unauthorised access or change.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-008",
+      "objective": "Journal entries are valid and authorised.",
+      "description": "Manual journals, the main route for management override, should be supported, independently approved and reviewed for unusual items.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-009",
+      "objective": "Bank balances are accurately reconciled and independently reviewed.",
+      "description": "Recorded cash and bank balances should agree with bank statements after valid reconciling items, with aged items investigated.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-010",
+      "objective": "Related-party transactions are identified and appropriately disclosed.",
+      "description": "Transactions with related parties should be detected before approval so they can be measured and disclosed correctly.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-011",
+      "objective": "Provisions reflect management's best estimate.",
+      "description": "Provisions should be based on supportable assumptions that are challenged independently and checked against actual outcomes.",
+      "review_status": "Verified"
+    },
+    {
+      "id": "OBJ-012",
+      "objective": "Financial statement disclosures are complete.",
+      "description": "All disclosures required by the applicable financial reporting framework should be included and understandable.",
+      "review_status": "Verified"
+    }
+  ],
+  "controls": []
+}

@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-TEL-002",
+    "then": {
+      "assertion_ids": [
+        "TRN-ACC",
+        "TRN-CUT",
+        "TRN-CLS"
+      ],
+      "control_ids": [
+        "C-TEL-002-1",
+        "C-TEL-002-2"
+      ],
+      "missing_information": [
+        "The stand-alone selling prices used and how they were determined.",
+        "Whether any manual journals adjust system-generated allocation.",
+        "The volume of bundled contracts and their revenue share."
+      ],
+      "note": "Manual top-side adjustments to allocation are a separate fraud-relevant consideration.",
+      "procedure_ids": [
+        "P-TEL-002-1",
+        "P-TEL-002-2"
+      ],
+      "risk_ids": [
+        "R-TEL-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-TEL-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Multi-element customer contracts (handset plus service bundles) -> Incorrect allocation of consideration across bundle components and premature revenue recognition",
+  "priority": 20,
+  "rationale": "Allocation error is systematic rather than random, so the rule focuses on reperforming the allocation logic on new plans and testing the approval control that authorises the inputs.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-TEL-002",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-ACC",
+      "TRN-CUT",
+      "TRN-CLS"
+    ],
+    "control_ids": [
+      "C-TEL-002-1",
+      "C-TEL-002-2"
+    ],
+    "missing_information": [
+      "The stand-alone selling prices used and how they were determined.",
+      "Whether any manual journals adjust system-generated allocation.",
+      "The volume of bundled contracts and their revenue share."
+    ],
+    "note": "Manual top-side adjustments to allocation are a separate fraud-relevant consideration.",
+    "procedure_ids": [
+      "P-TEL-002-1",
+      "P-TEL-002-2"
+    ],
+    "risk_ids": [
+      "R-TEL-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-TEL-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

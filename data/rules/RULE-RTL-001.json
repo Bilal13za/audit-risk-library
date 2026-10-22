@@ -1,0 +1,81 @@
+{
+  "definition": {
+    "rule_id": "RULE-RTL-001",
+    "then": {
+      "assertion_ids": [
+        "TRN-COM",
+        "BAL-EXI"
+      ],
+      "control_ids": [
+        "C-RTL-001-1",
+        "C-RTL-001-2"
+      ],
+      "missing_information": [
+        "The proportion of cash versus card sales.",
+        "Void, refund and discount rates by outlet.",
+        "How shrinkage is measured and provided for."
+      ],
+      "note": "Findings of systematic shortfalls are fraud indicators to investigate, never automatic conclusions.",
+      "procedure_ids": [
+        "P-RTL-001-1",
+        "P-RTL-001-2"
+      ],
+      "risk_ids": [
+        "R-RTL-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-RTL-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "High-volume cash and card sales with shrinkage exposure -> Unrecorded sales and theft of takings (shrinkage)",
+  "priority": 20,
+  "rationale": "Cash volume is the risk driver, so the rule focuses on the till-to-bank trail and outlet-level analytics rather than individual transaction vouching.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-RTL-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-COM",
+      "BAL-EXI"
+    ],
+    "control_ids": [
+      "C-RTL-001-1",
+      "C-RTL-001-2"
+    ],
+    "missing_information": [
+      "The proportion of cash versus card sales.",
+      "Void, refund and discount rates by outlet.",
+      "How shrinkage is measured and provided for."
+    ],
+    "note": "Findings of systematic shortfalls are fraud indicators to investigate, never automatic conclusions.",
+    "procedure_ids": [
+      "P-RTL-001-1",
+      "P-RTL-001-2"
+    ],
+    "risk_ids": [
+      "R-RTL-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-RTL-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

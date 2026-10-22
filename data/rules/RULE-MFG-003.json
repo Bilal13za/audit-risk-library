@@ -1,0 +1,79 @@
+{
+  "definition": {
+    "rule_id": "RULE-MFG-003",
+    "then": {
+      "assertion_ids": [
+        "BAL-COM",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-MFG-003-1"
+      ],
+      "missing_information": [
+        "The warranty terms offered and which products they cover.",
+        "Claims history by cohort, especially for new products.",
+        "How the provision has compared with actual claims in prior periods."
+      ],
+      "note": "A falling provision alongside rising sales is an analytical red flag, not proof of error.",
+      "procedure_ids": [
+        "P-MFG-003-1",
+        "P-MFG-003-2"
+      ],
+      "risk_ids": [
+        "R-MFG-003"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-MFG-003",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Warranty obligations on goods sold -> Understated warranty provision",
+  "priority": 20,
+  "rationale": "Warranty estimates live or die on claim experience, so the rule centres on back-testing and cohort analysis rather than accepting the model.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-MFG-003",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-COM",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-MFG-003-1"
+    ],
+    "missing_information": [
+      "The warranty terms offered and which products they cover.",
+      "Claims history by cohort, especially for new products.",
+      "How the provision has compared with actual claims in prior periods."
+    ],
+    "note": "A falling provision alongside rising sales is an analytical red flag, not proof of error.",
+    "procedure_ids": [
+      "P-MFG-003-1",
+      "P-MFG-003-2"
+    ],
+    "risk_ids": [
+      "R-MFG-003"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-MFG-003",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

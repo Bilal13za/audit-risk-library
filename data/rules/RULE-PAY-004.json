@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-PAY-004",
+    "then": {
+      "assertion_ids": [
+        "TRN-ACC",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-PAY-007",
+        "C-PAY-008"
+      ],
+      "missing_information": [
+        "Whether payroll is calculated manually, by system, or by an outsourced provider.",
+        "How rate and tax tables are updated, and whether changes are independently reviewed.",
+        "Whether the payroll summary is independently reviewed before payments are released."
+      ],
+      "note": "Because calculation errors are often systematic, the auditor quantifies the aggregate effect on wages expense and statutory liabilities rather than treating each error as isolated.",
+      "procedure_ids": [
+        "P-PAY-013",
+        "P-PAY-014",
+        "P-PAY-015",
+        "P-PAY-016"
+      ],
+      "risk_ids": [
+        "R-PAY-004"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PAY-004",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Incorrect payroll calculations -> misstated wages and deductions",
+  "priority": 40,
+  "rationale": "Errors in rates, tax tables or deduction parameters flow systematically into pay and related liabilities. The rule directs independent recalculation from authorised sources, agreement of rates, and reconciliation of payroll to the ledger.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PAY-004",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-ACC",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-PAY-007",
+      "C-PAY-008"
+    ],
+    "missing_information": [
+      "Whether payroll is calculated manually, by system, or by an outsourced provider.",
+      "How rate and tax tables are updated, and whether changes are independently reviewed.",
+      "Whether the payroll summary is independently reviewed before payments are released."
+    ],
+    "note": "Because calculation errors are often systematic, the auditor quantifies the aggregate effect on wages expense and statutory liabilities rather than treating each error as isolated.",
+    "procedure_ids": [
+      "P-PAY-013",
+      "P-PAY-014",
+      "P-PAY-015",
+      "P-PAY-016"
+    ],
+    "risk_ids": [
+      "R-PAY-004"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PAY-004",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

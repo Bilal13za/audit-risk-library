@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-CSH-001",
+    "then": {
+      "assertion_ids": [
+        "BAL-EXI",
+        "BAL-COM"
+      ],
+      "control_ids": [
+        "C-CSH-001",
+        "C-CSH-002"
+      ],
+      "missing_information": [
+        "Whether bank balances are material to the financial statements.",
+        "How often reconciliations are prepared, by whom, and whether any independent review exists.",
+        "The age profile of outstanding items in the latest reconciliation."
+      ],
+      "note": "An unreviewed reconciliation cannot be relied upon; the cash balance must be corroborated independently through reperformance, vouching of outstanding items and bank confirmation.",
+      "procedure_ids": [
+        "P-CSH-001",
+        "P-CSH-002",
+        "P-CSH-003",
+        "P-CSH-004"
+      ],
+      "risk_ids": [
+        "R-CSH-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-CSH-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Bank reconciliations not independently reviewed -> undetected bank errors",
+  "priority": 10,
+  "rationale": "The bank reconciliation is the key detective control over cash; without independent review, errors and irregularities go unchallenged. The rule directs the auditor to test the review control, reperform the reconciliation, vouch aged items, and obtain direct bank confirmation.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-CSH-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-EXI",
+      "BAL-COM"
+    ],
+    "control_ids": [
+      "C-CSH-001",
+      "C-CSH-002"
+    ],
+    "missing_information": [
+      "Whether bank balances are material to the financial statements.",
+      "How often reconciliations are prepared, by whom, and whether any independent review exists.",
+      "The age profile of outstanding items in the latest reconciliation."
+    ],
+    "note": "An unreviewed reconciliation cannot be relied upon; the cash balance must be corroborated independently through reperformance, vouching of outstanding items and bank confirmation.",
+    "procedure_ids": [
+      "P-CSH-001",
+      "P-CSH-002",
+      "P-CSH-003",
+      "P-CSH-004"
+    ],
+    "risk_ids": [
+      "R-CSH-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-CSH-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

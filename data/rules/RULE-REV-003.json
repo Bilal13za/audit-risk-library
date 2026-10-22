@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-REV-003",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-REV-005",
+        "C-REV-006"
+      ],
+      "missing_information": [
+        "Which revenue streams lack dispatch evidence and why.",
+        "Whether alternative evidence of performance exists for those streams.",
+        "Whether the gap reflects missing documents or a missing control."
+      ],
+      "note": "Missing evidence is a control deficiency and a risk indicator; an unsupported invoice is an exception to investigate, not a confirmed fictitious sale.",
+      "procedure_ids": [
+        "P-REV-008",
+        "P-REV-009",
+        "P-REV-010"
+      ],
+      "risk_ids": [
+        "R-REV-003"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-REV-003",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Unsupported sales -> fictitious revenue risk",
+  "priority": 30,
+  "rationale": "Dispatch or performance evidence connects a recorded sale to a real event; without it the auditor cannot distinguish missing paperwork from a sale that never happened. The rule directs vouching to supporting evidence, analytical comparison with operational data, and external confirmation for independent corroboration.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-REV-003",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-REV-005",
+      "C-REV-006"
+    ],
+    "missing_information": [
+      "Which revenue streams lack dispatch evidence and why.",
+      "Whether alternative evidence of performance exists for those streams.",
+      "Whether the gap reflects missing documents or a missing control."
+    ],
+    "note": "Missing evidence is a control deficiency and a risk indicator; an unsupported invoice is an exception to investigate, not a confirmed fictitious sale.",
+    "procedure_ids": [
+      "P-REV-008",
+      "P-REV-009",
+      "P-REV-010"
+    ],
+    "risk_ids": [
+      "R-REV-003"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-REV-003",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

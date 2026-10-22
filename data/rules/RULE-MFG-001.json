@@ -1,0 +1,81 @@
+{
+  "definition": {
+    "rule_id": "RULE-MFG-001",
+    "then": {
+      "assertion_ids": [
+        "BAL-VAL",
+        "TRN-ACC"
+      ],
+      "control_ids": [
+        "C-MFG-001-1",
+        "C-MFG-001-2"
+      ],
+      "missing_information": [
+        "The normal-capacity level assumed and how it compares with actual utilisation.",
+        "Whether overhead rates were updated for the current budget.",
+        "The ageing of open WIP jobs."
+      ],
+      "note": "Abnormal amounts of wasted material or idle time are expensed, not absorbed.",
+      "procedure_ids": [
+        "P-MFG-001-1",
+        "P-MFG-001-2"
+      ],
+      "risk_ids": [
+        "R-MFG-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-MFG-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Work in progress with absorbed production overheads -> Misallocated overheads and misstated work in progress",
+  "priority": 20,
+  "rationale": "Overhead valuation fails at the rate-setting stage, so the rule leads with reperformance of the model and a physical reality check on WIP stages.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-MFG-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-VAL",
+      "TRN-ACC"
+    ],
+    "control_ids": [
+      "C-MFG-001-1",
+      "C-MFG-001-2"
+    ],
+    "missing_information": [
+      "The normal-capacity level assumed and how it compares with actual utilisation.",
+      "Whether overhead rates were updated for the current budget.",
+      "The ageing of open WIP jobs."
+    ],
+    "note": "Abnormal amounts of wasted material or idle time are expensed, not absorbed.",
+    "procedure_ids": [
+      "P-MFG-001-1",
+      "P-MFG-001-2"
+    ],
+    "risk_ids": [
+      "R-MFG-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-MFG-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

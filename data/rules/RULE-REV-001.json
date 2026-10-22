@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-REV-001",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "TRN-CUT"
+      ],
+      "control_ids": [
+        "C-REV-001",
+        "C-REV-002"
+      ],
+      "missing_information": [
+        "The entity's revenue recognition policy and when the criteria are deemed met.",
+        "Whether billing is linked to dispatch or acceptance evidence.",
+        "Whether revenue is material and concentrated at period ends."
+      ],
+      "note": "Premature recognition is a presumed fraud risk area; the rule treats the factor as a risk indicator requiring testing, not as proof of misstatement.",
+      "procedure_ids": [
+        "P-REV-001",
+        "P-REV-002",
+        "P-REV-003",
+        "P-REV-004"
+      ],
+      "risk_ids": [
+        "R-REV-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-REV-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Premature revenue recognition -> revenue overstatement risk",
+  "priority": 10,
+  "rationale": "Recording revenue before the recognition criteria are met breaks the link between the entry and the underlying event, so recorded revenue may be overstated (occurrence) and in the wrong period (cut-off). The rule directs the auditor to occurrence-focused vouching, contract inspection and cut-off testing, plus a test of the preventive matching control.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-REV-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "TRN-CUT"
+    ],
+    "control_ids": [
+      "C-REV-001",
+      "C-REV-002"
+    ],
+    "missing_information": [
+      "The entity's revenue recognition policy and when the criteria are deemed met.",
+      "Whether billing is linked to dispatch or acceptance evidence.",
+      "Whether revenue is material and concentrated at period ends."
+    ],
+    "note": "Premature recognition is a presumed fraud risk area; the rule treats the factor as a risk indicator requiring testing, not as proof of misstatement.",
+    "procedure_ids": [
+      "P-REV-001",
+      "P-REV-002",
+      "P-REV-003",
+      "P-REV-004"
+    ],
+    "risk_ids": [
+      "R-REV-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-REV-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

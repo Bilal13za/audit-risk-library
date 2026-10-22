@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-REV-002",
+    "then": {
+      "assertion_ids": [
+        "TRN-CUT",
+        "TRN-COM"
+      ],
+      "control_ids": [
+        "C-REV-003",
+        "C-REV-004"
+      ],
+      "missing_information": [
+        "Whether a dispatch-to-invoice reconciliation is performed at period end.",
+        "Whether unmatched dispatches are accrued, and how reliably.",
+        "The typical lag between dispatch and invoicing."
+      ],
+      "note": "Understatement is often error rather than fraud, but systematic late recording warrants the same scepticism as premature recognition.",
+      "procedure_ids": [
+        "P-REV-005",
+        "P-REV-006",
+        "P-REV-007"
+      ],
+      "risk_ids": [
+        "R-REV-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-REV-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Late-recorded dispatches -> revenue understatement (cut-off) risk",
+  "priority": 20,
+  "rationale": "When dispatch precedes invoicing across the reporting date, earned sales fall out of the current period. The rule directs two-directional cut-off testing and inspection of management's own reconciliation, targeting completeness and cut-off of revenue.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-REV-002",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-CUT",
+      "TRN-COM"
+    ],
+    "control_ids": [
+      "C-REV-003",
+      "C-REV-004"
+    ],
+    "missing_information": [
+      "Whether a dispatch-to-invoice reconciliation is performed at period end.",
+      "Whether unmatched dispatches are accrued, and how reliably.",
+      "The typical lag between dispatch and invoicing."
+    ],
+    "note": "Understatement is often error rather than fraud, but systematic late recording warrants the same scepticism as premature recognition.",
+    "procedure_ids": [
+      "P-REV-005",
+      "P-REV-006",
+      "P-REV-007"
+    ],
+    "risk_ids": [
+      "R-REV-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-REV-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-FRP-005",
+    "then": {
+      "assertion_ids": [
+        "DIS-COM",
+        "DIS-CLS"
+      ],
+      "control_ids": [
+        "C-FRP-009",
+        "C-FRP-010"
+      ],
+      "missing_information": [
+        "The applicable financial reporting framework and any new or amended requirements.",
+        "Whether new or unusual transactions occurred in the period.",
+        "Who prepares and reviews the disclosures."
+      ],
+      "note": "An omitted disclosure misstates the financial statements taken as a whole even though no account balance is wrong; materiality is judged on the needs of users.",
+      "procedure_ids": [
+        "P-FRP-005-001",
+        "P-FRP-005-002",
+        "P-FRP-005-003"
+      ],
+      "risk_ids": [
+        "R-FRP-005"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-FRP-005",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "No disclosure completeness process -> omitted disclosures risk",
+  "priority": 40,
+  "rationale": "Disclosures do not affect the trial balance, so they are missed without a disciplined process. The rule directs the auditor to act as the missing control: complete an independent disclosure checklist, trace disclosed amounts to the records, and assess novel transactions for disclosure implications.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-FRP-005",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "DIS-COM",
+      "DIS-CLS"
+    ],
+    "control_ids": [
+      "C-FRP-009",
+      "C-FRP-010"
+    ],
+    "missing_information": [
+      "The applicable financial reporting framework and any new or amended requirements.",
+      "Whether new or unusual transactions occurred in the period.",
+      "Who prepares and reviews the disclosures."
+    ],
+    "note": "An omitted disclosure misstates the financial statements taken as a whole even though no account balance is wrong; materiality is judged on the needs of users.",
+    "procedure_ids": [
+      "P-FRP-005-001",
+      "P-FRP-005-002",
+      "P-FRP-005-003"
+    ],
+    "risk_ids": [
+      "R-FRP-005"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-FRP-005",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

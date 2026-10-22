@@ -1,0 +1,79 @@
+{
+  "definition": {
+    "rule_id": "RULE-BNK-001",
+    "then": {
+      "assertion_ids": [
+        "BAL-VAL",
+        "DIS-COM"
+      ],
+      "control_ids": [
+        "C-BNK-001-1"
+      ],
+      "missing_information": [
+        "The staging criteria and the volume of overrides.",
+        "How forward-looking scenarios are weighted.",
+        "The size and direction of management overlays."
+      ],
+      "note": "This is typically a significant risk requiring special audit consideration and possible expertise.",
+      "procedure_ids": [
+        "P-BNK-001-1",
+        "P-BNK-001-2"
+      ],
+      "risk_ids": [
+        "R-BNK-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-BNK-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Loan book subject to expected credit losses -> Understated loan impairment (expected credit losses)",
+  "priority": 20,
+  "rationale": "ECL fails at staging and parameter judgments, so the rule targets borderline cases and overlays rather than re-running the whole model naively.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-BNK-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "BAL-VAL",
+      "DIS-COM"
+    ],
+    "control_ids": [
+      "C-BNK-001-1"
+    ],
+    "missing_information": [
+      "The staging criteria and the volume of overrides.",
+      "How forward-looking scenarios are weighted.",
+      "The size and direction of management overlays."
+    ],
+    "note": "This is typically a significant risk requiring special audit consideration and possible expertise.",
+    "procedure_ids": [
+      "P-BNK-001-1",
+      "P-BNK-001-2"
+    ],
+    "risk_ids": [
+      "R-BNK-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-BNK-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

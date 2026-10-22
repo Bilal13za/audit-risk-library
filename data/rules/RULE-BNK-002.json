@@ -1,0 +1,77 @@
+{
+  "definition": {
+    "rule_id": "RULE-BNK-002",
+    "then": {
+      "assertion_ids": [
+        "TRN-ACC",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-BNK-002-1"
+      ],
+      "missing_information": [
+        "The policy criteria for suspending interest accrual.",
+        "The ageing and size of the NPL book.",
+        "Whether suspended interest is tracked for disclosure."
+      ],
+      "note": "Regulatory definitions of non-performance may differ from accounting ones - both matter.",
+      "procedure_ids": [
+        "P-BNK-002-1"
+      ],
+      "risk_ids": [
+        "R-BNK-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-BNK-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Interest income recognised on non-performing loans -> Overstated interest income on non-performing loans",
+  "priority": 20,
+  "rationale": "Accrual is automatic and stopping it is the decision, so the rule tests the suspension boundary and the provision against continuing accruals.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-BNK-002",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-ACC",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-BNK-002-1"
+    ],
+    "missing_information": [
+      "The policy criteria for suspending interest accrual.",
+      "The ageing and size of the NPL book.",
+      "Whether suspended interest is tracked for disclosure."
+    ],
+    "note": "Regulatory definitions of non-performance may differ from accounting ones - both matter.",
+    "procedure_ids": [
+      "P-BNK-002-1"
+    ],
+    "risk_ids": [
+      "R-BNK-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-BNK-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

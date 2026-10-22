@@ -1,0 +1,79 @@
+{
+  "definition": {
+    "rule_id": "RULE-MFG-002",
+    "then": {
+      "assertion_ids": [
+        "TRN-ACC",
+        "BAL-VAL"
+      ],
+      "control_ids": [
+        "C-MFG-002-1"
+      ],
+      "missing_information": [
+        "When standards were last revised and for which inputs.",
+        "How material variances are currently disposed of.",
+        "Whether variance investigations are documented."
+      ],
+      "note": "Persistent adverse variances may also signal operational issues beyond the financial statements.",
+      "procedure_ids": [
+        "P-MFG-002-1",
+        "P-MFG-002-2"
+      ],
+      "risk_ids": [
+        "R-MFG-002"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-MFG-002",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Standard costing with material variances not investigated -> Variances buried rather than analysed, misstating inventory and cost of sales",
+  "priority": 20,
+  "rationale": "Variances are the costing system's built-in diagnostic, so the rule treats them as the primary evidence and tests both their investigation and their accounting.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-MFG-002",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-ACC",
+      "BAL-VAL"
+    ],
+    "control_ids": [
+      "C-MFG-002-1"
+    ],
+    "missing_information": [
+      "When standards were last revised and for which inputs.",
+      "How material variances are currently disposed of.",
+      "Whether variance investigations are documented."
+    ],
+    "note": "Persistent adverse variances may also signal operational issues beyond the financial statements.",
+    "procedure_ids": [
+      "P-MFG-002-1",
+      "P-MFG-002-2"
+    ],
+    "risk_ids": [
+      "R-MFG-002"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-MFG-002",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

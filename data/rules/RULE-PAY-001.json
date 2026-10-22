@@ -1,0 +1,85 @@
+{
+  "definition": {
+    "rule_id": "RULE-PAY-001",
+    "then": {
+      "assertion_ids": [
+        "TRN-OCC",
+        "BAL-EXI"
+      ],
+      "control_ids": [
+        "C-PAY-001",
+        "C-PAY-002"
+      ],
+      "missing_information": [
+        "Whether payroll is material to the financial statements.",
+        "How leavers are communicated from HR to payroll, and the typical delay before removal.",
+        "Whether anyone reconciles the payroll master to HR employment records."
+      ],
+      "note": "Ghost-employee testing starts from independent populations (HR leaver lists, headcount) rather than from the payroll register itself, which is the record under suspicion.",
+      "procedure_ids": [
+        "P-PAY-001",
+        "P-PAY-002",
+        "P-PAY-003",
+        "P-PAY-004"
+      ],
+      "risk_ids": [
+        "R-PAY-001"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-PAY-001",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Terminated employees remain on payroll -> ghost employee risk",
+  "priority": 10,
+  "rationale": "A lag between termination and removal from the payroll master, combined with bulk electronic payments, creates the opportunity for continued payments to non-employees. The rule directs occurrence-focused testing: analytical scans, tracing leavers, and vouching payees to employment evidence.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-PAY-001",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-OCC",
+      "BAL-EXI"
+    ],
+    "control_ids": [
+      "C-PAY-001",
+      "C-PAY-002"
+    ],
+    "missing_information": [
+      "Whether payroll is material to the financial statements.",
+      "How leavers are communicated from HR to payroll, and the typical delay before removal.",
+      "Whether anyone reconciles the payroll master to HR employment records."
+    ],
+    "note": "Ghost-employee testing starts from independent populations (HR leaver lists, headcount) rather than from the payroll register itself, which is the record under suspicion.",
+    "procedure_ids": [
+      "P-PAY-001",
+      "P-PAY-002",
+      "P-PAY-003",
+      "P-PAY-004"
+    ],
+    "risk_ids": [
+      "R-PAY-001"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-PAY-001",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}

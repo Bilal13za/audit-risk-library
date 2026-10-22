@@ -1,0 +1,83 @@
+{
+  "definition": {
+    "rule_id": "RULE-CSH-003",
+    "then": {
+      "assertion_ids": [
+        "TRN-CUT",
+        "BAL-EXI"
+      ],
+      "control_ids": [
+        "C-CSH-005",
+        "C-CSH-006"
+      ],
+      "missing_information": [
+        "The value and timing of transfers in the cut-off window around the reporting date.",
+        "Whether a transfer register is maintained and both sides are recorded in the same period.",
+        "Whether material transfers are reversed shortly after year-end."
+      ],
+      "note": "Cut-off testing is performed on both sides of each transfer: the sending account and the receiving account. A transfer confirmed on one side only is an exception, not a timing difference.",
+      "procedure_ids": [
+        "P-CSH-009",
+        "P-CSH-010",
+        "P-CSH-011"
+      ],
+      "risk_ids": [
+        "R-CSH-003"
+      ]
+    },
+    "when": {
+      "all": [
+        {
+          "factor_id": "F-CSH-003",
+          "type": "factor_selected"
+        }
+      ],
+      "any": [],
+      "exclude": []
+    }
+  },
+  "effective_date": "2026-10-21",
+  "name": "Year-end bank transfers -> cut-off and double-counting risk",
+  "priority": 30,
+  "rationale": "Transfers in transit at year-end can be double-counted or omitted, and may be used to window-dress liquidity. The rule directs cut-off testing that matches both sides of every material transfer to bank value dates and reperforms the in-transit position.",
+  "review_status": "Verified",
+  "reviewed_by": "Library build - deterministic rules",
+  "rule_id": "RULE-CSH-003",
+  "source_reference": "Professional practice guidance; standards references unverified - see docs/REFERENCES.md",
+  "status": "Active",
+  "then": {
+    "assertion_ids": [
+      "TRN-CUT",
+      "BAL-EXI"
+    ],
+    "control_ids": [
+      "C-CSH-005",
+      "C-CSH-006"
+    ],
+    "missing_information": [
+      "The value and timing of transfers in the cut-off window around the reporting date.",
+      "Whether a transfer register is maintained and both sides are recorded in the same period.",
+      "Whether material transfers are reversed shortly after year-end."
+    ],
+    "note": "Cut-off testing is performed on both sides of each transfer: the sending account and the receiving account. A transfer confirmed on one side only is an exception, not a timing difference.",
+    "procedure_ids": [
+      "P-CSH-009",
+      "P-CSH-010",
+      "P-CSH-011"
+    ],
+    "risk_ids": [
+      "R-CSH-003"
+    ]
+  },
+  "version": 1,
+  "when": {
+    "all": [
+      {
+        "factor_id": "F-CSH-003",
+        "type": "factor_selected"
+      }
+    ],
+    "any": [],
+    "exclude": []
+  }
+}
